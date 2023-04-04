@@ -1,0 +1,38 @@
+.logo {
+  position: absolute;
+  left: 160px;
+  top: 35px;
+  width: 324px;
+  height: 56px;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+}
+
+.mini_nav {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  right: 250px;
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #808080;
+}
+
+.mini_nav div {
+  background: transparent;
+  padding: 8px;
+  display: flex;
+  color: #000;
+  cursor: pointer;
+}
