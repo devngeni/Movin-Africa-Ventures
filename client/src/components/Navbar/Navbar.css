@@ -9,9 +9,10 @@
 nav {
   position: fixed;
   width: 100vw;
-  height: 80px;
+  height: 100px;
   background-color: transparent;
   backdrop-filter: blur(15px);
+  z-index: 10;
 }
 
 .mini_nav {
@@ -26,13 +27,14 @@ nav {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  color: #808080;
+
+  /* color: #13153a; */
 }
 
 .mini_nav div {
   background: transparent;
   padding: 8px;
   display: flex;
-  color: #000;
+  color: #808080;
   cursor: pointer;
 }

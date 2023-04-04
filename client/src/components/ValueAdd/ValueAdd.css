@@ -1,0 +1,110 @@
+.valueAdd_container {
+  position: relative;
+  top: 3600px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1600px;
+  height: 1000px;
+  color: aliceblue;
+
+  background: #1f2117;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.plusLines_div {
+  padding-top: 30px;
+}
+
+/* .plusLines {
+  position: absolute;
+  
+  height: auto;
+  padding-top: 20px;
+} */
+
+.grid1 {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  top: 130px;
+  left: 60px;
+}
+.grid_imgs {
+  position: absolute;
+  width: 136px;
+  height: 104px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.headers {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.descrip {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 604px;
+  height: 157px;
+
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+
+  /* or 222% */
+  text-align: center;
+
+  color: #cfdea0;
+}
+
+.grid2 {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  top: 130px;
+  right: 60px;
+}
+.grid3 {
+  position: absolute;
+  width: 700px;
+  height: 350px;
+  bottom: 50px;
+  left: 60px;
+}
+.grid4 {
+  position: absolute;
+  width: 700px;
+  height: 350px;
+  bottom: 50px;
+  right: 60px;
+}
