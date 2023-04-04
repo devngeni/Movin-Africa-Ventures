@@ -1,8 +1,8 @@
 .About_page {
   position: relative;
   width: 100vw;
-  height: auto;
-  top: 1000px;
+  height: 2450px;
+  /* top: 1000px; */
 }
 
 .we_are_ {
@@ -44,7 +44,7 @@
   width: 1104px;
   height: 628px;
   right: 0;
-  top: 140px;
+  top: 120px;
 }
 
 .invest_container {
@@ -83,11 +83,11 @@
 
 .about_grid_containers {
   position: absolute;
-  top: 1750px;
+  top: 1273px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 1050px;
-  height: 870px;
+  height: 668px;
 }
 
 .green_grid {
@@ -95,7 +95,7 @@
   top: 0px;
   left: 62.5px;
   width: 420px;
-  height: 609px;
+  height: 472px;
   background: #404430;
   backdrop-filter: blur(17px);
 
@@ -112,10 +112,10 @@
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 40px;
 
-  /* or 167% */
+  /* or 222% */
 
   color: #ffffff;
 }
@@ -125,7 +125,7 @@
   top: 0;
   right: 62.5px;
   width: 420px;
-  height: 609px;
+  height: 472px;
   background: rgba(221, 221, 221, 0.5);
   backdrop-filter: blur(10.5px);
   border-radius: 22px;
@@ -142,10 +142,10 @@
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 40px;
 
-  /* or 167% */
+  /* or 222% */
 
   color: #404430;
 }
@@ -169,7 +169,7 @@
   height: 96px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 90px;
+  bottom: 40px;
 
   font-family: "Advent Pro";
   font-style: normal;

@@ -1,0 +1,59 @@
+.whyNow {
+  position: relative;
+  width: 725px;
+  height: 950px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 78px;
+
+  text-align: center;
+  color: #13153a;
+}
+
+.withThe_ {
+  position: absolute;
+  width: inherit;
+  height: 108px;
+  padding-top: 20px;
+
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+
+  text-align: center;
+  color: #666666;
+}
+
+.why_icon {
+  position: absolute;
+  width: 717.56px;
+  height: 545px;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.movin_africa_is_here {
+  position: absolute;
+  width: 725.22px;
+  height: 108px;
+  bottom: 0px;
+
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+
+  /* or 200% */
+  text-align: center;
+
+  color: #666666;
+}

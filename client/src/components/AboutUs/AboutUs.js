@@ -28,8 +28,8 @@ const AboutUs = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M1201.48 654.683C1201.14 1014.48 793.007 1213.28 421.552 1298.52C137.176 1363.77 -152.513 1234.78 -306.998 1000.82C-433.604 809.075 -306.894 587.576 -170.495 401.88C-18.258 194.622 160.039 -41.1341 422.784 7.27964C798.569 76.5224 1201.83 294.334 1201.48 654.683Z"
             stroke="#404430"
           />
@@ -41,8 +41,8 @@ const AboutUs = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M1201.48 601.812C1201.13 961.613 792.999 1160.41 421.544 1245.65C137.168 1310.9 -152.52 1181.91 -307.006 947.945C-433.611 756.204 -558.171 638.769 -421.771 453.073C-269.535 245.816 133.064 555.364 653.374 151.804C1173.68 -251.756 1201.82 241.463 1201.48 601.812Z"
             stroke="#404430"
           />
@@ -54,8 +54,8 @@ const AboutUs = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M1166.8 470.507C1166.54 729.269 862.725 872.243 586.212 933.541C374.522 980.47 158.877 887.703 43.8769 719.439C-50.3687 581.543 43.9542 422.245 145.491 288.695C258.816 139.639 391.541 -29.9135 587.129 4.9049C866.865 54.7031 1167.05 211.35 1166.8 470.507Z"
             fill="#E6EECF"
           />
@@ -342,27 +342,26 @@ const AboutUs = () => {
             <circle cx="609.56" cy="649.411" r="2.5" fill="#13153A" />
           </g>
         </svg>
-
-        <div className="about_grid_containers">
-          <div className="green_grid">
-            <p>
-              Despite Afrika being widely cited as the next frontier for
-              emerging technologies, tech businesses across the continent are
-              being hampered by insufficient access to capital, impeding their
-              ability to leverage lucrative opportunities even as advanced
-              economies continue to thrive and innovate.
-            </p>
-          </div>
-          <div className="white_grid">
-            <p>
-              Technology is everywhere, and every business in Africa, small or
-              large, should be at the forefront of this revolution. It takes
-              capital to make this work.
-            </p>
-          </div>
-          <div className="z_index_bottom_grid">
-            <p>Movin.Africa is the capital moving Africa forward.</p>
-          </div>
+      </div>
+      <div className="about_grid_containers">
+        <div className="green_grid">
+          <p>
+            Despite Afrika being widely cited as the next frontier for emerging
+            technologies, tech businesses across the continent are being
+            hampered by insufficient access to capital, impeding their ability
+            to leverage lucrative opportunities even as advanced economies
+            continue to thrive and innovate.
+          </p>
+        </div>
+        <div className="white_grid">
+          <p>
+            Technology is everywhere, and every business in Africa, small or
+            large, should be at the forefront of this revolution. It takes
+            capital to make this work.
+          </p>
+        </div>
+        <div className="z_index_bottom_grid">
+          <p>Movin.Africa is the capital moving Africa forward.</p>
         </div>
       </div>
     </div>

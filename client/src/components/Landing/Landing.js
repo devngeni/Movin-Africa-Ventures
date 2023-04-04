@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Home from "../Home/Home";
 import AboutUs from "../AboutUs/AboutUs";
 import ValueAdd from "../ValueAdd/ValueAdd";
+import WhyNow from "../WhyNow/WhyNow";
 
 const Landing = () => {
   return (
@@ -11,6 +12,7 @@ const Landing = () => {
       <Home />
       <AboutUs />
       <ValueAdd />
+      <WhyNow />
     </div>
   );
 };
