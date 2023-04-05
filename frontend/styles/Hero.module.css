@@ -1,19 +1,23 @@
 .home_page {
-  position: relative;
-  width: 100vw;
-  height: 1000px;
+  width: 100%;
   font-family: "Gotham";
 }
 
 .home_img {
-  position: absolute;
-  width: 1483.49px;
+  position: relative;
+  width: 80%;
   height: 776.4px;
   left: 0;
   top: 0;
   opacity: 0.5;
 }
 
+
+.home_container {
+  position: relative;
+  height: 120vh;
+  width: 100%;
+}
 .phoneImg {
   position: absolute;
   top: 131px;
@@ -71,4 +75,11 @@
   font-size: 25px;
   line-height: 30px;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.home_button:hover {
+  background: #13153a;
+  transition: 0.3s ease-in-out;
 }

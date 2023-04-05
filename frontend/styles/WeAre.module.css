@@ -1,12 +1,11 @@
 .WeAre_Page {
-  position: relative;
+  position: absolute;
   width: 100vw;
-  height: 2450px;
-  /* top: 1000px; */
+  height: 100vh;
 }
 
 .we_are_ {
-  position: absolute;
+  position: relative;
   width: 667.65px;
   height: 162px;
   left: 184.04px;
@@ -17,7 +16,6 @@
   font-weight: 700;
   font-size: 45px;
   line-height: 54px;
-
   color: #13153a;
 }
 
@@ -38,13 +36,24 @@
 
   color: #666666;
 }
-
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+.left_grid {
+  display: flex;
+  flex-direction: column;
+}
+.city_div {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
 .city_img {
-  position: absolute;
-  width: 1104px;
-  height: 628px;
-  right: 0;
-  top: 120px;
+  width: 100%;
+  height: auto;
+  justify-self: end;
 }
 
 .invest_container {
@@ -83,7 +92,7 @@
 
 .weAre_grid_containers {
   position: absolute;
-  top: 1273px;
+  top: 1373px;
   left: 50%;
   transform: translateX(-50%);
   width: 1050px;
@@ -192,14 +201,12 @@
 .vectorc2 {
   position: absolute;
   top: 1250px;
-  width: 1100px;
   height: auto;
 }
 
 .half_oval {
   position: absolute;
-  top: 1420px;
-  width: 739px;
+  top: 1220px;
   height: auto;
   right: 0;
 }

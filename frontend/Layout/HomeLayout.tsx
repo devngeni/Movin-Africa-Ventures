@@ -4,6 +4,7 @@ interface Homeinterface {
   children: ReactNode;
 }
 import styles from "@/styles/Hero.module.css";
+import { Navbar } from "@/components/Landing";
 
 export default function HomeLayout({ children }: Homeinterface) {
   return (
@@ -14,6 +15,7 @@ export default function HomeLayout({ children }: Homeinterface) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       <main className={styles.home_page}>{children}</main>
     </>
   );
