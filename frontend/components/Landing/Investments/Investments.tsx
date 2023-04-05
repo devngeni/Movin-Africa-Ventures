@@ -88,8 +88,12 @@ export default function Investments() {
           million uncommitted and $2 million committed to investments.
         </p>
       </div>
-      <div className={investments_lines}>
-        <Image src={investments_lines_svg} alt="investments_lines_svg" />
+      <div>
+        <Image
+          src={investments_lines_svg}
+          alt="investments_lines_svg"
+          className={investments_lines}
+        />
       </div>
     </div>
   );
