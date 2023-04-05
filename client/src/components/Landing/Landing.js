@@ -4,6 +4,8 @@ import Navbar from "./Navbar/Navbar";
 import WeAre from "./WeAre/WeAre";
 import ValueAdd from "./ValueAdd/ValueAdd";
 import WhyNow from "./WhyNow/WhyNow";
+import Investment from "./Investments/Investment";
+import Teams from "./Teams/Teams";
 
 const Landing = () => {
   return (
@@ -13,6 +15,8 @@ const Landing = () => {
       <WeAre />
       <ValueAdd />
       <WhyNow />
+      <Investment />
+      <Teams />
     </div>
   );
 };

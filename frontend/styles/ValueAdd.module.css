@@ -1,8 +1,6 @@
 .valuePage {
-  position: absolute;
   width: 100vw;
   height: 1020px;
-  left: 0;
 }
 
 .valueAdd_container {
@@ -48,7 +46,6 @@
   height: 300px;
   top: 156px;
   left: 220px;
-  /* background-color: red; */
 }
 .grid1 img {
   position: absolute;
@@ -85,7 +82,7 @@
 
 .headers {
   position: absolute;
-  top: 130px;
+  top: 140px;
   width: max-content;
   left: 50%;
   transform: translateX(-50%);
@@ -107,7 +104,7 @@
 
 .descrip {
   position: absolute;
-  top: 150px;
+  top: 170px;
   left: 50%;
   transform: translateX(-50%);
   width: 394.65px;
