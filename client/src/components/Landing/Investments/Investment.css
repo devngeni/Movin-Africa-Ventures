@@ -1,0 +1,12 @@
+.Investment_page {
+  position: relative;
+  width: 100vw;
+  height: 1800px;
+  /* background-color: blue; */
+}
+
+.investment_container {
+  position: absolute;
+  width: 1319px;
+  height: 1368px;
+}

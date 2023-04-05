@@ -1,5 +1,5 @@
 import { HomeLayout } from "@/Layout";
-import { Hero, ValueAdd, WeAre } from "@/components/Landing";
+import { Hero, Investments, ValueAdd, WeAre } from "@/components/Landing";
 
 export default function HomePage() {
   return (
@@ -7,6 +7,7 @@ export default function HomePage() {
       <Hero />
       <WeAre />
       <ValueAdd />
+      <Investments/>
     </HomeLayout>
   );
 }
