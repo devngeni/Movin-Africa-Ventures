@@ -1,9 +1,12 @@
 .WeAre_Page {
-  position: absolute;
   width: 100vw;
   height: 100vh;
 }
-
+.Container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
 .we_are_ {
   position: relative;
   width: 667.65px;
@@ -85,8 +88,6 @@
   font-size: 100px;
   line-height: 120px;
   text-align: center;
-  /* background-color: #fff; */
-
   color: #13153a;
 }
 

@@ -1,14 +1,12 @@
 .valuePage {
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 1020px;
   left: 0;
 }
 
 .valueAdd_container {
-  position: absolute;
-  /* top: 3600px; */
-  top: 20px;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 1380px;

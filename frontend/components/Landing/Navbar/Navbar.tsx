@@ -2,6 +2,7 @@ import React from "react";
 import Moving from "../../../public/Moving.png";
 import Image from "next/image";
 import styles from "@/styles/Navbar.module.css";
+
 export default function Navbar() {
   const { nav, logo, mini_nav } = styles;
   return (
