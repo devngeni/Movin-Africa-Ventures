@@ -1,0 +1,154 @@
+.valuePage {
+  position: relative;
+  width: 100vw;
+  height: 1020px;
+  left: 0;
+}
+
+.valueAdd_container {
+  position: absolute;
+  /* top: 3600px; */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1380px;
+  height: 950px;
+  color: aliceblue;
+
+  background: #1f2117;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.plusLines_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plusLines {
+  width: 1295px;
+  height: 517px;
+}
+
+.grid1 {
+  position: absolute;
+  width: 394.65px;
+  height: 300px;
+  top: 156px;
+  left: 220px;
+  /* background-color: red; */
+}
+.grid1 img {
+  position: absolute;
+  width: 136px;
+  height: 104px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.grid2 img {
+  position: absolute;
+  width: 101px;
+  height: 94px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.grid3 img {
+  position: absolute;
+  width: 166px;
+  height: 158px;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.grid4 img {
+  position: absolute;
+  width: 94px;
+  height: 111px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.headers {
+  position: absolute;
+  top: 130px;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#grid3_H {
+  top: 145px;
+}
+
+.descrip {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 394.65px;
+  height: 156.73px;
+
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  /* or 157% */
+  text-align: center;
+
+  color: #cfdea0;
+}
+
+#grid3_D {
+  top: 160px;
+}
+
+.grid2 {
+  position: absolute;
+  width: 394.65px;
+  height: 300px;
+  top: 156px;
+  right: 220px;
+}
+.grid3 {
+  position: absolute;
+  width: 394.65px;
+  height: 300px;
+  bottom: 156px;
+  left: 220px;
+}
+.grid4 {
+  position: absolute;
+  width: 394.65px;
+  height: 300px;
+  bottom: 156px;
+  right: 220px;
+}
