@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav>
       <img
         className="logo"
-        src={require("../../assets/images/movin.png")}
+        src={require("../../../assets/images/movin.png")}
         alt=""
       />
       <div className="mini_nav">

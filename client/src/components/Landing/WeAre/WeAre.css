@@ -1,4 +1,4 @@
-.About_page {
+.WeAre_Page {
   position: relative;
   width: 100vw;
   height: 2450px;
@@ -81,7 +81,7 @@
   color: #13153a;
 }
 
-.about_grid_containers {
+.weAre_grid_containers {
   position: absolute;
   top: 1273px;
   left: 50%;
@@ -98,7 +98,6 @@
   height: 472px;
   background: #404430;
   backdrop-filter: blur(17px);
-
   border-radius: 22px;
 }
 .green_grid p {

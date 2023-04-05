@@ -8,7 +8,7 @@ const ValueAdd = () => {
         <div>ValueAdd</div>
         <div className="grid1">
           <img
-            src={require("../../assets/valueAdd_images/grid1img.png")}
+            src={require("../../../assets/valueAdd_images/grid1img.png")}
             alt=""
           />
           <div className="headers">Financial Support</div>
@@ -21,7 +21,7 @@ const ValueAdd = () => {
         </div>
         <div className="grid2">
           <img
-            src={require("../../assets/valueAdd_images/grid2Img.png")}
+            src={require("../../../assets/valueAdd_images/grid2Img.png")}
             alt=""
           />
           <div className="headers">Engineering Services</div>
@@ -34,7 +34,7 @@ const ValueAdd = () => {
         </div>
         <div className="grid3">
           <img
-            src={require("../../assets/valueAdd_images/grid3Img.png")}
+            src={require("../../../assets/valueAdd_images/grid3Img.png")}
             alt=""
           />
           <div className="headers" id="grid3_H">
@@ -48,7 +48,7 @@ const ValueAdd = () => {
         </div>
         <div className="grid4">
           <img
-            src={require("../../assets/valueAdd_images/grid4Img.png")}
+            src={require("../../../assets/valueAdd_images/grid4Img.png")}
             alt=""
           />
           <div className="headers">Traction</div>

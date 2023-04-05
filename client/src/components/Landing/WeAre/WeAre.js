@@ -1,9 +1,9 @@
 import React from "react";
-import "./AboutUs.css";
+import "./WeAre.css";
 
-const AboutUs = () => {
+const WeAre = () => {
   return (
-    <div className="About_page">
+    <div className="WeAre_Page">
       <div className="we_are_">
         We are Afrika’s First Ventures Collective Linking Technology to Capital
       </div>
@@ -12,8 +12,9 @@ const AboutUs = () => {
         dealmakers, engineers, and community builders looking to leverage the
         continent’s vast potential.
       </div>
+
       <img
-        src={require("../../assets/images/cityImg.png")}
+        src={require("../../../assets/images/cityImg.png")}
         alt=""
         className="city_img"
       />
@@ -343,7 +344,7 @@ const AboutUs = () => {
           </g>
         </svg>
       </div>
-      <div className="about_grid_containers">
+      <div className="weAre_grid_containers">
         <div className="green_grid">
           <p>
             Despite Afrika being widely cited as the next frontier for emerging
@@ -368,4 +369,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default WeAre;

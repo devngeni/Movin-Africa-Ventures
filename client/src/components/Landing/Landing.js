@@ -1,16 +1,16 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
-import Home from "../Home/Home";
-import AboutUs from "../AboutUs/AboutUs";
-import ValueAdd from "../ValueAdd/ValueAdd";
-import WhyNow from "../WhyNow/WhyNow";
+import Hero from "./HeroSection/Hero";
+import Navbar from "./Navbar/Navbar";
+import WeAre from "./WeAre/WeAre";
+import ValueAdd from "./ValueAdd/ValueAdd";
+import WhyNow from "./WhyNow/WhyNow";
 
 const Landing = () => {
   return (
     <div className="all_components">
       <Navbar />
-      <Home />
-      <AboutUs />
+      <Hero />
+      <WeAre />
       <ValueAdd />
       <WhyNow />
     </div>

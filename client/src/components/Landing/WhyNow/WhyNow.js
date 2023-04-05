@@ -12,7 +12,7 @@ const WhyNow = () => {
         level.
       </div>
       <img
-        src={require("../../assets/images/bulb.png")}
+        src={require("../../../assets/images/bulb.png")}
         alt=""
         className="why_icon"
       />
