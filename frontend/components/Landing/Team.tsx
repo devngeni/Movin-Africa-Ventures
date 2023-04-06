@@ -135,7 +135,6 @@ export default function Team() {
           </div>
         </div>
 
-        {/* no anitimations here u can update */}
         <div id={gridbottom}>
           <div className={member_card}>
             <div className={onhover_membercard}>
