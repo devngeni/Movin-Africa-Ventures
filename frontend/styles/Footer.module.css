@@ -5,3 +5,156 @@
 
   background: #404430;
 }
+
+.footer_logo img {
+  position: absolute;
+  top: 74px;
+  left: 288.42px;
+}
+
+.links_socials_container {
+  position: absolute;
+  top: 105.1px;
+  left: 679.27px;
+  width: 848.6px;
+  height: 176.08px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.links_socials_container_grids {
+  position: relative;
+  width: 211.3px;
+  height: 176.08px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Boldtext_footer {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.links_socials_container_grids span {
+  position: relative;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  left: 0;
+  color: #ffffff;
+}
+
+.aboveFaqsLine {
+  position: absolute;
+  width: 80.42px;
+  height: 0px;
+  left: 957.66px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.subscribe_container {
+  position: absolute;
+  width: 292px;
+  height: 60px;
+  left: 0px;
+  background: #686f50;
+  border-radius: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe_container input {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 208px;
+  height: 53px;
+  border: none;
+  border-top-left-radius: 72px;
+  border-bottom-left-radius: 72px;
+  padding-left: 10px;
+  background: none;
+
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+
+  text-align: center;
+  color: #ffffff;
+
+  outline: none;
+}
+
+.send_button {
+  position: absolute;
+  width: 68.61px;
+  height: 68.61px;
+  left: 223.39px;
+  top: -4px;
+
+  background: #929b70;
+  border-radius: 50%;
+}
+
+.send_icon img {
+  position: absolute;
+  width: 34px;
+  height: 29px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.getLatestNews {
+  position: absolute;
+  top: 69px;
+  width: 211.3px;
+  height: 21.66px;
+  left: 25px;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer_line {
+  position: absolute;
+  bottom: 104px;
+  width: 1046.63px;
+  height: 0;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.copyright {
+  position: absolute;
+  width: 420.31px;
+  height: 46.31px;
+  left: 780.35px;
+  bottom: 30.9px;
+
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+
+  /* or 200% */
+  text-align: center;
+
+  color: #ffffff;
+}
