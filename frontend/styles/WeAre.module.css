@@ -1,10 +1,10 @@
 .WeAre_Page {
-  width: 100vw;
+  width: 100%;
   height: 253vh;
 }
 .Container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 .we_are_ {
@@ -61,7 +61,7 @@
 
 .invest_container {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 415px;
   left: 0;
   top: 748px;
