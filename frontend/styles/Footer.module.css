@@ -16,9 +16,8 @@
   position: absolute;
   top: 105.1px;
   left: 679.27px;
-  width: 848.6px;
+  width: 44.19%;
   height: 176.08px;
-  /* background-color: blue; */
   display: flex;
   justify-content: space-between;
 }
@@ -29,6 +28,12 @@
   height: 176.08px;
   display: flex;
   flex-direction: column;
+}
+
+.subscribe_grid {
+  position: relative;
+  width: 292px;
+  height: 176.08px;
 }
 
 .Boldtext_footer {
@@ -89,10 +94,8 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-
   text-align: center;
   color: #ffffff;
-
   outline: none;
 }
 
@@ -102,7 +105,6 @@
   height: 68.61px;
   left: 223.39px;
   top: -4px;
-
   background: #929b70;
   border-radius: 50%;
 }
@@ -133,7 +135,7 @@
 .footer_line {
   position: absolute;
   bottom: 104px;
-  width: 1046.63px;
+  width: 54.53%;
   height: 0;
   border: 1px solid rgba(255, 255, 255, 0.25);
   left: 50%;
@@ -146,15 +148,11 @@
   height: 46.31px;
   left: 780.35px;
   bottom: 30.9px;
-
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-
-  /* or 200% */
   text-align: center;
-
   color: #ffffff;
 }

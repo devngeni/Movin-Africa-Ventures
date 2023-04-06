@@ -4,6 +4,7 @@ import Movin from "../../public/FooterLogo.svg";
 import SendIcon from "../../public/SendIcon.png";
 
 export default function Footer() {
+  console.log("width", window.innerWidth);
   const {
     footer,
     footer_logo,
@@ -11,6 +12,7 @@ export default function Footer() {
     links_socials_container_grids,
     Boldtext_footer,
     aboveFaqsLine,
+    subscribe_grid,
     subscribe_container,
     send_button,
     send_icon,
@@ -41,7 +43,7 @@ export default function Footer() {
           <span className={aboveFaqsLine} />
           <span>FAQs</span>
         </div>
-        <div className={links_socials_container_grids}>
+        <div className={subscribe_grid}>
           <div className={subscribe_container}>
             <input placeholder="subscribe" />
             <div className={send_button}>
