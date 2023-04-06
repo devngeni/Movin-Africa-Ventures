@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "@/styles/WeAre.module.css";
-import CityImage from "../../../public/City.svg";
+import CityImage from "../../public/City.svg";
 import Image from "next/image";
-import Dots from "../../../public/Dots.svg";
-import Vector2 from "../../../public/Vector2.svg";
+import Dots from "../../public/Dots.svg";
+import Vector2 from "../../public/Vector2.svg";
 import Vector1 from "@/public/Vector1";
 export default function WeAre() {
   const {

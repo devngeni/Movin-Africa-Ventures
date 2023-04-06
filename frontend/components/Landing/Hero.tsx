@@ -1,6 +1,6 @@
 import React from "react";
-import Ellipse1 from "../../../public/Ellipse1.png";
-import PhoneImg from "../../../public/PhoneImg.png";
+import Ellipse1 from "../../public/Ellipse1.png";
+import PhoneImg from "../../public/PhoneImg.png";
 import Image from "next/image";
 import styles from "@/styles/Hero.module.css";
 export default function Hero() {

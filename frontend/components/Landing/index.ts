@@ -1,6 +1,6 @@
-export { default as Hero } from "../Landing/HeroSection/Hero";
-export { default as Navbar } from "../Landing/Navbar/Navbar";
-export { default as WeAre } from "../Landing/WeAre/WeAre";
-export { default as ValueAdd } from "../Landing/ValueAdd/ValueAdd";
-export {default as WhyNow} from "../Landing/WhyNow/WhyNow";
-export {default as Investments} from "../Landing/Investments/Investments";
+export { default as Hero } from "./Hero";
+export { default as Navbar } from "./Navbar";
+export { default as WeAre } from "./WeAre";
+export { default as ValueAdd } from "./ValueAdd";
+export {default as WhyNow} from "./WhyNow";
+export {default as Investments} from "./Investments";
