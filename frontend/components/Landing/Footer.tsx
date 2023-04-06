@@ -4,7 +4,6 @@ import Movin from "../../public/FooterLogo.svg";
 import SendIcon from "../../public/SendIcon.png";
 
 export default function Footer() {
-  console.log("width", window.innerWidth);
   const {
     footer,
     footer_logo,
