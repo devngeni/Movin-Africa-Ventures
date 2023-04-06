@@ -1,5 +1,5 @@
 .whyNow {
-  position: relative;
+  position: absolute;
   width: 725px;
   height: 950px;
   left: 50%;
@@ -14,9 +14,11 @@
   text-align: center;
   color: #13153a;
 }
-
+.Why_Container {
+  position: relative;
+}
 .withThe_ {
-  position: absolute;
+  position: relative;
   width: inherit;
   height: 108px;
   padding-top: 20px;

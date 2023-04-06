@@ -34,7 +34,7 @@ export default function ValueAdd() {
           </p>
         </div>
         <div className={grid2}>
-          <Image src={grid2Img} alt="" />
+          <Image src={grid2Img} alt="engineering-img" />
           <div className={headers}>Engineering Services</div>
           <p className={descrip}>
             Our extensive engineering expertise gained from our existing
@@ -44,7 +44,7 @@ export default function ValueAdd() {
           </p>
         </div>
         <div className={grid3}>
-          <Image src={grid3Img} alt="" />
+          <Image src={grid3Img} alt="tech-image" />
           <div className={headers} id="grid3_H">
             Tech-Knowledge Sharing
           </div>
