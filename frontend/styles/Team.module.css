@@ -21,13 +21,19 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  font-family: "Advent Pro UltraExpanded";
+  font-family: "Advent Pro";
   font-style: normal;
   font-weight: 700;
   font-size: 65px;
   line-height: 78px;
   text-align: center;
   color: #13153a;
+}
+
+.the_team_lines img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .member_grid_container {
@@ -61,5 +67,190 @@
   position: relative;
   width: 327px;
   height: 388px;
-  background-color: #13153a;
+  /* background-color: red; */
+  cursor: pointer;
+}
+
+.member_card_container {
+  position: absolute;
+  top: 50px;
+  width: 216.67px;
+  height: 216.67px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.big_image_container {
+  position: absolute;
+  width: 209.67px;
+  height: 209.67px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 5px solid #414430;
+}
+
+.big_image_ img {
+  position: absolute;
+  top: 14px;
+  width: 180px;
+  height: 180px;
+  left: 14px;
+  /* background-color: rgb(0, 255, 13); */
+  border-radius: 50%;
+}
+
+.small_image_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 63.3px;
+  height: 63.3px;
+  background: #414430;
+  z-index: -1;
+  border-radius: 50%;
+}
+.small_image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56.15px;
+  height: 56.15px;
+}
+
+.member_name_descrip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 54px;
+  /* background-color: red; */
+  width: 293.65px;
+  height: 58px;
+  transition: left 0.3s ease;
+}
+
+.member_name {
+  position: absolute;
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #13153a;
+}
+.member_descrip {
+  position: absolute;
+  bottom: 0;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
+}
+
+.onhover_membercard {
+  position: absolute;
+  width: 200px;
+  height: 275px;
+  top: 50px;
+  left: 0;
+}
+
+.onhover_membercard_descrip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 190px;
+  /* height: 216px; */
+
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+
+  /* or 138% */
+  text-align: center;
+
+  color: #666666;
+}
+
+/* Initially hide the onhover_membercard & small_image */
+.onhover_membercard,
+.small_image {
+  display: none;
+}
+
+/* onhover Show the onhover_membercard */
+.member_card:hover .onhover_membercard {
+  display: block;
+}
+/* onhover Show the small_image */
+.member_card:hover .small_image {
+  display: block;
+}
+
+/* onhover hide the big_image_container */
+.member_card:hover .big_image_container {
+  display: none;
+}
+
+/* onhover hide the member_name_descrip */
+.member_card:hover .member_name_descrip {
+  display: none;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: -50px;
+  }
+  100% {
+    right: 0px; /* Adjust the value as needed */
+  }
+}
+.member_card:hover .member_name {
+  animation-name: moveLeftRight;
+  animation-duration: 0.3s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveImage {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: -50px;
+  }
+  100% {
+    right: 0px; /* Adjust the value as needed */
+  }
+}
+@keyframes moveImage {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(calc(-50% - 50px), -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.member_card:hover .big_image_ img {
+  animation-name: moveImage;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }

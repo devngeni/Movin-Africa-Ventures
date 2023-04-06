@@ -1,7 +1,9 @@
 import { HomeLayout } from "@/Layout";
 import {
+  Footer,
   Hero,
   Investments,
+  Team,
   ValueAdd,
   WeAre,
   WhyNow,
@@ -15,6 +17,8 @@ export default function HomePage() {
       <ValueAdd />
       <WhyNow />
       <Investments />
+      <Team />
+      <Footer />
     </HomeLayout>
   );
 }
