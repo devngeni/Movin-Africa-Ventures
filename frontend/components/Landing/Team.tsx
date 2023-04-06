@@ -138,13 +138,30 @@ export default function Team() {
         {/* no anitimations here u can update */}
         <div id={gridbottom}>
           <div className={member_card}>
+            <div className={onhover_membercard}>
+              <div className={member_name} style={{ bottom: 0 }}>
+                Christina Storey
+              </div>
+              <div className={onhover_membercard_descrip}>
+                An accomplished finance and blockchain entrepreneur with over 18
+                years of experience and a crypto native since 2013. He is a
+                former investment banker and venture capital professional in
+                Europe, with previous positions at Deutsche Bank, Greencoat
+                Capital, and Nexus Group. Joel is a BSc graduate in Finance and
+                Economics from the Kelley School of Business.
+              </div>
+            </div>
             <div className={member_card_container}>
               <div className={big_image_container}>
                 <div className={big_image_}>
                   <Image src={MeberImg} alt="" />
                 </div>
               </div>
-              <div className={small_image_container}></div>
+              <div className={small_image_container}>
+                <div className={small_image}>
+                  <Image src={MeberImg} alt="" />
+                </div>
+              </div>
             </div>
             <div className={member_name_descrip}>
               <div className={member_name}>Christina Storey</div>
@@ -154,13 +171,30 @@ export default function Team() {
             </div>
           </div>
           <div className={member_card}>
+            <div className={onhover_membercard}>
+              <div className={member_name} style={{ bottom: 0 }}>
+                Kevin R. Imani
+              </div>
+              <div className={onhover_membercard_descrip}>
+                An accomplished finance and blockchain entrepreneur with over 18
+                years of experience and a crypto native since 2013. He is a
+                former investment banker and venture capital professional in
+                Europe, with previous positions at Deutsche Bank, Greencoat
+                Capital, and Nexus Group. Joel is a BSc graduate in Finance and
+                Economics from the Kelley School of Business.
+              </div>
+            </div>
             <div className={member_card_container}>
               <div className={big_image_container}>
                 <div className={big_image_}>
                   <Image src={MeberImg} alt="" />
                 </div>
               </div>
-              <div className={small_image_container}></div>
+              <div className={small_image_container}>
+                <div className={small_image}>
+                  <Image src={MeberImg} alt="" />
+                </div>
+              </div>
             </div>
             <div className={member_name_descrip}>
               <div className={member_name}>Kevin R. Imani</div>
@@ -170,13 +204,30 @@ export default function Team() {
             </div>
           </div>
           <div className={member_card}>
+            <div className={onhover_membercard}>
+              <div className={member_name} style={{ bottom: 0 }}>
+                Susan Oh
+              </div>
+              <div className={onhover_membercard_descrip}>
+                An accomplished finance and blockchain entrepreneur with over 18
+                years of experience and a crypto native since 2013. He is a
+                former investment banker and venture capital professional in
+                Europe, with previous positions at Deutsche Bank, Greencoat
+                Capital, and Nexus Group. Joel is a BSc graduate in Finance and
+                Economics from the Kelley School of Business.
+              </div>
+            </div>
             <div className={member_card_container}>
               <div className={big_image_container}>
                 <div className={big_image_}>
                   <Image src={MeberImg} alt="" />
                 </div>
               </div>
-              <div className={small_image_container}></div>
+              <div className={small_image_container}>
+                <div className={small_image}>
+                  <Image src={MeberImg} alt="" />
+                </div>
+              </div>
             </div>
             <div className={member_name_descrip}>
               <div className={member_name}>Susan Oh</div>

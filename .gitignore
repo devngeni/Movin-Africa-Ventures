@@ -1,3 +1,4 @@
-node_modules
-.sanity
-.gitignore
+node_modules/
+.sanity/
+client/
+build/

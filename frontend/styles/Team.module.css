@@ -141,6 +141,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: #13153a;
+  width: max-content;
 }
 .member_descrip {
   position: absolute;
@@ -209,13 +210,13 @@
 
 @keyframes moveLeftRight {
   0% {
-    right: 0px;
+    transform: translateX(0);
   }
   50% {
-    right: -50px;
+    transform: translateX(-80px);
   }
   100% {
-    right: 0px; /* Adjust the value as needed */
+    transform: translateX(-50%); /* Adjust the value as needed */
   }
 }
 .member_card:hover .member_name {

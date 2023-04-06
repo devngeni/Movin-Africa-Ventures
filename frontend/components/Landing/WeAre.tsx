@@ -13,6 +13,8 @@ export default function WeAre() {
     city_img,
     invest_container,
     invest_invest,
+    moveLeft,
+    moveRight,
     weAre_grid_containers,
     green_grid,
     white_grid,
@@ -45,7 +47,10 @@ export default function WeAre() {
           </div>
         </div>
         <div className={invest_container}>
-          <div className={invest_invest}>Invest in you Invest with us.</div>
+          <div className={invest_invest}>
+            <div id={moveLeft}>Invest with you</div>
+            <div id={moveRight}>Invest with us.</div>
+          </div>
         </div>
         <div>
           <div className={vectorc1}>

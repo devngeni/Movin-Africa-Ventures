@@ -12,6 +12,7 @@ export default function Investments() {
     investments_page,
     investments_container,
     as_of_March,
+    as_of_March_p,
     competion_,
     BusinessModel,
     marketSize,
@@ -83,10 +84,10 @@ export default function Investments() {
         </div>
       </div>
       <div className={as_of_March}>
-        <p>
+        <div className={as_of_March_p}>
           As of March 2023, the fund&#39;s AUM totaled $5 million, with $3
           million uncommitted and $2 million committed to investments.
-        </p>
+        </div>
       </div>
       <div>
         <Image
