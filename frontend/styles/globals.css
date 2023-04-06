@@ -14,7 +14,23 @@
 @font-face {
   font-family: "Gotham";
   src: url("../public/fonts/Gotham-Light.otf") format("truetype");
-  font-weight: normal;
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../public/fonts/GothamBook.ttf") format("truetype");
+  font-weight: 400; /* Book */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../public/fonts/Gotham-Bold.otf") format("truetype");
+  font-weight: 700; /* Bold */
   font-style: normal;
   font-display: swap;
 }
