@@ -48,7 +48,7 @@ export default function WeAre() {
         </div>
         <div className={invest_container}>
           <div className={invest_invest}>
-            <div id={moveLeft}>Invest with you</div>
+            <div id={moveLeft}>Invest in you</div>
             <div id={moveRight}>Invest with us.</div>
           </div>
         </div>
