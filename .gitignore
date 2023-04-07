@@ -1,3 +1,4 @@
-node_modules
-.sanity
-.gitignore
+frontend/.next/
+frontend/node_modules
+sanity_cms/node_modules/
+*.log
