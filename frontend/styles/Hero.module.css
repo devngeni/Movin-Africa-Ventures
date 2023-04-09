@@ -40,8 +40,15 @@
   line-height: 120px;
   text-align: center;
   color: #13153a;
+  /* background-color: red; */
 }
 
+@media screen and (max-width: 1200px) {
+  .Linking {
+    font-size: 80px;
+    width: 60.88%;
+  }
+}
 .fueling_ {
   position: absolute;
   left: 50%;
