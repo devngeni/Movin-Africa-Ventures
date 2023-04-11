@@ -8,7 +8,10 @@
   position: absolute;
   width: 1152px;
   height: 1337px;
-  right: 363px;
+  /* right: 363px; */
+  /* background-color: blue; */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .as_of_March {
@@ -116,7 +119,8 @@
   position: absolute;
   width: 290.96px;
   height: 29px;
-  left: 118.6px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 214.9px;
   font-family: "Advent Pro";
   font-style: normal;
@@ -155,4 +159,56 @@
   width: 100%;
   height: auto;
   bottom: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .as_of_March {
+    width: 95vw;
+  }
+  .as_of_March_p {
+    width: 80vw;
+    height: auto;
+  }
+  .investments_container {
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .competion_ {
+    width: 45%;
+  }
+  .BusinessModel {
+    width: 45%;
+  }
+  .marketSize {
+    width: 45%;
+  }
+  .mcb_p {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .as_of_March {
+    top: 1550px;
+  }
+  .mcb_images {
+    width: 150px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .competion_ {
+    width: 45%;
+  }
+  .BusinessModel {
+    width: 45%;
+  }
+  .marketSize {
+    width: 45%;
+  }
+  .mcb_p {
+    width: 95%;
+  }
 }

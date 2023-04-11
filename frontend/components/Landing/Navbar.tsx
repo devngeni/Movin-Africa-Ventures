@@ -2,15 +2,17 @@ import React from "react";
 import Moving from "../../public/Moving.png";
 import Image from "next/image";
 import styles from "@/styles/Navbar.module.css";
-import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
+import mLogo from "../../public/mobileImages/lgo.svg";
+import MenuIcon from "../../public/mobileImages/MenuIcon.svg";
 
 export default function Navbar() {
-  const { nav, logo, mini_nav, Menu_icon } = styles;
+  const { nav, logo, mini_nav, Menu_icon, mobile_Logo } = styles;
   return (
     <div className={nav}>
-      <Image className={logo} src={Moving} alt="moving -icon" />
+      <Image className={logo} src={Moving} alt="movin-icon" />
+      <Image className={mobile_Logo} src={mLogo} alt="movin-icon" />
       <div className={Menu_icon}>
-        <FiMenu />
+        <Image src={MenuIcon} alt="menu-icon" />
       </div>
       <div className={mini_nav}>
         <span>Home</span>

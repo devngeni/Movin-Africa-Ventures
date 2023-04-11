@@ -47,7 +47,7 @@
 
 #gridtop {
   position: absolute;
-  width: 1361px;
+  width: inherit;
   height: 388px;
   top: 0;
   display: flex;
@@ -56,7 +56,7 @@
 
 #gridbottom {
   position: absolute;
-  width: 1361px;
+  width: inherit;
   height: 388px;
   bottom: 0;
   display: flex;
@@ -67,7 +67,6 @@
   position: relative;
   width: 327px;
   height: 388px;
-  /* background-color: red; */
   cursor: pointer;
 }
 
@@ -93,10 +92,11 @@
 
 .big_image_ img {
   position: absolute;
-  top: 14px;
+  top: 11px;
   width: 180px;
   height: 180px;
-  left: 14px;
+  left: 50%;
+  transform: translateX(-50%);
   /* background-color: rgb(0, 255, 13); */
   border-radius: 50%;
 }
@@ -254,4 +254,77 @@
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 1500px) {
+  .member_grid_container {
+    width: 90vw;
+  }
+  .the_team_lines img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .member_card_container {
+    width: 190px;
+    height: 190px;
+  }
+  .big_image_container {
+    width: 190px;
+    height: 190px;
+  }
+  .big_image_ img {
+    width: 170px;
+    height: 170px;
+    top: 5.5px;
+  }
+  .member_card {
+    width: 237px;
+  }
+  .small_image_container {
+    width: 60px;
+  }
+  .onhover_membercard {
+    width: 150px;
+    height: 345px;
+  }
+
+  .onhover_membercard_descrip {
+    width: inherit;
+    height: max-content;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .meet_the_team {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .meet_the_team {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .meet_the_team {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .meet_the_team {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .the_team {
+    height: 210px;
+  }
+  .meet_the_team {
+    font-size: 40px;
+  }
+  .member_grid_container {
+    top: 250px;
+  }
 }

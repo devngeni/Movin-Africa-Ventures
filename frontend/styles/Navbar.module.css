@@ -8,7 +8,7 @@
 
 .nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100px;
   background-color: transparent;
   backdrop-filter: blur(15px);
@@ -44,7 +44,13 @@
   color: #13153a;
 }
 
-@media screen and (min-width: 1200px) {
+.Menu_icon img {
+  position: absolute;
+  top: 25px;
+  right: 13.06%;
+}
+
+@media screen and (min-width: 900px) {
   .Menu_icon {
     display: none;
   }
@@ -54,12 +60,33 @@
   .mini_nav {
     display: none;
   }
+}
+@media screen and (min-width: 501px) {
+  .mobile_Logo {
+    display: none;
+  }
+}
 
-  .Menu_icon {
+@media screen and (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+  .mobile_Logo {
     position: absolute;
-    top: 60px;
-    right: 13.06%;
-    font-size: 25px;
-    color: #13153a;
+    width: 156px;
+    height: 27px;
+    left: 46px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .nav {
+    height: 65px;
+    background: #ffffff;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile_Logo {
+    left: 30px;
   }
 }

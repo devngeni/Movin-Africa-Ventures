@@ -14,7 +14,7 @@
 
 .home_container {
   position: relative;
-  height: 110vh;
+  height: 1080px;
   width: 100%;
 }
 .phoneImg {
@@ -31,7 +31,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 576px;
-  width: 1168.73px;
+  width: 900px;
   height: 240px;
   font-family: "Advent Pro";
   font-style: normal;
@@ -40,15 +40,9 @@
   line-height: 120px;
   text-align: center;
   color: #13153a;
-  /* background-color: red; */
+  /*  */
 }
 
-@media screen and (max-width: 1200px) {
-  .Linking {
-    font-size: 80px;
-    width: 60.88%;
-  }
-}
 .fueling_ {
   position: absolute;
   left: 50%;
@@ -72,7 +66,7 @@
   height: 60px;
   left: 50%;
   transform: translateX(-50%);
-  top: 939.99px;
+  bottom: 80px;
   background: #404430;
   border-radius: 72px;
   font-family: "Advent Pro";
@@ -88,4 +82,136 @@
 .home_button:hover {
   background: #13153a;
   transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  .Linking {
+    width: 90vw;
+  }
+  .fueling_ {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home_container {
+    height: 1100px;
+  }
+}
+@media screen and (max-width: 792px) {
+  .Linking {
+    font-size: 80px;
+  }
+  .phoneImg {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .Linking {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .Linking {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Linking {
+    font-size: 70px;
+  }
+  .home_button {
+    bottom: 20px;
+  }
+  .home_container {
+    height: 1200px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .Linking {
+    font-size: 69px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Linking {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .Linking {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 501px) {
+  .mobile_home_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home_container {
+    height: 850px;
+  }
+  .home_img {
+    display: none;
+  }
+  .Linking {
+    padding-top: 0;
+    width: 300px;
+    height: 162px;
+    font-size: 55px;
+    top: 349.86px;
+    line-height: 54px;
+  }
+  .fueling_ {
+    top: 540px;
+    width: 300px;
+    font-size: 20px;
+  }
+  .home_button {
+    width: 50vw;
+    height: 53px;
+    bottom: 80px;
+  }
+
+  .phoneImg {
+    top: 120px;
+    width: 279px;
+    height: 226px;
+  }
+  .mobile_home_img {
+    top: 65px;
+    position: absolute;
+    width: 100vw;
+    height: 754px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home_container {
+    height: 754px;
+  }
+  .mobile_home_img {
+    height: 680px;
+  }
+  .Linking {
+    width: 250px;
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    color: #13153a;
+  }
+  .fueling_ {
+    width: 244.9px;
+    height: 54px;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #666666;
+  }
 }

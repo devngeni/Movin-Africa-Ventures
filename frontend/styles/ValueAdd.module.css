@@ -1,31 +1,27 @@
 .valuePage {
   position: relative;
   width: 100%;
-  height: 1020px;
+  height: 1050px;
 }
 
 .valueAdd_container {
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 1380px;
   height: 950px;
   color: aliceblue;
-
   background: #1f2117;
   align-items: center;
   text-align: center;
   padding-top: 40px;
-  border-radius: 2rem;
   font-family: "Advent Pro";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
-
-  /* identical to box height */
   text-align: center;
-
   color: #ffffff;
 }
 
@@ -146,4 +142,130 @@
   height: 300px;
   bottom: 156px;
   right: 220px;
+}
+
+@media screen and (max-width: 1450px) {
+  .valueAdd_container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .grid1,
+  .grid3 {
+    left: 120px;
+  }
+  .grid2,
+  .grid4 {
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .plusLines {
+    width: 100vw;
+  }
+  .grid1,
+  .grid3 {
+    left: 60px;
+  }
+  .grid2,
+  .grid4 {
+    right: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .grid1,
+  .grid3 {
+    left: 30px;
+  }
+  .grid2,
+  .grid4 {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .plusLines {
+    width: 97vw;
+    height: 70vh;
+  }
+  .grid1,
+  .grid3 {
+    left: 60px;
+    width: 300px;
+    height: 300px;
+  }
+  .grid2,
+  .grid4 {
+    right: 60px;
+    width: 300px;
+    height: 300px;
+  }
+  .grid1 img {
+    width: 100px;
+    height: 75px;
+  }
+  .grid2 img {
+    width: 80px;
+    height: 70px;
+  }
+  .grid3 img {
+    width: 100px;
+    height: 100px;
+    top: 0px;
+  }
+  .grid4 img {
+    width: 80px;
+    height: 90px;
+  }
+  .headers {
+    top: 100px;
+  }
+  .descrip {
+    top: 130px;
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .plusLines {
+    width: 97vw;
+    height: 70vh;
+  }
+  .grid1,
+  .grid3 {
+    left: 20px;
+    width: 300px;
+    height: 300px;
+  }
+  .grid2,
+  .grid4 {
+    right: 20px;
+    width: 300px;
+    height: 300px;
+  }
+  .grid1 img {
+    width: 100px;
+    height: 75px;
+  }
+  .grid2 img {
+    width: 80px;
+    height: 70px;
+  }
+  .grid3 img {
+    width: 100px;
+    height: 100px;
+    top: 0px;
+  }
+  .grid4 img {
+    width: 80px;
+    height: 90px;
+  }
+  .headers {
+    top: 100px;
+  }
+  .descrip {
+    top: 130px;
+    width: inherit;
+  }
 }

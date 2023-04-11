@@ -1,8 +1,3 @@
-.container {
-  width: 100%;
-  height: 1050px;
-}
-
 .whyNow {
   position: relative;
   width: 725px;
@@ -14,25 +9,20 @@
   font-weight: 700;
   font-size: 65px;
   line-height: 78px;
-
   text-align: center;
   color: #13153a;
 }
-/* .Why_Container {
-  position: relative;
-} */
+
 .withThe_ {
   position: relative;
   width: inherit;
   height: 108px;
   padding-top: 20px;
-
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
-
   text-align: center;
   color: #666666;
 }
@@ -48,18 +38,32 @@
 
 .movin_africa_is_here {
   position: absolute;
-  width: 725.22px;
+  width: inherit;
   height: 108px;
   bottom: 0px;
-
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
-
-  /* or 200% */
   text-align: center;
-
   color: #666666;
+}
+
+@media screen and (max-width: 1000px) {
+  .whyNow {
+    width: 90vw;
+  }
+  .why_icon {
+    width: 100%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .why_icon {
+    top: 280px;
+    width: 100%;
+    height: 50%;
+  }
 }
