@@ -319,7 +319,6 @@
 }
 @media screen and (max-width: 750px) {
   .left_grid {
-    /* background-color: red; */
     width: 90vw;
   }
   .we_are_ {
@@ -328,6 +327,92 @@
   }
   .we_are_pan {
     width: inherit;
+  }
+}
+@media screen and (min-width: 701px) {
+  .mobile_halfOval,
+  .mobile_vector_lines {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .theCapital {
+    height: 792px;
+  }
+  .weAre_grid_containers {
+    top: 61px;
+    height: 627px;
+  }
+  .z_index_bottom_grid {
+    display: none;
+  }
+  .green_grid {
+    width: 60vw;
+    /* width: 251px; */
+    height: 289px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .green_grid p {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+
+    height: 220px;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+
+    text-align: center;
+    color: #ffffff;
+  }
+  .white_grid p {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 220px;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+
+    text-align: center;
+  }
+  .white_grid {
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(221, 221, 221, 0.5);
+    backdrop-filter: blur(1.5px);
+    width: 60vw;
+    /* width: 251px; */
+    height: 289px;
+    top: 338px;
+  }
+  .vectorc2 {
+    display: none;
+  }
+
+  .half_oval {
+    display: none;
+  }
+
+  .mobile_halfOval {
+    position: absolute;
+    top: 145.5px;
+    right: 0;
+  }
+
+  .mobile_vector_lines {
+    position: absolute;
+    width: 100%;
+    top: 143.11px;
+    opacity: 0.5;
   }
 }
 @media screen and (max-width: 670px) {
@@ -362,7 +447,32 @@
   .we_are_pan {
     width: inherit;
   }
+  .green_grid,
+  .white_grid {
+    height: 330px;
+  }
 }
+@media screen and (max-width: 590px) {
+  .green_grid p,
+  .white_grid p {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 503px) {
+  .green_grid,
+  .white_grid {
+    width: 251px;
+    height: 289px;
+  }
+  .green_grid p,
+  .white_grid p {
+    top: 44%;
+    width: 187.08px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
 @media screen and (min-width: 501px) {
   .city_mobile_img {
     display: none;
@@ -382,7 +492,7 @@
   }
   .we_are_ {
     height: 132px;
-    font-family: "Advent Pro UltraExpanded";
+    font-family: "Advent Pro";
     font-style: normal;
     font-weight: 700;
     font-size: 28px;

@@ -18,11 +18,14 @@ export default function ValueAdd() {
     valueAdd_container,
     plusLines_div,
     plusLines,
+    valueAddheader,
+    grid3_H,
+    grid3_D,
   } = styles;
   return (
     <div className={valuePage}>
       <div className={valueAdd_container}>
-        <div>ValueAdd</div>
+        <div className={valueAddheader}>Value Add</div>
         <div className={grid1}>
           <Image src={grid1img} alt="" />
           <div className={headers}>Financial Support</div>
@@ -45,10 +48,10 @@ export default function ValueAdd() {
         </div>
         <div className={grid3}>
           <Image src={grid3Img} alt="tech-image" />
-          <div className={headers} id="grid3_H">
+          <div className={headers} id={grid3_H}>
             Tech-Knowledge Sharing
           </div>
-          <p className={descrip} id="grid3_D">
+          <p className={descrip} id={grid3_D}>
             We are a world-class team of tech experts who can guide and support
             tech businesses to build their operations, scale up, and achieve
             growth.

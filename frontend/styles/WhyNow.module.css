@@ -52,18 +52,99 @@
 
 @media screen and (max-width: 1000px) {
   .whyNow {
-    width: 90vw;
+    width: 70vw;
   }
   .why_icon {
-    width: 100%;
+    width: 70vw;
     height: 60%;
   }
 }
-
+@media screen and (max-width: 800px) {
+  .whyNow {
+    width: 60vw;
+    height: 1100px;
+  }
+  .why_icon {
+    top: 340px;
+    width: 70vw;
+    height: 50%;
+  }
+  .movin_africa_is_here {
+    bottom: 60px;
+  }
+}
 @media screen and (max-width: 700px) {
   .why_icon {
-    top: 280px;
+    top: 320px;
     width: 100%;
     height: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .whyNow {
+    height: 680px;
+    padding-top: 59px;
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #13153a;
+  }
+  .why_icon {
+    width: 291.78px;
+    height: 221.61px;
+    top: 280px;
+  }
+  .withThe_ {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 305.41px;
+    height: 100px;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #666666;
+  }
+  .movin_africa_is_here {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 281.32px;
+    height: 66.58px;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #666666;
+    bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .movin_africa_is_here,
+  .withThe_ {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .movin_africa_is_here,
+  .withThe_ {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .why_icon {
+    top: 290px;
   }
 }

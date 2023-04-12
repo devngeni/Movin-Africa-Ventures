@@ -18,6 +18,8 @@ export default function Footer() {
     getLatestNews,
     footer_line,
     copyright,
+    footerpage,
+    subscribe_grid_mobile,
   } = styles;
   return (
     <div className={footer}>
@@ -54,6 +56,19 @@ export default function Footer() {
           <div className={getLatestNews}>
             Get latest news and resources direct in your inbox!
           </div>
+        </div>
+      </div>
+      <div className={subscribe_grid_mobile}>
+        <div className={subscribe_container}>
+          <input placeholder="subscribe" />
+          <div className={send_button}>
+            <div className={send_icon}>
+              <Image src={SendIcon} alt="send-icon" />
+            </div>
+          </div>
+        </div>
+        <div className={getLatestNews}>
+          Get latest news and resources direct in your inbox!
         </div>
       </div>
       <div className={footer_line} />

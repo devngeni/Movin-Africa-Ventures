@@ -15,7 +15,6 @@
   z-index: 10;
   top: 0;
   left: 0;
-  /* display: flex; */
 }
 
 .mini_nav {
@@ -56,9 +55,15 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .mini_nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mini_nav {
+    right: 10px;
   }
 }
 @media screen and (min-width: 501px) {

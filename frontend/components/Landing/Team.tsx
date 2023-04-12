@@ -1,7 +1,16 @@
 import styles from "@/styles/Team.module.css";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import MeberImg from "../../public/MemberImg.png";
 import TeamLines from "../../public/TeamLines.svg";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css"; // Import the CSS file for styling
+
+interface Member {
+  name: string;
+  description: string;
+  bio: string;
+  image: StaticImageData;
+}
 
 export default function Team() {
   const {
@@ -23,7 +32,54 @@ export default function Team() {
     onhover_membercard,
     onhover_membercard_descrip,
     small_image,
+    member_card_mobile,
   } = styles;
+
+  const members: Member[] = [
+    {
+      name: "Joel Johnson",
+      description:
+        "an accomplished finance and blockchain entrepreneur with over 18 years of experience and a crypto native since 2013. he is a former investment banker and venture capital professional in europe, with previous positions at deutsche bank, greencoat capital, and nexus group.",
+      bio: " Accomplished finance and blockchain entrepreneur.",
+      image: MeberImg,
+    },
+    {
+      name: "Afua Amoah",
+      description:
+        "an accomplished finance and blockchain entrepreneur with over 18 years of experience and a crypto native since 2013. he is a former investment banker and venture capital professional in europe, with previous positions at deutsche bank, greencoat capital, and nexus group.",
+      bio: " Accomplished finance and blockchain entrepreneur.",
+      image: MeberImg,
+    },
+    {
+      name: "Brian Jones",
+      description:
+        "an accomplished finance and blockchain entrepreneur with over 18 years of experience and a crypto native since 2013. he is a former investment banker and venture capital professional in europe, with previous positions at deutsche bank, greencoat capital, and nexus group.",
+      bio: " Accomplished finance and blockchain entrepreneur.",
+      image: MeberImg,
+    },
+    {
+      name: "Christina Storey",
+      description:
+        "an accomplished finance and blockchain entrepreneur with over 18 years of experience and a crypto native since 2013. he is a former investment banker and venture capital professional in europe, with previous positions at deutsche bank, greencoat capital, and nexus group.",
+      bio: " Accomplished finance and blockchain entrepreneur.",
+      image: MeberImg,
+    },
+    {
+      name: "Kevin R. Imani",
+      description:
+        "an accomplished finance and blockchain entrepreneur with over 18 years of experience and a crypto native since 2013. he is a former investment banker and venture capital professional in europe, with previous positions at deutsche bank, greencoat capital, and nexus group.",
+      bio: " Accomplished finance and blockchain entrepreneur.",
+      image: MeberImg,
+    },
+    {
+      name: "Susan Oh",
+      description:
+        "an accomplished finance and blockchain entrepreneur with over 18 years of experience and a crypto native since 2013. he is a former investment banker and venture capital professional in europe, with previous positions at deutsche bank, greencoat capital, and nexus group.",
+      bio: " Accomplished finance and blockchain entrepreneur.",
+      image: MeberImg,
+    },
+  ];
+
   return (
     <div className={team_page}>
       <div className={the_team}>
@@ -236,6 +292,57 @@ export default function Team() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* corousel for member card at mobile screens */}
+      <div className={member_grid_container}>
+        <AliceCarousel
+          items={members.map((card) => (
+            <div key={card.name}>
+              <div className={member_card_mobile}>
+                <div className={onhover_membercard}>
+                  <div className={member_name} style={{ bottom: 0 }}>
+                    {card.name}
+                  </div>
+                  <div className={onhover_membercard_descrip}>
+                    {card.description}
+                  </div>
+                </div>
+                <div className={member_card_container}>
+                  <div className={big_image_container}>
+                    <div className={big_image_}>
+                      <Image src={card.image} alt="" />
+                    </div>
+                  </div>
+                  <div className={small_image_container}>
+                    <div className={small_image}>
+                      <Image src={card.image} alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div className={member_name_descrip}>
+                  <div className={member_name}>{card.name}</div>
+                  <div className={member_descrip}>{card.bio}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+          responsive={{
+            0: { items: 1 },
+            500: { items: 2 },
+            700: { items: 2 },
+          }}
+          disableDotsControls={true}
+          infinite={true}
+          autoPlay={true}
+          autoPlayInterval={3000}
+          disableButtonsControls={true}
+          autoPlayControls={false}
+          swipeDelta={50}
+          touchTracking={true}
+          mouseTracking={true}
+          autoPlayStrategy={"default"}
+        />
       </div>
     </div>
   );

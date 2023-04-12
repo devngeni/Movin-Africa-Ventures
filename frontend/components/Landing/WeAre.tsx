@@ -2,6 +2,8 @@ import React from "react";
 import styles from "@/styles/WeAre.module.css";
 import CityImage from "../../public/City.svg";
 import CityMobileImg from "../../public/mobileImages/Mobile_City.png";
+import MobileVectorLines from "../../public/mobileImages/VectorLines.svg";
+import MobileDots from "../../public/mobileImages/MobileDots.svg";
 import Image from "next/image";
 import Dots from "../../public/Dots.svg";
 import Vector2 from "../../public/Vector2.svg";
@@ -28,6 +30,8 @@ export default function WeAre() {
     vectorc1,
     half_oval,
     city_mobile_img,
+    mobile_vector_lines,
+    mobile_halfOval,
   } = styles;
   return (
     <div className={WeAre_Page}>
@@ -67,6 +71,18 @@ export default function WeAre() {
           <div>
             <Image src={Dots} alt="dots-graphics" className={half_oval} />
           </div>
+        </div>
+        <div>
+          <Image
+            src={MobileDots}
+            alt="dots-graphics"
+            className={mobile_halfOval}
+          />
+          <Image
+            src={MobileVectorLines}
+            alt="lines-graphics"
+            className={mobile_vector_lines}
+          />
         </div>
         <div className={weAre_grid_containers}>
           <div className={green_grid}>

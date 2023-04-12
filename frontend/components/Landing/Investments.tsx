@@ -6,6 +6,7 @@ import BusinessModelArrow from "../../public/BsModel.png";
 import MarketSize from "../../public/MarketSize.png";
 import investmentsDots from "../../public/investmentDots.svg";
 import investments_lines_svg from "../../public/InvestmentLines.svg";
+import MobileInvestmentLines from "../../public/mobileImages/MobileInvestmentLines.svg";
 
 export default function Investments() {
   const {
@@ -21,6 +22,7 @@ export default function Investments() {
     mcb_p,
     investmentsDots_image,
     investments_lines,
+    mobile_investments_lines,
   } = styles;
   return (
     <div className={investments_page}>
@@ -94,6 +96,13 @@ export default function Investments() {
           src={investments_lines_svg}
           alt="investments_lines_svg"
           className={investments_lines}
+        />
+      </div>
+      <div>
+        <Image
+          src={MobileInvestmentLines}
+          alt="investments_lines_svg"
+          className={mobile_investments_lines}
         />
       </div>
     </div>
