@@ -27,7 +27,7 @@ export default function Hero() {
         <Image className={phoneImg} src={PhoneImg} alt="phone-icon" />
         <div className={Linking}>Linking Technology with Capital</div>
         <div className={fueling_}>
-          Fueling the Growth of Afrika’s Tech Ecosystem While Creating
+          Fueling the Growth of Africa&#39;s Tech Ecosystem While Creating
           Opportunities For Young, Vibrant Minds.
         </div>
         <button className={home_button}>Button</button>

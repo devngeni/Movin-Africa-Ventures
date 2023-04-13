@@ -9,14 +9,13 @@ export default function WhyNow() {
     <div className={whyNow}>
       <div>Why Now</div>
       <div className={withThe_}>
-        With the rapid pace of technological advancements and the growing demand
-        for digital solutions, there is a tremendous opportunity for African
-        businesses to leverage technology to scale and compete on a global
-        level.
+        In today&#39;s fast-paced world of rapid technological advancements,
+        African businesses have a unique opportunity to leverage cutting-edge
+        technology to scale and compete globally.
       </div>
       <Image src={Bulb} alt="" className={why_icon} />
       <div className={movin_africa_is_here}>
-        Movin.Africa is here to provide the necessary capital, expertise, and
+        Movin Africa is here to provide the necessary capital, expertise, and
         support to help these businesses thrive in the digital age.
       </div>
     </div>

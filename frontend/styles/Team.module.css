@@ -97,6 +97,7 @@
   transform: translateX(-50%);
   /* background-color: rgb(0, 255, 13); */
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .small_image_container {
@@ -116,6 +117,8 @@
   transform: translate(-50%, -50%);
   width: 56.15px;
   height: 56.15px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .member_name_descrip {
@@ -123,14 +126,13 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 54px;
-  /* background-color: red; */
   width: 293.65px;
   height: 58px;
   transition: left 0.3s ease;
 }
 
 .member_name {
-  position: absolute;
+  position: relative;
   font-family: "Advent Pro";
   font-style: normal;
   font-weight: 700;
@@ -142,7 +144,7 @@
   width: max-content;
 }
 .member_descrip {
-  position: absolute;
+  position: relative;
   bottom: 0;
   font-family: "Gotham";
   font-style: normal;
@@ -154,15 +156,15 @@
 }
 
 .onhover_membercard {
-  position: absolute;
+  position: relative;
   width: 200px;
-  height: 275px;
+  height: auto;
   top: 50px;
   left: 0;
 }
 
 .onhover_membercard_descrip {
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
@@ -264,9 +266,15 @@
   .meet_the_team {
     width: inherit;
   }
+  .team_page {
+    height: 1250px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .member_name_descrip {
+    width: 200px;
+  }
   .member_card_container {
     width: 190px;
     height: 190px;
@@ -286,14 +294,17 @@
   .small_image_container {
     width: 60px;
   }
-  .onhover_membercard {
+  /* .onhover_membercard {
     width: 150px;
     height: 345px;
-  }
+  } */
 
   .onhover_membercard_descrip {
     width: inherit;
     height: max-content;
+  }
+  .member_card:hover .small_image_container {
+    right: -50px;
   }
 }
 
@@ -311,8 +322,11 @@
   .member_card_mobile {
     display: none;
   }
-  .member_card{
+  .member_card {
     display: block;
+  }
+  .mobile_member_grid_container {
+    display: none;
   }
 }
 @media screen and (max-width: 700px) {
@@ -322,7 +336,7 @@
   .meet_the_team {
     font-size: 50px;
   }
-
+  .member_grid_container,
   .member_card,
   .gridbottom,
   .gridtop,
@@ -330,7 +344,8 @@
     display: none;
   }
 
-  .member_grid_container {
+  .mobile_member_grid_container {
+    position: absolute;
     top: 220px;
     height: 300px;
     width: 90vw;
@@ -356,17 +371,15 @@
   .meet_the_team {
     font-size: 40px;
   }
-  .member_grid_container {
+  .mobile_member_grid_container {
     top: 250px;
     width: 400px;
   }
 }
 
 @media screen and (max-width: 412px) {
-  .member_grid_container {
+  .mobile_member_grid_container {
     width: 327px;
-  }
-  .member_grid_container {
     top: 200px;
   }
 }

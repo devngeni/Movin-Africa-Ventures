@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className={mini_nav}>
         <span>Home</span>
         <span>About Us</span>
-        <span>Investmet Criteria</span>
+        <span>Investment Criteria</span>
         <span>Portfolio</span>
         <span>Resources</span>
       </div>

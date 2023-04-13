@@ -38,11 +38,11 @@ export default function WeAre() {
       <div className={grid}>
         <div className={left_grid}>
           <div className={we_are_}>
-            We are Afrika’s First Ventures Collective Linking Technology to
+            We are Africa’s First Ventures Collective Linking Technology to
             Capital
           </div>
           <div className={we_are_pan}>
-            We are a Pan-Afrikan focus team of entrepreneurs, Engineers,
+            We are a Pan-African focus team of entrepreneurs, engineers,
             investors, dealmakers, engineers, and community builders looking to
             leverage the continent’s vast potential.
           </div>
@@ -87,11 +87,10 @@ export default function WeAre() {
         <div className={weAre_grid_containers}>
           <div className={green_grid}>
             <p>
-              Despite Afrika being widely cited as the next frontier for
-              emerging technologies, tech businesses across the continent are
-              being hampered by insufficient access to capital, impeding their
-              ability to leverage lucrative opportunities even as advanced
-              economies continue to thrive and innovate.
+              Tech businesses in Africa struggle with limited access to capital,
+              hindering their ability to leverage emerging opportunities in the
+              tech industry, while advanced economies continue to thrive and
+              innovate.
             </p>
           </div>
           <div className={white_grid}>
@@ -102,7 +101,7 @@ export default function WeAre() {
             </p>
           </div>
           <div className={z_index_bottom_grid}>
-            <p>Movin.Africa is the capital moving Africa forward.</p>
+            <p>Movin Africa is the capital moving Africa forward.</p>
           </div>
         </div>
       </div>
