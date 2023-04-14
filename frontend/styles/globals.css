@@ -43,6 +43,9 @@ body {
   margin: 0;
   font-family: "Gotham", "Advent Pro";
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth; /* Safari and Chrome */
+  -moz-scroll-behavior: smooth; /* Firefox */
+  -ms-scroll-behavior: smooth; /* Microsoft Edge */
   transition: all 10s ease;
   overflow-x: hidden;
 }
