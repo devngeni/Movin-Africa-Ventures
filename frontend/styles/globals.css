@@ -3,6 +3,7 @@
   --max-width: 100vw;
   --border-radius: 12px;
   --background-start-rgb: #fff;
+  scroll-behavior: smooth;
 }
 
 * {
