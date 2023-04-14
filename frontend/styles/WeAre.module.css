@@ -316,6 +316,9 @@
   .half_oval {
     width: 500px;
   }
+  .invest_invest {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 750px) {
   .left_grid {
@@ -479,12 +482,13 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .grid {
+    height: 740px;
+  }
   .city_div {
     display: none;
   }
-  .grid {
-    height: 980px;
-  }
+
   .left_grid {
     top: 74px;
     height: 262px;
@@ -514,12 +518,12 @@
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 628px;
+    height: 400px;
   }
 
   .city_img {
     width: 100vw;
-    height: 628px;
+    height: 400px;
   }
 }
 @media screen and (max-width: 450px) {

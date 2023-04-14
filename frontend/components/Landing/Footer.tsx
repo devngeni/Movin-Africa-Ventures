@@ -39,6 +39,28 @@ export default function Footer() {
   const toggleLinks = () => {
     setExpanded(!expanded);
   };
+  const [activeNav, setActiveNav] = useState("Home");
+  const handleHomeRoute = () => {
+    const section = document.getElementById("Home");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveNav("Home");
+  };
+  const handleAboutUsRoute = () => {
+    const section = document.getElementById("AboutUs");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveNav("AboutUs");
+  };
+  const handleInvestmentCriteriaRoute = () => {
+    const section = document.getElementById("InvestmentCriteria");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveNav("InvestmentCriteria");
+  };
 
   return (
     <div className={`${footer} ${expanded ? expand : collapse}`}>
@@ -48,9 +70,24 @@ export default function Footer() {
       <div className={links_socials_container}>
         <div className={links_socials_container_grids}>
           <div className={Boldtext_footer}>Quick Links</div>
-          <span>Back to Top</span>
-          <span>About Us</span>
-          <span>Investment Criteria </span>
+          <span
+            onClick={handleHomeRoute}
+            className={activeNav === "Home" ? styles.active : ""}
+          >
+            Back to Top
+          </span>
+          <span
+            onClick={handleAboutUsRoute}
+            className={activeNav === "AboutUs" ? styles.active : ""}
+          >
+            About Us
+          </span>
+          <span
+            onClick={handleInvestmentCriteriaRoute}
+            className={activeNav === "InvestmentCriteria" ? styles.active : ""}
+          >
+            Investment Criteria{" "}
+          </span>
           <span>Portfolio</span>
           <span>Resources</span>
         </div>
@@ -101,9 +138,26 @@ export default function Footer() {
         <div className={links_socials_container_mobile}>
           <div className={links_socials_container_grids}>
             <div className={Boldtext_footer}>Quick Links</div>
-            <span>Back to Top</span>
-            <span>About Us</span>
-            <span>Investment Criteria </span>
+            <span
+              onClick={handleHomeRoute}
+              className={activeNav === "Home" ? styles.active : ""}
+            >
+              Back to Top
+            </span>
+            <span
+              onClick={handleAboutUsRoute}
+              className={activeNav === "AboutUs" ? styles.active : ""}
+            >
+              About Us
+            </span>
+            <span
+              onClick={handleInvestmentCriteriaRoute}
+              className={
+                activeNav === "InvestmentCriteria" ? styles.active : ""
+              }
+            >
+              Investment Criteria
+            </span>
             <span>Portfolio</span>
             <span>Resources</span>
           </div>

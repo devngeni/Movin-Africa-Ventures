@@ -33,75 +33,78 @@ export default function WeAre() {
     mobile_vector_lines,
     mobile_halfOval,
   } = styles;
+
   return (
-    <div className={WeAre_Page}>
-      <div className={grid}>
-        <div className={left_grid}>
-          <div className={we_are_}>
-            We are Africa’s First Ventures Collective Linking Technology to
-            Capital
+    <div id="AboutUs">
+      <div className={WeAre_Page}>
+        <div className={grid}>
+          <div className={left_grid}>
+            <div className={we_are_}>
+              We are Africa’s First Ventures Collective Linking Technology to
+              Capital
+            </div>
+            <div className={we_are_pan}>
+              We are a Pan-African focus team of entrepreneurs, engineers,
+              investors, dealmakers, and community builders looking to leverage
+              the continent’s vast potential.
+            </div>
           </div>
-          <div className={we_are_pan}>
-            We are a Pan-African focus team of entrepreneurs, engineers,
-            investors, dealmakers, engineers, and community builders looking to
-            leverage the continent’s vast potential.
+          <div className={city_div}>
+            <Image src={CityImage} alt="city-image" className={city_img} />
+          </div>
+          <div className={city_mobile_img}>
+            <Image src={CityMobileImg} alt="city-image" className={city_img} />
           </div>
         </div>
-        <div className={city_div}>
-          <Image src={CityImage} alt="city-image" className={city_img} />
+        <div className={invest_container}>
+          <div className={invest_invest}>
+            <div id={moveLeft}>Invest in you</div>
+            <div id={moveRight}>Invest with us.</div>
+          </div>
         </div>
-        <div className={city_mobile_img}>
-          <Image src={CityMobileImg} alt="city-image" className={city_img} />
-        </div>
-      </div>
-      <div className={invest_container}>
-        <div className={invest_invest}>
-          <div id={moveLeft}>Invest in you</div>
-          <div id={moveRight}>Invest with us.</div>
-        </div>
-      </div>
-      <div className={theCapital}>
-        <div>
-          <div className={vectorc1}>
-            <Vector1 />
+        <div className={theCapital}>
+          <div>
+            <div className={vectorc1}>
+              <Vector1 />
+            </div>
+            <div>
+              <Image src={Vector2} alt="lines-graphics" className={vectorc2} />
+            </div>
+            <div>
+              <Image src={Dots} alt="dots-graphics" className={half_oval} />
+            </div>
           </div>
           <div>
-            <Image src={Vector2} alt="lines-graphics" className={vectorc2} />
+            <Image
+              src={MobileDots}
+              alt="dots-graphics"
+              className={mobile_halfOval}
+            />
+            <Image
+              src={MobileVectorLines}
+              alt="lines-graphics"
+              className={mobile_vector_lines}
+            />
           </div>
-          <div>
-            <Image src={Dots} alt="dots-graphics" className={half_oval} />
-          </div>
-        </div>
-        <div>
-          <Image
-            src={MobileDots}
-            alt="dots-graphics"
-            className={mobile_halfOval}
-          />
-          <Image
-            src={MobileVectorLines}
-            alt="lines-graphics"
-            className={mobile_vector_lines}
-          />
-        </div>
-        <div className={weAre_grid_containers}>
-          <div className={green_grid}>
-            <p>
-              Tech businesses in Africa struggle with limited access to capital,
-              hindering their ability to leverage emerging opportunities in the
-              tech industry, while advanced economies continue to thrive and
-              innovate.
-            </p>
-          </div>
-          <div className={white_grid}>
-            <p>
-              Technology is everywhere, and every business in Africa, small or
-              large, should be at the forefront of this revolution. It takes
-              capital to make this work.
-            </p>
-          </div>
-          <div className={z_index_bottom_grid}>
-            <p>Movin Africa is the capital moving Africa forward.</p>
+          <div className={weAre_grid_containers}>
+            <div className={green_grid}>
+              <p>
+                Tech businesses in Africa struggle with limited access to
+                capital, hindering their ability to leverage emerging
+                opportunities in the tech industry, while advanced economies
+                continue to thrive and innovate.
+              </p>
+            </div>
+            <div className={white_grid}>
+              <p>
+                Technology is everywhere, and every business in Africa, small or
+                large, should be at the forefront of this revolution. It takes
+                capital to make this work.
+              </p>
+            </div>
+            <div className={z_index_bottom_grid}>
+              <p>Movin Africa is the capital moving Africa forward.</p>
+            </div>
           </div>
         </div>
       </div>

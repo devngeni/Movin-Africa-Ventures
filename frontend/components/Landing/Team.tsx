@@ -1,6 +1,6 @@
 import styles from "@/styles/Team.module.css";
 import Image, { StaticImageData } from "next/image";
-import KevinImani from "../../public/MemberImages/KevinImani.png";
+import KevinImani from "../../public/MemberImages/KelvinImani.jpeg";
 import SusanOh from "../../public/MemberImages/SusanOh.jpeg";
 import BrianJones from "../../public/MemberImages/BrianJones.webp";
 import ChristinaStorey from "../../public/MemberImages/ChristinaStorey.jpeg";
@@ -10,6 +10,7 @@ import TeamLines from "../../public/TeamLines.svg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import NoSSR from "react-no-ssr";
+import { useEffect, useState } from "react";
 
 interface Member {
   name: string;
@@ -40,6 +41,12 @@ export default function Team() {
     small_image,
     member_card_mobile,
     mobile_member_grid_container,
+    readbio,
+    collapse,
+    ReadBio_btn,
+    collapse_btn,
+    open,
+    close,
   } = styles;
 
   const members: Member[] = [
@@ -86,6 +93,26 @@ export default function Team() {
       image: SusanOh,
     },
   ];
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleLinks = () => {
+    setExpanded(!expanded);
+    console.log("i was clicked");
+  };
+
+  useEffect(() => {
+    const memberCardMobile = document.querySelector(`.${member_card_mobile}`);
+
+    if (memberCardMobile) {
+      const closeButton = memberCardMobile.querySelector(`.${collapse_btn}`);
+
+      if (closeButton) {
+        closeButton.addEventListener("click", () => {
+          memberCardMobile.classList.remove(`hovered`);
+        });
+      }
+    }
+  });
 
   return (
     <div className={team_page}>
@@ -328,9 +355,9 @@ export default function Team() {
       <NoSSR>
         <div className={mobile_member_grid_container}>
           <AliceCarousel
-            items={members.map((card: any) => (
-              <div key={card.name}>
-                <div className={member_card_mobile}>
+            items={members.map((card: any, index: number) => (
+              <div key={index}>
+                <div className={member_card_mobile} onClick={toggleLinks}>
                   <div className={onhover_membercard}>
                     <div
                       className={member_name}
@@ -357,6 +384,7 @@ export default function Team() {
                   <div className={member_name_descrip}>
                     <div className={member_name}>{card.name}</div>
                     <div className={member_descrip}>{card.bio}</div>
+                    <button className={ReadBio_btn}>Read Bio</button>
                   </div>
                 </div>
               </div>

@@ -47,7 +47,7 @@ export default function Investments() {
             trailblazer.
           </p>
         </div>
-        <div className={BusinessModel}>
+        <div className={BusinessModel} id="InvestmentCriteria">
           <div>
             <Image
               src={BusinessModelArrow}

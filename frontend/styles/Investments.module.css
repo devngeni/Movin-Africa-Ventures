@@ -372,4 +372,20 @@
     font-size: 22px;
     line-height: 26px;
   }
+  .as_of_March {
+    width: 95vw;
+  }
+  /* .BusinessModel{
+    width: 95vw;
+  } */
+}
+@media screen and (max-width: 300px) {
+  .investments_container {
+    width: 95vw;
+  }
+  .marketSize,
+  .competion_,
+  .BusinessModel {
+    width: inherit;
+  }
 }

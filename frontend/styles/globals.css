@@ -37,14 +37,14 @@
   font-style: normal;
   font-display: swap;
 }
-
-body,
-html {
-  font-family: "Gotham", "Advent Pro";
-  overflow-x: hidden;
-  width: 100%;
-  margin: 0;
+html,
+body {
   padding: 0;
+  margin: 0;
+  font-family: "Gotham", "Advent Pro";
+  scroll-behavior: smooth;
+  transition: all 10s ease;
+  overflow-x: hidden;
 }
 
 a {
