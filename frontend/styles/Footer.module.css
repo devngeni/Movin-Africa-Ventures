@@ -1,8 +1,7 @@
 .footer {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 100vw;
   height: 446px;
-
   background: #404430;
 }
 
@@ -54,6 +53,11 @@
   line-height: 28px;
   left: 0;
   color: #ffffff;
+  width: max-content;
+  cursor: pointer;
+}
+.links_socials_container_grids span:hover {
+  text-decoration: underline;
 }
 
 .aboveFaqsLine {
@@ -137,7 +141,7 @@
 
 .footer_line {
   position: absolute;
-  bottom: 104px;
+  top: 341.79px;
   width: 54.53%;
   height: 0;
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -148,9 +152,9 @@
 .copyright {
   position: absolute;
   width: 420.31px;
-  height: 46.31px;
   left: 780.35px;
-  bottom: 30.9px;
+  top: 360px;
+
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
@@ -158,4 +162,198 @@
   line-height: 28px;
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    width: 100vw;
+  }
+  .footer_logo img {
+    left: 80px;
+  }
+  .links_socials_container {
+    left: 63%;
+    transform: translateX(-50%);
+  }
+  .copyright {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer_logo img {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .footer_logo img {
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .footer_logo img {
+    left: 90px;
+    top: 30px;
+  }
+  .links_socials_container {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .footer_line {
+    position: absolute;
+  }
+  .openQuickLinks,
+  .openQuickLinks_component,
+  .links_socials_container_mobile {
+    display: none;
+  }
+  .subscribe_grid_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .copyright {
+    width: max-content;
+  }
+  .footer.collapse {
+    height: 350px;
+  }
+
+  .footer.expand {
+    height: 530px;
+  }
+  .links_socials_container {
+    display: none;
+  }
+
+  .openQuickLinks_component.open {
+    display: block;
+  }
+  .openQuickLinks_component.close {
+    display: none;
+  }
+  .footer_logo img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .links_socials_container_mobile {
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 177px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+  }
+  .openQuickLinks_component {
+    position: relative;
+    height: 204px;
+    top: 30px;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .QuickLinks_button {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 75vw;
+    color: #fff;
+  }
+  .icon_btn img {
+    position: absolute;
+    left: 5px;
+    width: 40px;
+    height: 35px;
+    top: 1px;
+  }
+  .openQuickLinks {
+    position: relative;
+    top: 40px;
+    height: 35px;
+    width: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .openQuickLinks.open {
+    display: block;
+  }
+  .openQuickLinks.close {
+    display: none;
+  }
+  .quickLinksText {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: max-content;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .x_close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .subscribe_grid,
+  .Boldtext_footer {
+    display: none;
+  }
+
+  .subscribe_grid_mobile {
+    position: relative;
+    width: 292px;
+    height: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+  }
+  .footer_line {
+    position: relative;
+    bottom: none;
+    top: 60px;
+    width: 80%;
+  }
+  .copyright {
+    position: relative;
+    top: 70px;
+    height: none;
+  }
+}
+@media screen and (max-width: 510px) {
+  .footer_logo img {
+    width: 246px;
+  }
+  .links_socials_container_grids {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .links_socials_container_grids {
+    width: 20%;
+  }
+  .links_socials_container_grids span {
+    font-size: 12px;
+  }
 }

@@ -1,6 +1,6 @@
 .logo {
   position: absolute;
-  left: 160px;
+  left: 8.33%;
   top: 35px;
   width: 324px;
   height: 56px;
@@ -8,14 +8,13 @@
 
 .nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100px;
   background-color: transparent;
   backdrop-filter: blur(15px);
   z-index: 10;
   top: 0;
   left: 0;
-  /* display: flex; */
 }
 
 .mini_nav {
@@ -24,14 +23,12 @@
   display: flex;
   justify-content: space-around;
   width: 600px;
-  right: 250px;
+  right: 13.02%;
   font-family: "Advent Pro";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-
-  /* color: #13153a; */
 }
 
 .mini_nav span {
@@ -44,4 +41,130 @@
 
 .mini_nav span:hover {
   color: #13153a;
+}
+.mini_nav span.active {
+  text-decoration: none;
+  color: #13153a;
+}
+
+.Menu_icon img {
+  position: absolute;
+  top: 25px;
+  right: 13.06%;
+}
+
+@media screen and (min-width: 988px) {
+  .Menu_icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  .mini_nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mini_nav {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 987px) {
+  .Menu_icon img {
+    top: 50px;
+    right: 80px;
+  }
+  .mobilenav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    backdrop-filter: blur(2px);
+    background: transparent;
+  }
+
+  .theMiniNav {
+    position: relative;
+    top: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .theMiniNav .x_close {
+    position: absolute;
+    right: 10px;
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #13153a;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .theMiniNav div {
+    margin-top: 10px;
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: #13153a;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    cursor: pointer;
+  }
+  .mobilenav.open {
+    display: block;
+  }
+  .mobilenav.close {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Menu_icon img {
+    top: 25px;
+    right: 55px;
+  }
+}
+@media screen and (min-width: 501px) {
+  .mobile_Logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+  .mobile_Logo {
+    position: absolute;
+    width: 156px;
+    height: 27px;
+    left: 46px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .nav {
+    height: 65px;
+    background: #ffffff;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile_Logo {
+    left: 30px;
+  }
+  .Menu_icon img {
+    top: 27px;
+    right: 20px;
+  }
 }

@@ -6,6 +6,7 @@ import BusinessModelArrow from "../../public/BsModel.png";
 import MarketSize from "../../public/MarketSize.png";
 import investmentsDots from "../../public/investmentDots.svg";
 import investments_lines_svg from "../../public/InvestmentLines.svg";
+import MobileInvestmentLines from "../../public/mobileImages/MobileInvestmentLines.svg";
 
 export default function Investments() {
   const {
@@ -21,6 +22,7 @@ export default function Investments() {
     mcb_p,
     investmentsDots_image,
     investments_lines,
+    mobile_investments_lines,
   } = styles;
   return (
     <div className={investments_page}>
@@ -38,14 +40,14 @@ export default function Investments() {
           </div>
           <div className={mcb_headers}>The Competition</div>
           <p className={mcb_p} style={{ color: "#5e5e5e" }}>
-            OpenTech Fund is the inaugural tech-focused ventures collective
-            setting itself apart with a distinctive market niche. With no direct
-            competitors, the fund presents a novel value proposition,
-            establishing itself as a trailblazer that can capitalize on emerging
-            opportunities and drive the growth of tech startups.
+            Movin Africa is a pioneering tech-focused venture collective,
+            carving a unique market niche with no direct competitors. With a
+            distinct value proposition, it capitalizes on emerging opportunities
+            to drive the growth of tech startups, setting itself apart as a
+            trailblazer.
           </p>
         </div>
-        <div className={BusinessModel}>
+        <div className={BusinessModel} id="InvestmentCriteria">
           <div>
             <Image
               src={BusinessModelArrow}
@@ -55,7 +57,7 @@ export default function Investments() {
           </div>
           <div className={mcb_headers}>Business Model</div>
           <p className={mcb_p} style={{ color: "#000000" }}>
-            OpenTech Fund operates an open fund model. We guarantee equitable
+            Movin Africa operates an open fund model. We guarantee equitable
             access to capital for all entrepreneurs, establishing a level
             playing field for tomorrow&#39;s tech titans. Our innovative
             investment strategy harnesses emerging technologies and financial
@@ -75,11 +77,11 @@ export default function Investments() {
             Market Size
           </div>
           <p className={mcb_p}>
-            The tech industry in Africa is rapidly growing, with a market size
-            projected to reach $345 billion by 2025, driven by an increasing
-            population, rising mobile phone adoption, and expanding internet
-            connectivity. OpenFund is well-positioned to tap into this market by
-            investing in and supporting innovative, tech-driv en businesses.
+            Africa&#39;s tech industry is booming, with a $345 billion market
+            size projected by 2025. Movin Africa is poised to capitalize on this
+            growth by investing in and supporting innovative tech-driven
+            businesses, leveraging the rising population, mobile phone adoption,
+            and expanding internet connectivity in the region.
           </p>
         </div>
       </div>
@@ -94,6 +96,13 @@ export default function Investments() {
           src={investments_lines_svg}
           alt="investments_lines_svg"
           className={investments_lines}
+        />
+      </div>
+      <div>
+        <Image
+          src={MobileInvestmentLines}
+          alt="investments_lines_svg"
+          className={mobile_investments_lines}
         />
       </div>
     </div>

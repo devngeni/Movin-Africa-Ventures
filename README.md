@@ -4,5 +4,5 @@
 
 # Movin-Africa-Ventures
 
-- Linking ```Technology``` with ```Capital```
+- Linking `Technology` with `Capital`
 - Fueling the Growth of Afrika’s Tech Ecosystem While Creating Opportunities For Young, Vibrant Minds.

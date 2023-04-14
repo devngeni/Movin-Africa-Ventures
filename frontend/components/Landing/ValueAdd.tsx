@@ -18,11 +18,14 @@ export default function ValueAdd() {
     valueAdd_container,
     plusLines_div,
     plusLines,
+    valueAddheader,
+    grid3_H,
+    grid3_D,
   } = styles;
   return (
     <div className={valuePage}>
       <div className={valueAdd_container}>
-        <div>ValueAdd</div>
+        <div className={valueAddheader}>Value Add</div>
         <div className={grid1}>
           <Image src={grid1img} alt="" />
           <div className={headers}>Financial Support</div>
@@ -37,32 +40,30 @@ export default function ValueAdd() {
           <Image src={grid2Img} alt="engineering-img" />
           <div className={headers}>Engineering Services</div>
           <p className={descrip}>
-            Our extensive engineering expertise gained from our existing
-            ventures, like NGENI LABs, puts us in good stead to provide
-            comprehensive engineering capacity to a diverse range of projects
-            and businesses.
+            With a strong engineering acumen developed through ventures like
+            NGENI LABs, we are well-equipped to provide comprehensive
+            engineering capacity for diverse projects and businesses.
           </p>
         </div>
         <div className={grid3}>
           <Image src={grid3Img} alt="tech-image" />
-          <div className={headers} id="grid3_H">
+          <div className={headers} id={grid3_H}>
             Tech-Knowledge Sharing
           </div>
-          <p className={descrip} id="grid3_D">
-            We are a world-class team of tech experts who can guide and support
-            tech businesses to build their operations, scale up, and achieve
-            growth.
+          <p className={descrip} id={grid3_D}>
+            We are an elite team of tech professionals offering guidance and
+            support to help tech businesses build, scale, and achieve
+            unparalleled growth.
           </p>
         </div>
         <div className={grid4}>
           <Image src={grid4Img} alt="" />
           <div className={headers}>Traction</div>
           <p className={descrip}>
-            OpenTech Fund is breaking new ground as the first fund in Africa to
-            invest in tech-focused businesses across three continents. With a
-            team of seasoned professionals in investment, entrepreneurship, and
-            community building, the fund is poised to make waves in the
-            financial and tech industries.
+            Movin Africa is making history as the first African fund to invest
+            in tech-focused businesses across three continents, led by a team of
+            seasoned professionals in investment, entrepreneurship, and
+            community building.
           </p>
         </div>
         <div className={plusLines_div}>
