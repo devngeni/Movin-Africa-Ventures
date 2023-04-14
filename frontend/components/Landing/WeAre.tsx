@@ -35,7 +35,7 @@ export default function WeAre() {
   } = styles;
 
   return (
-    <div id="AboutUs">
+    <div>
       <div className={WeAre_Page}>
         <div className={grid}>
           <div className={left_grid}>

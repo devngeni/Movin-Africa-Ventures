@@ -14,6 +14,7 @@ export default function Hero() {
     fueling_,
     home_button,
     mobile_home_img,
+    aboutLink,
   } = styles;
   return (
     <div className={home_page} id="Home">
@@ -31,6 +32,7 @@ export default function Hero() {
           Opportunities For Young, Vibrant Minds.
         </div>
         <button className={home_button}>Button</button>
+        <div className={aboutLink} id="AboutUs"></div>
       </div>
     </div>
   );
