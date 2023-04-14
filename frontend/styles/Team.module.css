@@ -2,9 +2,7 @@
   position: relative;
   width: 100%;
   height: 1419px;
-  /* background-color: aqua; */
 }
-/* team_page */
 
 .the_team {
   position: absolute;
@@ -47,7 +45,7 @@
 
 #gridtop {
   position: absolute;
-  width: 1361px;
+  width: inherit;
   height: 388px;
   top: 0;
   display: flex;
@@ -56,7 +54,7 @@
 
 #gridbottom {
   position: absolute;
-  width: 1361px;
+  width: inherit;
   height: 388px;
   bottom: 0;
   display: flex;
@@ -67,7 +65,6 @@
   position: relative;
   width: 327px;
   height: 388px;
-  /* background-color: red; */
   cursor: pointer;
 }
 
@@ -93,12 +90,13 @@
 
 .big_image_ img {
   position: absolute;
-  top: 14px;
+  top: 11px;
   width: 180px;
   height: 180px;
-  left: 14px;
-  /* background-color: rgb(0, 255, 13); */
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .small_image_container {
@@ -118,6 +116,8 @@
   transform: translate(-50%, -50%);
   width: 56.15px;
   height: 56.15px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .member_name_descrip {
@@ -125,14 +125,13 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 54px;
-  /* background-color: red; */
   width: 293.65px;
   height: 58px;
   transition: left 0.3s ease;
 }
 
 .member_name {
-  position: absolute;
+  position: relative;
   font-family: "Advent Pro";
   font-style: normal;
   font-weight: 700;
@@ -144,7 +143,7 @@
   width: max-content;
 }
 .member_descrip {
-  position: absolute;
+  position: relative;
   bottom: 0;
   font-family: "Gotham";
   font-style: normal;
@@ -156,31 +155,27 @@
 }
 
 .onhover_membercard {
-  position: absolute;
+  position: relative;
   width: 200px;
-  height: 275px;
+  height: auto;
   top: 50px;
   left: 0;
 }
 
 .onhover_membercard_descrip {
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
   width: 190px;
-  /* height: 216px; */
-
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-
-  /* or 138% */
   text-align: center;
-
   color: #666666;
+  transition: all 10s ease;
 }
 
 /* Initially hide the onhover_membercard & small_image */
@@ -254,4 +249,226 @@
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 1500px) {
+  .member_grid_container {
+    width: 90vw;
+  }
+  .the_team_lines img {
+    width: 90%;
+  }
+  .meet_the_team {
+    width: inherit;
+  }
+  .team_page {
+    height: 1250px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .member_name_descrip {
+    width: 200px;
+  }
+  .member_card_container {
+    width: 190px;
+    height: 190px;
+  }
+  .big_image_container {
+    width: 190px;
+    height: 190px;
+  }
+  .big_image_ img {
+    width: 170px;
+    height: 170px;
+    top: 5.5px;
+  }
+  .member_card {
+    width: 237px;
+  }
+  .small_image_container {
+    width: 60px;
+  }
+  /* .onhover_membercard {
+    width: 150px;
+    height: 345px;
+  } */
+
+  .onhover_membercard_descrip {
+    width: inherit;
+    height: max-content;
+  }
+  .member_card:hover .small_image_container {
+    right: -50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .meet_the_team {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .meet_the_team {
+    font-size: 55px;
+  }
+}
+@media screen and (min-width: 701px) {
+  .member_card_mobile {
+    display: none;
+  }
+  .member_card {
+    display: block;
+  }
+  .mobile_member_grid_container {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .team_page {
+    height: 600px;
+  }
+
+  .mobile_member_grid_container {
+    position: absolute;
+    top: 220px;
+    height: auto;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .member_card_mobile {
+    padding-top: -10px;
+    top: 10px;
+    position: relative;
+    width: auto;
+    height: 360px;
+  }
+
+  /* onhover Show the onhover_membercard */
+  .member_card_mobile:hover .onhover_membercard {
+    display: block;
+  }
+  /* onhover Show the small_image */
+  .member_card_mobile:hover .small_image {
+    display: block;
+  }
+
+  /* onhover hide the big_image_container */
+  .member_card_mobile:hover .big_image_container {
+    display: none;
+  }
+
+  /* onhover hide the member_name_descrip */
+  .member_card_mobile:hover .member_name_descrip {
+    display: none;
+  }
+
+  .member_card_mobile:hover .big_image_ img {
+    animation-name: moveImage;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .member_card_mobile:hover .member_name {
+    animation-name: moveLeftRight;
+    animation-duration: 0.3s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  /* .team_page.readbio {
+    height: 600px;
+  }
+  .team_page.collapse {
+    height: 600px;
+  } */
+  .ReadBio_btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    font-family: "Gotham";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #717171;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .collapse_btn {
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    font-family: "Gotham";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #717171;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .collapse_btn.open {
+    display: block;
+  }
+
+  .collapse_btn.close {
+    display: none;
+  }
+
+  .meet_the_team {
+    font-size: 50px;
+  }
+  .member_grid_container,
+  .member_card,
+  .gridbottom,
+  .gridtop,
+  .the_team_lines {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .meet_the_team {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .the_team {
+    height: 210px;
+  }
+  .meet_the_team {
+    font-size: 40px;
+  }
+  .mobile_member_grid_container {
+    top: 250px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .mobile_member_grid_container {
+    width: 327px;
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mobile_member_grid_container {
+    width: 99vw;
+  }
 }

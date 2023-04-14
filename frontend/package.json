@@ -9,8 +9,8 @@
   },
   "maintainers": [
     {
-      "name": "Samwel Nzomo",
-      "email": "samwel@ngeni.io",
+      "name": "Samuel Nzomo",
+      "email": "samuel@ngeni.io",
       "url": "https://ngeni.io"
     }
   ],
@@ -32,8 +32,14 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-no-ssr": "^1.1.0",
+    "react-responsive-carousel": "^3.2.23",
     "styled-components": "^5.3.9",
     "typescript": "5.0.3",
     "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@types/react-alice-carousel": "^1.15.3",
+    "@types/react-no-ssr": "^1.1.3"
   }
 }
