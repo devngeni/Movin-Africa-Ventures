@@ -4,7 +4,7 @@
   height: 950px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 65px;
@@ -85,7 +85,7 @@
   .whyNow {
     height: 680px;
     padding-top: 59px;
-    font-family: "Advent Pro";
+    font-family: "Advent Pro UltraExpanded";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;

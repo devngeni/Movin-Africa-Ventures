@@ -24,7 +24,7 @@
   justify-content: space-around;
   width: 600px;
   right: 13.02%;
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -103,7 +103,7 @@
   .theMiniNav .x_close {
     position: absolute;
     right: 10px;
-    font-family: "Advent Pro";
+    font-family: "Advent Pro UltraExpanded";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -116,7 +116,7 @@
   }
   .theMiniNav div {
     margin-top: 10px;
-    font-family: "Advent Pro";
+    font-family: "Advent Pro UltraExpanded";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
