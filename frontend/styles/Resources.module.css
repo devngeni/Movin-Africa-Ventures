@@ -584,8 +584,8 @@
   .mobile_discover_our_blog_image {
     position: absolute;
     right: 0px;
-    height: 537px;
-    width: 80%;
+    height: inherit;
+    width: 87%;
   }
 }
 
