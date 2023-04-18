@@ -108,6 +108,33 @@ export default function Slug() {
                 </div>
               </div>
             </Link>
+            <Link href={`/Resources/${"promodo"}`}>
+              <div className={relatedArticles_Card}>
+                <Image src={BlogImage} alt="" />
+                <div className={categoryRelatedArticles}>category</div>
+                <div className={RelatedArticletitle}>
+                  The promodo Time pps in 2023 time apps
+                </div>
+              </div>
+            </Link>
+            <Link href={`/Resources/${"promodo"}`}>
+              <div className={relatedArticles_Card}>
+                <Image src={BlogImage} alt="" />
+                <div className={categoryRelatedArticles}>category</div>
+                <div className={RelatedArticletitle}>
+                  The promodo Time pps in 2023 time apps
+                </div>
+              </div>
+            </Link>
+            <Link href={`/Resources/${"promodo"}`}>
+              <div className={relatedArticles_Card}>
+                <Image src={BlogImage} alt="" />
+                <div className={categoryRelatedArticles}>category</div>
+                <div className={RelatedArticletitle}>
+                  The promodo Time pps in 2023 time apps
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
