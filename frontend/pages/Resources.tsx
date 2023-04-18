@@ -4,6 +4,7 @@ import Image from "next/image";
 import EllipseR from "../public/ResourcesR.png";
 import BlogImg from "../public/blogAssets/BlogImg.png";
 import MobileBlogImg from "../public/blogAssets/MobileElllipse.png";
+import { useState } from "react";
 
 export default function Resources() {
   const {
@@ -30,6 +31,8 @@ export default function Resources() {
     theBigBlogContainer,
     mobile_discover_our_blog_image,
   } = styles;
+
+  // const [activeNav, setActiveNav] = useState("#Home");
 
   return (
     <div className={resources}>
@@ -241,7 +244,7 @@ export default function Resources() {
           </div>
         </div>
         <div className={readAllArticles}>
-          <button className={ReadAll_btn}>Read All Articles</button>
+          <button className={ReadAll_btn}>Show More</button>
         </div>
       </div>
 

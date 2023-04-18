@@ -499,8 +499,18 @@
     color: #89b94b;
   }
   .ReadAll_btn {
-    width: 235px;
-    height: 50px;
+    width: 225px;
+    height: 45px;
+    font-family: "Advent Pro UltraExpanded";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #ffffff;
   }
   .ByMovinAfrica {
     font-family: "Gotham";
