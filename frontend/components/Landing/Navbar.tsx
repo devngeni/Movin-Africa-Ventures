@@ -26,6 +26,7 @@ export default function Navbar() {
 
   React.useEffect(() => {
     setActiveNav(router.asPath);
+    console.log(router.asPath);
   }, [router.asPath]);
 
   return (
