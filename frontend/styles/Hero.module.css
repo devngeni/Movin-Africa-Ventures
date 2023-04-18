@@ -31,9 +31,9 @@
   left: 50%;
   transform: translateX(-50%);
   top: 576px;
-  width: 900px;
+  width: 1168.73px;
   height: 240px;
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
@@ -69,7 +69,7 @@
   bottom: 80px;
   background: #404430;
   border-radius: 72px;
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -203,7 +203,7 @@
   }
   .Linking {
     width: 250px;
-    font-family: "Advent Pro";
+    font-family: "Advent Pro UltraExpanded";
     font-style: normal;
     font-weight: 700;
     font-size: 45px;

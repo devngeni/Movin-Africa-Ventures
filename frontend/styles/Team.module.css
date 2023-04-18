@@ -19,7 +19,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 65px;
@@ -66,6 +66,7 @@
   width: 327px;
   height: 388px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .member_card_container {
@@ -75,6 +76,7 @@
   height: 216.67px;
   left: 50%;
   transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
 }
 
 .big_image_container {
@@ -86,6 +88,7 @@
   border-radius: 50%;
   background-color: #fff;
   border: 5px solid #414430;
+  transition: 0.3s ease-in-out;
 }
 
 .big_image_ img {
@@ -97,6 +100,7 @@
   transform: translateX(-50%);
   border-radius: 50%;
   object-fit: cover;
+  transition: 0.3s ease-in-out;
 }
 
 .small_image_container {
@@ -108,6 +112,7 @@
   background: #414430;
   z-index: -1;
   border-radius: 50%;
+  transition: 0.3s ease-in-out;
 }
 .small_image img {
   position: absolute;
@@ -118,6 +123,7 @@
   height: 56.15px;
   border-radius: 50%;
   object-fit: cover;
+  transition: 0.3s ease-in-out;
 }
 
 .member_name_descrip {
@@ -132,7 +138,7 @@
 
 .member_name {
   position: relative;
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -175,7 +181,7 @@
   line-height: 18px;
   text-align: center;
   color: #666666;
-  transition: all 10s ease;
+  transition: 0.3s ease-in-out;
 }
 
 /* Initially hide the onhover_membercard & small_image */
@@ -196,6 +202,7 @@
 /* onhover hide the big_image_container */
 .member_card:hover .big_image_container {
   display: none;
+  transform: 0.3s ease-in-out;
 }
 
 /* onhover hide the member_name_descrip */
@@ -219,19 +226,24 @@
   animation-duration: 0.3s; /* Adjust the duration as needed */
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+  transition: 0.3s ease-in-out;
 }
 
-@keyframes moveImage {
+@keyframes enlargeImage {
   0% {
-    right: 0px;
+    width: 180px;
+    height: 180px;
   }
   50% {
-    right: -50px;
+    width: 200px;
+    height: 200px;
   }
   100% {
-    right: 0px; /* Adjust the value as needed */
+    width: 220px;
+    height: 220px;
   }
 }
+
 @keyframes moveImage {
   0% {
     transform: translate(-50%, -50%);
@@ -241,14 +253,15 @@
   }
   100% {
     transform: translate(-50%, -50%);
+    display: none;
   }
 }
 
 .member_card:hover .big_image_ img {
-  animation-name: moveImage;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  animation-name: enlargeImage, moveImage;
+  animation-duration: 0.5s, 5s;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out, ease-in-out;
 }
 
 @media screen and (max-width: 1500px) {
@@ -277,11 +290,13 @@
   .big_image_container {
     width: 190px;
     height: 190px;
+    transition: 0.3s ease-in-out;
   }
   .big_image_ img {
     width: 170px;
     height: 170px;
     top: 5.5px;
+    transition: 0.3s ease-in-out;
   }
   .member_card {
     width: 237px;

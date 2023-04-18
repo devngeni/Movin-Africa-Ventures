@@ -24,14 +24,14 @@
   justify-content: space-around;
   width: 600px;
   right: 13.02%;
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }
 
-.mini_nav span {
+.mini_nav a {
   background: transparent;
   padding: 8px;
   display: flex;
@@ -39,10 +39,10 @@
   cursor: pointer;
 }
 
-.mini_nav span:hover {
+.mini_nav a:hover {
   color: #13153a;
 }
-.mini_nav span.active {
+.mini_nav a.active {
   text-decoration: none;
   color: #13153a;
 }
@@ -103,7 +103,7 @@
   .theMiniNav .x_close {
     position: absolute;
     right: 10px;
-    font-family: "Advent Pro";
+    font-family: "Advent Pro UltraExpanded";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -114,9 +114,9 @@
     background: none;
     cursor: pointer;
   }
-  .theMiniNav div {
+  .theMiniNav a {
     margin-top: 10px;
-    font-family: "Advent Pro";
+    font-family: "Advent Pro UltraExpanded";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;

@@ -4,6 +4,8 @@ import styles from "@/styles/Footer.module.css";
 import Movin from "../../public/FooterLogo.svg";
 import SendIcon from "../../public/SendIcon.png";
 import MenuIcon from "../../public/QuickLinks.png";
+import Link from "next/link";
+// import { Link } from "react-router-dom";
 
 export default function Footer() {
   const [expanded, setExpanded] = useState(false);
@@ -70,35 +72,36 @@ export default function Footer() {
       <div className={links_socials_container}>
         <div className={links_socials_container_grids}>
           <div className={Boldtext_footer}>Quick Links</div>
-          <span
-            onClick={handleHomeRoute}
-            className={activeNav === "Home" ? styles.active : ""}
-          >
+          <Link href="/" className={activeNav === "/" ? styles.active : ""}>
             Back to Top
-          </span>
-          <span
-            onClick={handleAboutUsRoute}
-            className={activeNav === "AboutUs" ? styles.active : ""}
+          </Link>
+
+          <Link
+            href="/#AboutUs"
+            className={activeNav === "/" ? styles.active : ""}
           >
             About Us
-          </span>
-          <span
-            onClick={handleInvestmentCriteriaRoute}
-            className={activeNav === "InvestmentCriteria" ? styles.active : ""}
+          </Link>
+
+          <Link
+            href="/#InvestmentCriteria"
+            className={activeNav === "/" ? styles.active : ""}
           >
-            Investment Criteria{" "}
-          </span>
-          <span>Portfolio</span>
-          <span>Resources</span>
+            Investment Criteria
+          </Link>
+          <Link href={"Portfolio"}>Portfolio</Link>
+          <Link href={"Resources"}>Resources</Link>
         </div>
         <div className={links_socials_container_grids}>
           <div className={Boldtext_footer}>Social Media</div>
-          <span>Twitter</span>
-          <span>Linked In</span>
-          <span>LinkTree </span>
-          <span>Substack</span>
-          <span className={aboveFaqsLine} />
-          <span>FAQs</span>
+          <Link href={"/#Twitter"}>Twitter</Link>
+          <Link href={"/#LinkedIn"}>Linked In</Link>
+          <Link href={"/#LinkTree"}>LinkTree </Link>
+          <Link href={"/#Substack"}>Substack</Link>
+          <Link href={"#null"}>
+            <div className={aboveFaqsLine} />
+          </Link>
+          <Link href={"/#FAQs"}>FAQs</Link>
         </div>
         <div className={subscribe_grid}>
           <div className={subscribe_container}>
@@ -138,37 +141,37 @@ export default function Footer() {
         <div className={links_socials_container_mobile}>
           <div className={links_socials_container_grids}>
             <div className={Boldtext_footer}>Quick Links</div>
-            <span
-              onClick={handleHomeRoute}
-              className={activeNav === "Home" ? styles.active : ""}
-            >
+
+            <Link href="/" className={activeNav === "/" ? styles.active : ""}>
               Back to Top
-            </span>
-            <span
-              onClick={handleAboutUsRoute}
+            </Link>
+            <Link
+              href={"/#AboutUs"}
               className={activeNav === "AboutUs" ? styles.active : ""}
             >
               About Us
-            </span>
-            <span
-              onClick={handleInvestmentCriteriaRoute}
+            </Link>
+            <Link
+              href={"/#InvestmentCriteria"}
               className={
                 activeNav === "InvestmentCriteria" ? styles.active : ""
               }
             >
               Investment Criteria
-            </span>
-            <span>Portfolio</span>
-            <span>Resources</span>
+            </Link>
+            <Link href={"/Portfolio"}>Portfolio</Link>
+            <Link href={"/Resources"}>Resources</Link>
           </div>
           <div className={links_socials_container_grids}>
             <div className={Boldtext_footer}>Social Media</div>
-            <span>Twitter</span>
-            <span>Linked In</span>
-            <span>LinkTree </span>
-            <span>Substack</span>
-            <span className={aboveFaqsLine} />
-            <span>FAQs</span>
+            <Link href={"/#"}>Twitter</Link>
+            <Link href={"/#"}>Linked In</Link>
+            <Link href={"/#"}>LinkTree </Link>
+            <Link href={"/#"}>Substack</Link>
+            <Link href={"/#"}>
+              <div className={aboveFaqsLine} />
+            </Link>
+            <Link href={"/#FAQs"}>FAQs</Link>
           </div>
           <div className={subscribe_grid}>
             <div className={subscribe_container}>

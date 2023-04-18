@@ -1,0 +1,603 @@
+.resources {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: #ffffff;
+}
+.discover_our_blog {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 537px;
+}
+
+.discover_our_blog_image {
+  position: absolute;
+  right: 0px;
+  height: 537px;
+  width: 80%;
+}
+
+.container_discover_our {
+  position: absolute;
+  top: 237.69px;
+  width: 644.34px;
+  height: 218.15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.discovertext {
+  position: absolute;
+  top: 0;
+  width: inherit;
+  font-family: "Advent Pro UltraExpanded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #13153a;
+}
+.fuelingTheGrowth {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #666666;
+}
+
+.theBigBlogContainer {
+  position: relative;
+  background: #fafafa;
+  width: 100vw;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.blogs_container {
+  position: relative;
+  width: 75vw;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 30px;
+  padding-top: 20px;
+  height: auto;
+  min-height: 800px !important;
+  max-height: 1200px !important;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.blog_card {
+  position: relative;
+  width: 424px;
+  height: 581px;
+  margin-top: 65px;
+  margin-left: 20px;
+  transition: 0.3s ease-in-out;
+  background: #ffffff;
+}
+
+.blog_card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  margin-bottom: 105px;
+}
+
+.blog_card:hover .blog_card_img {
+  width: 97%;
+  max-width: 424px;
+}
+
+.blog_card_img {
+  position: relative;
+  width: 97%;
+  height: 199px;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
+}
+
+.card_content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  position: absolute;
+  width: 378.59px;
+  height: 312px;
+  left: 15px;
+  transition: 0.3s ease-in-out;
+}
+.blog_card:hover .card_content {
+  left: 30px;
+}
+
+.category {
+  position: relative;
+  width: 37px;
+  height: 24px;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  left: 0;
+  top: 20.46px;
+  transition: 0.3s ease-in-out;
+}
+.blog_card:hover .category {
+  color: #89b94b;
+}
+.card_header {
+  position: relative;
+  width: 378.59px;
+  max-height: 56px;
+  font-family: "Advent Pro UltraExpanded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #13153a;
+  top: 10px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Maximum number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: scroll;
+  cursor: move;
+}
+.card_body {
+  position: relative;
+  width: 371.62px;
+  max-height: 168px; /* Maximum height to display 6 lines */
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  top: 10px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Maximum number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card_line {
+  position: relative;
+  width: inherit;
+  height: 0px;
+  left: 0px;
+  border: 1px solid #eaeaea;
+  top: 10px;
+
+  transition: opacity 0.3s ease;
+}
+.blog_card:hover .card_line {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card_footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: flex-start;
+  width: 241.49px;
+  left: 0;
+  top: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 24px;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  transition: 0.3s ease-in-out;
+}
+.blog_card:hover .dot {
+  color: #89b94b;
+}
+
+.ByMovinAfrica {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #666666;
+  transition: 0.3s ease-in-out;
+}
+.blog_card:hover .ByMovinAfrica {
+  color: #89b94b;
+}
+
+.timeRead {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #666666;
+  transition: 0.3s ease-in-out;
+}
+.blog_card:hover .timeRead {
+  color: #89b94b;
+}
+
+.readAllArticles {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  bottom: 0;
+  background-color: inherit;
+}
+
+.ReadAll_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 292px;
+  height: 60px;
+  background: #404430;
+  border-radius: 72px;
+  border: none;
+
+  font-family: "Advent Pro UltraExpanded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.ReadAll_btn:hover {
+  background-color: #13153a;
+}
+
+@media screen and (max-width: 1500px) {
+  .blogs_container {
+    width: 95vw;
+  }
+  .blog_card {
+    width: 400px;
+  }
+  .blog_card:hover {
+    transform: scale(1.001);
+  }
+  .blog_card:hover .card_content {
+    left: 17px;
+  }
+  .card_content {
+    width: 370px;
+  }
+  .card_body,
+  .card_header {
+    width: inherit;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .blog_card {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .blogs_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .blog_card {
+    width: 370px;
+  }
+  .card_content {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blogs_container {
+    grid-template-columns: 1fr;
+  }
+  .blogs_container {
+    width: 500px;
+  }
+  .blog_card {
+    width: 480px;
+  }
+  .card_content {
+    width: 450px;
+  }
+  .blog_card:hover {
+    transform: scale(1.01);
+  }
+  .blog_card:hover .blog_card_img {
+    width: 100%;
+    max-width: inherit;
+  }
+  .blog_card:hover .card_content {
+    max-width: 300px;
+    left: 17px;
+  }
+  .container_discover_our {
+    width: 90vw;
+  }
+  .discovertext {
+    width: inherit;
+  }
+  .fuelingTheGrowth {
+    width: inherit;
+  }
+}
+@media screen and (max-width: 744px) {
+  .container_discover_our {
+    top: 160px;
+    position: absolute;
+    height: auto;
+  }
+  .discovertext {
+    position: relative;
+    width: inherit;
+  }
+  .fuelingTheGrowth {
+    padding: 20px;
+    position: relative;
+    width: inherit;
+  }
+}
+@media screen and (max-width: 530px) {
+  .container_discover_our {
+    top: 150px;
+    position: absolute;
+    height: auto;
+  }
+  .discovertext {
+    position: relative;
+    width: inherit;
+  }
+  .fuelingTheGrowth {
+    padding-top: 20px;
+    position: relative;
+    width: inherit;
+  }
+}
+@media screen and (max-width: 538px) {
+  .blogs_container {
+    width: 90vw;
+  }
+  .blog_card {
+    width: inherit;
+    margin-left: 0;
+  }
+  .card_content {
+    width: 95%;
+  }
+  .blog_card:hover .card_content {
+    max-width: 95%;
+    left: 17px;
+  }
+}
+@media screen and (max-width: 538px) {
+  .blogs_container {
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .card_content {
+    left: 10px;
+  }
+  .blog_card_img {
+    width: inherit;
+  }
+  .blog_card:hover .card_content {
+    left: 5px;
+  }
+}
+@media screen and (min-width: 416px) {
+  .mobile_discover_our_blog_image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .discover_our_blog_image {
+    display: none;
+  }
+  .blogs_container {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    overflow: -moz-scrollbars-none; /* Firefox */
+    -webkit-overflow-scrolling: touch; /* iOS */
+  }
+  .blogs_container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  .blog_card {
+    background: #ffffff;
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 97%;
+    height: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+  }
+
+  .blog_card:hover {
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .blog_card_img {
+    transform: none;
+    left: 0;
+    right: 0;
+  }
+
+  .blog_card:hover .blog_card_img {
+    width: 97%;
+    max-width: inherit;
+  }
+
+  .blog_card:hover .card_content {
+    left: 10px;
+  }
+
+  .blog_card:hover .category {
+    color: #89b94b;
+  }
+
+  .blog_card:hover .card_line {
+    opacity: 1;
+  }
+
+  .blog_card:hover .dot {
+    color: #666666;
+  }
+
+  .blog_card:hover .ByMovinAfrica {
+    color: #89b94b;
+  }
+
+  .blog_card:hover .timeRead {
+    color: #89b94b;
+  }
+  .ReadAll_btn {
+    width: 225px;
+    height: 45px;
+    font-family: "Advent Pro UltraExpanded";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .ByMovinAfrica {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 24px;
+    color: #89b94b;
+  }
+  .timeRead {
+    font-family: "Gotham";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 24px;
+    color: #89b94b;
+  }
+  .card_header {
+    font-family: "Advent Pro UltraExpanded";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #13153a;
+  }
+  .card_body {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+  }
+  .category {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #89b94b;
+  }
+
+  .discover_our_blog {
+    height: 232px;
+    width: 100vw;
+  }
+  .resources {
+    top: 65px;
+  }
+  .container_discover_our {
+    width: 75vw;
+    top: 50px;
+    height: 160px;
+  }
+
+  .discovertext {
+    width: 250px;
+    height: auto;
+    font-family: "Advent Pro UltraExpanded";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #13153a;
+  }
+  .fuelingTheGrowth {
+    padding-top: 5px;
+    width: 280px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #666666;
+  }
+  .mobile_discover_our_blog_image {
+    position: absolute;
+    right: 0px;
+    height: inherit;
+    width: 87%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+}

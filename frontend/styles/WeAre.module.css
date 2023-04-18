@@ -5,11 +5,11 @@
 
 .we_are_ {
   position: relative;
-  width: 667.65px;
+  width: 500px;
   height: 162px;
   left: 0px;
   top: 0px;
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
@@ -76,7 +76,7 @@
   width: max-content;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
@@ -90,7 +90,7 @@
   left: 50%;
   width: max-content;
   transform: translateX(-50%);
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
@@ -182,7 +182,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 40px;
-  font-family: "Advent Pro";
+  font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -496,7 +496,7 @@
   }
   .we_are_ {
     height: 132px;
-    font-family: "Advent Pro";
+    font-family: "Advent Pro UltraExpanded";
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
