@@ -87,6 +87,12 @@
   position: absolute;
   bottom: 100px;
 }
+@media screen and (max-width: 1310px) {
+  .Linking {
+    width: 78vw;
+    font-weight: 600;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .Linking {
@@ -194,6 +200,8 @@
     height: 754px;
   }
 }
+
+
 @media screen and (max-width: 400px) {
   .home_container {
     height: 754px;

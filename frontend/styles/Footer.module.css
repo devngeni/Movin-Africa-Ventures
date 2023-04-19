@@ -108,7 +108,7 @@
   position: absolute;
   width: 68.61px;
   height: 68.61px;
-  left: 223.39px;
+  right: 0px;
   top: -4px;
   background: #929b70;
   border-radius: 50%;
@@ -353,5 +353,20 @@
   }
   .links_socials_container_grids a {
     font-size: 12px;
+  }
+  .subscribe_container {
+    width: 95vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .subscribe_container input {
+    width: 72%;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+  .openQuickLinks {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
