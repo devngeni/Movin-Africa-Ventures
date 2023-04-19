@@ -222,6 +222,9 @@
     width: 800px;
     bottom: -80px;
   }
+  .left_grid {
+    height: 380px;
+  }
 }
 
 /* ======reponsiveness======= */
@@ -540,9 +543,21 @@
     font-size: 50px;
   }
 }
+@media screen and (max-width: 413px) {
+  .we_are_ {
+    width: 70%;
+    left: 0;
+    transform: none;
+  }
+}
 @media screen and (max-width: 385px) {
   .left_grid {
     height: 280px;
+  }
+  .we_are_ {
+    width: 67%;
+    left: 0;
+    transform: none;
   }
 }
 @media screen and (max-width: 340px) {
@@ -566,5 +581,16 @@
   #moveLeft,
   #moveRight {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .left_grid {
+    height: 260px;
+  }
+  .we_are_ {
+    width: 100%;
+    left: 0;
+    transform: none;
   }
 }
