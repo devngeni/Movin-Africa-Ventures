@@ -29,6 +29,10 @@ export default function Navbar() {
     console.log(router.asPath);
   }, [router.asPath]);
 
+  function toggleDrawer() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div>
       <div className={nav}>
@@ -69,14 +73,12 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-      <div className={`${mobilenav} ${isOpen ? open : close}`}>
+      <div
+        className={`${mobilenav} ${isOpen ? open : close}`}
+        onClick={toggleDrawer}
+      >
         <div className={theMiniNav}>
-          <button
-            className={x_close}
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
+          <button className={x_close} onClick={toggleDrawer}>
             X
           </button>
           <Link href={"/#Home"}>
@@ -115,10 +117,21 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href={"/Portfolio"}>
-            <div>Portfolio</div>
+            <div
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Portfolio
+            </div>
           </Link>
           <Link href="/Resources">
-            <div className={activeNav === "Resources" ? styles.active : ""}>
+            <div
+              className={activeNav === "Resources" ? styles.active : ""}
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
               Resources
             </div>
           </Link>
