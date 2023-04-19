@@ -2,6 +2,7 @@ import { Footer, Navbar } from "@/components/Landing";
 import styles from "@/styles/Slug.module.css";
 import { useRouter } from "next/router";
 import TopNavImage from "../../public/blogAssets/TopNavImg.png";
+import TopNavImageM from "../../public/blogAssets/TopNavImgM.png";
 import BlogImage from "../../public/blogAssets/BlogImg.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,6 +18,7 @@ export default function Slug() {
   const {
     slup_page,
     topnarimg,
+    topnarimgMobile,
     BlogContent_container,
     content_container,
     titleContainer,
@@ -41,6 +43,9 @@ export default function Slug() {
       <Navbar />
       <div className={topnarimg}>
         <Image src={TopNavImage} alt="topNavimg" className={topnarimg} />
+      </div>
+      <div className={topnarimgMobile}>
+        <Image src={TopNavImageM} alt="topNavimg" className={topnarimgMobile} />
       </div>
       <div className={content_container}>
         <div className={BlogContent_container}>

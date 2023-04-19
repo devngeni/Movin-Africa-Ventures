@@ -301,8 +301,23 @@
     width: 380px;
   }
 }
+@media screen and (min-width: 414px) {
+  .topnarimgMobile {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 413px) {
+  .topnarimg {
+    display: none;
+  }
+  .topnarimgMobile {
+    position: relative;
+    left: 0;
+    height: 70px;
+    width: 100vw;
+    top: 0px;
+  }
   .Blogtitle {
     width: 70%;
 

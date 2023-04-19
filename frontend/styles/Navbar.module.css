@@ -210,7 +210,11 @@
   }
   .nav {
     height: 65px;
-    background: #ffffff;
+    background: transparent;
+    backdrop-filter: blur(5px);
+  }
+  .Menu_icon img {
+    right: 30px;
   }
 }
 
