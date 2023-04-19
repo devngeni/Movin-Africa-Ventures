@@ -5,6 +5,9 @@ import TopNavImage from "../../public/blogAssets/TopNavImg.png";
 import BlogImage from "../../public/blogAssets/BlogImg.png";
 import Image from "next/image";
 import Link from "next/link";
+import { RiWhatsappLine } from "@react-icons/all-files/ri/RiWhatsappLine";
+import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
+import { BsPlayFill } from "@react-icons/all-files/bs/BsPlayFill";
 
 export default function Slug() {
   const router = useRouter();
@@ -55,9 +58,9 @@ export default function Slug() {
             </div>
           </div>
           <div className={socials_share}>
-            <div className="">A</div>
-            <div className="">B</div>
-            <div className="">C</div>
+            <RiWhatsappLine style={{ cursor: "pointer" }} />
+            <AiOutlineTwitter style={{ cursor: "pointer" }} />
+            <BsPlayFill style={{ cursor: "pointer" }} />
           </div>
 
           <div className={Blog_Image}>

@@ -51,6 +51,7 @@
   position: absolute;
   top: 25px;
   right: 13.06%;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 988px) {

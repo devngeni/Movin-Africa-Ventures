@@ -203,7 +203,7 @@
   width: 740.38px;
   left: 50%;
   transform: translateX(-50%);
-  top: 120px;
+  top: 75px;
   text-align: left;
   font-family: "Gotham";
   font-style: normal;
@@ -212,6 +212,7 @@
   line-height: 28px;
   color: #666666;
   padding-bottom: 120px;
+  cursor: all-scroll;
 }
 
 .blogLine {
