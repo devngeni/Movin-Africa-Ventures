@@ -41,28 +41,7 @@ export default function Footer() {
   const toggleLinks = () => {
     setExpanded(!expanded);
   };
-  const [activeNav, setActiveNav] = useState("Home");
-  const handleHomeRoute = () => {
-    const section = document.getElementById("Home");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-    setActiveNav("Home");
-  };
-  const handleAboutUsRoute = () => {
-    const section = document.getElementById("AboutUs");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-    setActiveNav("AboutUs");
-  };
-  const handleInvestmentCriteriaRoute = () => {
-    const section = document.getElementById("InvestmentCriteria");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-    setActiveNav("InvestmentCriteria");
-  };
+  const [activeNav] = useState("Home");
 
   return (
     <div className={`${footer} ${expanded ? expand : collapse}`}>
@@ -89,8 +68,8 @@ export default function Footer() {
           >
             Investment Criteria
           </Link>
-          <Link href={"Portfolio"}>Portfolio</Link>
-          <Link href={"Resources"}>Resources</Link>
+          <Link href={"/Portfolio"}>Portfolio</Link>
+          <Link href={"/Resources"}>Resources</Link>
         </div>
         <div className={links_socials_container_grids}>
           <div className={Boldtext_footer}>Social Media</div>
