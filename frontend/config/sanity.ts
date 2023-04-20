@@ -1,11 +1,7 @@
-import { createClient, ClientConfig } from "@sanity/client";
-
-const clientConfig: ClientConfig = {
-  projectId: "yourProjectId",
-  dataset: "yourDataset",
-  useCdn: true, // or false if you want to use the live dataset
-};
-
-const sanityClient = createClient(clientConfig);
-
-export default sanityClient;
+import sanityClient from "@sanity/client";
+// require("dotenv").config()
+export const client = sanityClient({
+  projectId: "taki18de",
+  dataset: "production",
+  useCdn: true, // use the Content Delivery Network, for faster response times
+});
