@@ -75,7 +75,7 @@
   padding-bottom: 30px;
   padding-top: 20px;
   height: auto;
-  min-height: 900px !important;
+  min-height: 600px !important;
   max-height: 1200px !important;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -440,6 +440,8 @@
     display: none;
   }
   .blogs_container {
+    height: 600px;
+    padding-bottom: 110px;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     overflow: -moz-scrollbars-none; /* Firefox */

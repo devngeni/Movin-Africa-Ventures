@@ -3,18 +3,23 @@ import styles from "@/styles/Slug.module.css";
 import { useRouter } from "next/router";
 import TopNavImage from "../../public/blogAssets/TopNavImg.png";
 import TopNavImageM from "../../public/blogAssets/TopNavImgM.png";
-import BlogImage from "../../public/blogAssets/BlogImg.png";
 import Image from "next/image";
 import Link from "next/link";
 import { RiWhatsappLine } from "@react-icons/all-files/ri/RiWhatsappLine";
 import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 import { BsPlayFill } from "@react-icons/all-files/bs/BsPlayFill";
+import { PostData } from "@/config/types";
+import { useEffect, useState } from "react";
+import { client } from "@/config/sanity";
+import BlockContent from "@sanity/block-content-to-react";
+import Loader from "@/Loader/Loader";
+import { getReadingTime } from "@/utils/TimeRead";
+import { getDateFormat } from "@/utils/DateFormat";
+import { REACT_APP_dataset, REACT_APP_projectId } from "@/env";
+import { shareToMedia } from "@/utils/ShareToMedia";
+import { speak } from "@/utils/TextToSpeech";
 
 export default function Slug() {
-  const router = useRouter();
-  const { slug } = router.query;
-  console.log(router);
-
   const {
     slup_page,
     topnarimg,
@@ -36,7 +41,52 @@ export default function Slug() {
     relatedArticles_header,
     categoryRelatedArticles,
     RelatedArticletitle,
+    block_content,
   } = styles;
+
+  const router = useRouter();
+  const { slug } = router.query;
+  const [postData, setPostData] = useState<PostData | null>(null);
+
+  useEffect(() => {
+    const fetchPost = async () => {
+      const [post, relatedArticlesData] = await Promise.all([
+        client.fetch(
+          `*[_type == "post" && slug.current == $slug][0]{
+            _id,
+            title,
+            body,
+            slug,
+            "author": author->{name, "avatar": avatar.asset->url},
+            "categories": categories[]->title,
+            "mainImage": mainImage.asset->url,
+            publishedAt
+          }`,
+          { slug }
+        ),
+        client.fetch(
+          `*[_type == "post" && slug.current != $slug][0...2]{
+            _id,
+            title,
+            "categories": categories[]->title,
+            "mainImage": mainImage.asset->url,
+            slug
+          }`,
+          { slug }
+        ),
+      ]);
+      setPostData({ ...post, relatedArticlesData });
+      console.log({ ...post, relatedArticlesData });
+    };
+
+    if (slug) {
+      fetchPost();
+    }
+  }, [slug]);
+
+  if (!postData) {
+    return <Loader />;
+  }
 
   return (
     <div className={slup_page}>
@@ -48,103 +98,101 @@ export default function Slug() {
         <Image src={TopNavImageM} alt="topNavimg" className={topnarimgMobile} />
       </div>
       <div className={content_container}>
-        <div className={BlogContent_container}>
-          <div className={titleContainer}>
-            <div className={category_time}>
-              <div>Technoloy</div>
-              <div className={dateDot}>.</div>
-              <div>15 Min Read</div>
+        {postData.slug ? (
+          <div className={BlogContent_container}>
+            <div className={titleContainer}>
+              <div className={category_time}>
+                <div>{postData.categories}</div>
+                <div className={dateDot}>.</div>
+                <div>{getReadingTime(postData.body)} Min Read</div>
+              </div>
+              <div className={Blogtitle}>{postData.title}</div>
+              <div className={ByMoving_date}>
+                <div>
+                  {postData.author
+                    ? "By " + postData.author.name
+                    : "By Movin Africa"}
+                </div>
+                <div className={dateDot}>.</div>
+                <div>{getDateFormat(postData.publishedAt)}</div>
+              </div>
             </div>
-            <div className={Blogtitle}>The Role of Technology in Our Lives</div>
-            <div className={ByMoving_date}>
-              <div>By Movin.Africa</div>
-              <div className={dateDot}>.</div>
-              <div>4th April 2023</div>
+            <div className={socials_share}>
+              <RiWhatsappLine
+                style={{ cursor: "pointer", fontSize: "20px" }}
+                onClick={() => {
+                  window.open(
+                    `https://api.whatsapp.com/send/?&text=${shareToMedia(
+                      postData.body
+                    )}`,
+                    "_blank"
+                  );
+                }}
+              />
+              <AiOutlineTwitter
+                style={{ cursor: "pointer", fontSize: "20px" }}
+                onClick={() => {
+                  window.open(
+                    `https://twitter.com/intent/tweet?text=${shareToMedia(
+                      postData.body
+                    )}`,
+                    "_blank"
+                  );
+                }}
+              />
+              <BsPlayFill
+                style={{ cursor: "pointer", fontSize: "20px" }}
+                onClick={() => speak("heyyyy")}
+              />
             </div>
-          </div>
-          <div className={socials_share}>
-            <RiWhatsappLine style={{ cursor: "pointer" }} />
-            <AiOutlineTwitter style={{ cursor: "pointer" }} />
-            <BsPlayFill style={{ cursor: "pointer" }} />
-          </div>
 
-          <div className={Blog_Image}>
-            <Image src={BlogImage} alt="" className={Blog_Image} />
+            <div className={Blog_Image}>
+              <Image
+                src={postData.mainImage}
+                alt=""
+                className={Blog_Image}
+                width={1000}
+                height={540}
+              />
+            </div>
+            <div className={Body}>
+              <BlockContent
+                blocks={postData.body}
+                projectId={`${REACT_APP_projectId}`}
+                dataset={`${REACT_APP_dataset}`}
+                className={block_content}
+              />
+            </div>
           </div>
-          <div className={Body}>
-            Technology has become an integral part of our lives, from the way we
-            work to the way we communicate and entertain ourselves. It has
-            revolutionized every aspect of society, from business and education
-            to healthcare and entertainment. As we continue to advance
-            technologically, it is important to reflect on the role that
-            technology plays in our lives and the impact it has on our society
-            as a whole. One of the most significant ways that technology has
-            impacted our lives is through communication. With the advent of the
-            internet and social media, we are now able to connect with people
-            from all over the world at any time of day. This has revolutionized
-            the way we communicate, making it easier than ever to stay in touch
-            with friends and family, collaborate with colleagues, and build
-            online communities. Technology has also transformed the way we work.
-            Remote work has become increasingly popular, with more and more
-            companies adopting flexible work policies and utilizing digital
-            tools to communicate and collaborate. This has given workers more
-            autonomy and flexibility in their work schedules, while also
-            allowing companies to access a wider pool of talent and reduce
-            overhead costs. In the realm of healthcare, technology has brought
-            about significant advancements in medical treatments and research.
-            From telemedicine to artificial intelligence, technology is being
-            used to improve patient outcomes and enhance the accuracy of medical
-            diagnoses. Wearable devices, such as fitness trackers and
-            smartwatches, have also become increasingly popular, allowing
-            individuals to monitor their health and track their fitness goals.
-            blue used to improve patient outcomes and enhance the accuracy of
-            medical diagnoses. Wearable devices, such as fitness trackers and
-            smartwatches, have also become increasingly popular, allowing
-            individuals to monitor their health and track their fitness goals.
+        ) : (
+          ""
+        )}
+        {postData?.relatedArticlesData && (
+          <div className={relatedArticle_container}>
+            <div className={blogLine}></div>
+            <div className={relatedArticles_header}>Related </div>
+            <div className={relatedArticles}>
+              {postData?.relatedArticlesData.map((article: any, index: any) => (
+                <div key={index}>
+                  <Link href={`/Resources/${article.slug.current}`}>
+                    <div className={relatedArticles_Card}>
+                      <Image
+                        src={article.mainImage}
+                        alt={article.slug.current}
+                        width={1000}
+                        height={540}
+                      />
+                      <div className={categoryRelatedArticles}>
+                        {article.categories}
+                      </div>
+                      <div className={RelatedArticletitle}>{article.title}</div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className={relatedArticle_container}>
-          <div className={blogLine}></div>
-          <div className={relatedArticles_header}>Related </div>
-          <div className={relatedArticles}>
-            <Link href={`/Resources/${"promodo"}`}>
-              <div className={relatedArticles_Card}>
-                <Image src={BlogImage} alt="" />
-                <div className={categoryRelatedArticles}>category</div>
-                <div className={RelatedArticletitle}>
-                  The promodo Time pps in 2023 time apps
-                </div>
-              </div>
-            </Link>
-            <Link href={`/Resources/${"promodo"}`}>
-              <div className={relatedArticles_Card}>
-                <Image src={BlogImage} alt="" />
-                <div className={categoryRelatedArticles}>category</div>
-                <div className={RelatedArticletitle}>
-                  The promodo Time pps in 2023 time apps
-                </div>
-              </div>
-            </Link>
-            <Link href={`/Resources/${"promodo"}`}>
-              <div className={relatedArticles_Card}>
-                <Image src={BlogImage} alt="" />
-                <div className={categoryRelatedArticles}>category</div>
-                <div className={RelatedArticletitle}>
-                  The promodo Time pps in 2023 time apps
-                </div>
-              </div>
-            </Link>
-            <Link href={`/Resources/${"promodo"}`}>
-              <div className={relatedArticles_Card}>
-                <Image src={BlogImage} alt="" />
-                <div className={categoryRelatedArticles}>category</div>
-                <div className={RelatedArticletitle}>
-                  The promodo Time pps in 2023 time apps
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
+        )}
       </div>
       <Footer />
     </div>

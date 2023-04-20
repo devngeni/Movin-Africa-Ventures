@@ -87,7 +87,7 @@
 .titleContainer {
   position: relative;
   width: 644.34px;
-  height: 194px;
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
   padding-top: 30px;
@@ -120,7 +120,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 500px;
-  height: 108px;
+  height: auto;
   font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 600;
@@ -136,7 +136,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
-  width: 257px;
+  width: max-content;
   height: 24px;
   flex: none;
   order: 2;
@@ -149,6 +149,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #666666;
+  padding-bottom: 10px;
 }
 
 .dateDot {
@@ -196,6 +197,7 @@
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
+  object-fit: cover;
 }
 
 .Body {
@@ -205,16 +207,27 @@
   transform: translateX(-50%);
   top: 75px;
   text-align: left;
+  /* font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #d11515; */
+  padding-bottom: 120px;
+  cursor: all-scroll;
+}
+.block_content {
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   color: #666666;
-  padding-bottom: 120px;
-  cursor: all-scroll;
 }
-
+.block_content img {
+  max-width: 100%;
+  height: auto;
+}
 .blogLine {
   position: relative;
   width: 740.38px;

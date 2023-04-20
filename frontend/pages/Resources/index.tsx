@@ -2,10 +2,14 @@ import { Footer, Navbar } from "@/components/Landing";
 import styles from "@/styles/Resources.module.css";
 import Image from "next/image";
 import EllipseR from "../../public/ResourcesR.png";
-import BlogImg from "../../public/blogAssets/BlogImg.png";
 import MobileBlogImg from "../../public/blogAssets/MobileElllipse.png";
-import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { client } from "@/config/sanity";
+import { PostData } from "@/config/types";
+import BlockContent from "@sanity/block-content-to-react";
+import { useRouter } from "next/router";
+import { getReadingTime } from "@/utils/TimeRead";
+import { REACT_APP_dataset, REACT_APP_projectId } from "@/env";
 
 export default function Resources() {
   const {
@@ -31,7 +35,32 @@ export default function Resources() {
     card_content,
     theBigBlogContainer,
     mobile_discover_our_blog_image,
+    block_content,
   } = styles;
+
+  const [blogPosts, setBlogPosts] = useState<PostData[]>([]);
+  const router = useRouter();
+
+  useEffect(() => {
+    async function fetchPosts() {
+      const response = await client.fetch(`
+      *[_type == "post"]{
+        _id,
+        title,
+        body,
+        "slug": slug.current,
+        "author": author->{name, "avatar": avatar.asset->url},
+        "categories": categories[]->title,
+        "mainImage": mainImage.asset->url,
+        publishedAt
+      }
+      `);
+      setBlogPosts(response);
+      console.log(response[0]);
+    }
+
+    fetchPosts();
+  }, []);
 
   return (
     <div className={resources}>
@@ -58,32 +87,48 @@ export default function Resources() {
       </div>
       <div className={theBigBlogContainer}>
         <div className={blogs_container}>
-          <Link href={`/Resources/${"tecnology"}`}>
-            <div className={blog_card}>
-              <div className={blog_card_img}>
-                <Image src={BlogImg} alt="BlogImg" className={blog_card_img} />
-              </div>
-              <div className={card_content}>
-                <div className={category}>Business</div>
-                <div className={card_header}>
-                  The role of technology in our lives
+          {blogPosts.map((post, index: any) => (
+            <div
+              key={index}
+              onClick={() => router.push(`/Resources/${post.slug}`)}
+            >
+              <div className={blog_card}>
+                <div className={blog_card_img}>
+                  <Image
+                    src={post.mainImage}
+                    alt={post.mainImage}
+                    className={blog_card_img}
+                    width={1000}
+                    height={540}
+                  />
                 </div>
-                <div className={card_body}>
-                  Technology has become an integral part of our lives, from the
-                  way we work to the way we communicate and entertain ourselves.
-                  It has revolutionized every aspect of society, from business
-                  and education to healthcare and entertainment. As we continue
-                  to advance technologically, it is important to reflect on.
-                </div>
-                <div className={card_line}></div>
-                <div className={card_footer}>
-                  <div className={ByMovinAfrica}>By Movin Africa</div>
-                  <div className={dot}>.</div>
-                  <div className={timeRead}>15 Min Read</div>
+                <div className={card_content}>
+                  <div className={category}>{post.categories}</div>
+                  <div className={card_header}>{post.title}</div>
+                  <div className={card_body}>
+                    <BlockContent
+                      blocks={post.body}
+                      projectId={`${REACT_APP_projectId}`}
+                      dataset={`${REACT_APP_dataset}`}
+                      className={block_content}
+                    />
+                  </div>
+                  <div className={card_line}></div>
+                  <div className={card_footer}>
+                    <div className={ByMovinAfrica}>
+                      {post.author
+                        ? "By " + post.author.name
+                        : "By Movin Africa"}
+                    </div>
+                    <div className={dot}>.</div>
+                    <div className={timeRead}>
+                      {getReadingTime(post.body)} min Read
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </Link>
+          ))}
         </div>
         <div className={readAllArticles}>
           <button className={ReadAll_btn}>Show More</button>
