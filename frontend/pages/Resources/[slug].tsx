@@ -15,10 +15,8 @@ import BlockContent from "@sanity/block-content-to-react";
 import Loader from "@/Loader/Loader";
 import { getReadingTime } from "@/utils/TimeRead";
 import { getDateFormat } from "@/utils/DateFormat";
-import { REACT_APP_dataset, REACT_APP_projectId } from "@/env";
 import { shareToMedia } from "@/utils/ShareToMedia";
 import { speak } from "@/utils/TextToSpeech";
-
 export default function Slug() {
   const {
     slup_page,
@@ -47,7 +45,8 @@ export default function Slug() {
   const router = useRouter();
   const { slug } = router.query;
   const [postData, setPostData] = useState<PostData | null>(null);
-
+  const REACT_APP_dataset = process.env.NEXT_PUBLIC_DATASET;
+  const REACT_APP_projectId = process.env.NEXT_PUBLIC_PROJECTID;
   useEffect(() => {
     const fetchPost = async () => {
       const [post, relatedArticlesData] = await Promise.all([

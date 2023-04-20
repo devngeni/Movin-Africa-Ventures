@@ -9,9 +9,10 @@ import { PostData } from "@/config/types";
 import BlockContent from "@sanity/block-content-to-react";
 import { useRouter } from "next/router";
 import { getReadingTime } from "@/utils/TimeRead";
-import { REACT_APP_dataset, REACT_APP_projectId } from "@/env";
 
 export default function Resources() {
+  const REACT_APP_dataset = process.env.NEXT_PUBLIC_DATASET;
+  const REACT_APP_projectId = process.env.NEXT_PUBLIC_PROJECTID;
   const {
     resources,
     discover_our_blog,
@@ -56,7 +57,6 @@ export default function Resources() {
       }
       `);
       setBlogPosts(response);
-      console.log(response[0]);
     }
 
     fetchPosts();
