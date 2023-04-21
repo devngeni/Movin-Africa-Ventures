@@ -100,7 +100,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
-  width: 202px;
+  width: max-content;
   height: 24px;
   flex: none;
   order: 0;
