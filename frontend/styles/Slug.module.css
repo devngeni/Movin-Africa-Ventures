@@ -28,12 +28,11 @@
 .relatedArticles {
   position: relative;
   width: 745px;
-  height: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   left: 50%;
   transform: translateX(-50%);
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   top: 18px;
 }
@@ -41,7 +40,7 @@
 .relatedArticles_Card {
   position: relative;
   width: 225px;
-  height: 196px;
+  height: 200px;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -240,9 +239,10 @@
   top: 35px;
   position: relative;
   width: 742.69px;
-  height: 259px;
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
+  padding-bottom: 20px;
 }
 
 .relatedArticles_header {

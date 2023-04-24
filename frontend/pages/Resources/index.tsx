@@ -3,7 +3,7 @@ import styles from "@/styles/Resources.module.css";
 import Image from "next/image";
 import EllipseR from "../../public/ResourcesR.png";
 import MobileBlogImg from "../../public/blogAssets/MobileElllipse.png";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { client } from "@/config/sanity";
 import { PostData } from "@/config/types";
 import BlockContent from "@sanity/block-content-to-react";
@@ -87,48 +87,56 @@ export default function Resources() {
       </div>
       <div className={theBigBlogContainer}>
         <div className={blogs_container}>
-          {blogPosts.map((post, index: any) => (
-            <div
-              key={index}
-              onClick={() => router.push(`/Resources/${post.slug}`)}
-            >
-              <div className={blog_card}>
-                <div className={blog_card_img}>
-                  <Image
-                    src={post.mainImage}
-                    alt={post.mainImage}
-                    className={blog_card_img}
-                    width={1000}
-                    height={540}
-                  />
-                </div>
-                <div className={card_content}>
-                  <div className={category}>{post.categories}</div>
-                  <div className={card_header}>{post.title}</div>
-                  <div className={card_body}>
-                    <BlockContent
-                      blocks={post.body}
-                      projectId={`${REACT_APP_projectId}`}
-                      dataset={`${REACT_APP_dataset}`}
-                      className={block_content}
+          {blogPosts.map((post, index: any) =>
+            post.slug ? (
+              <div
+                key={index}
+                onClick={() => {
+                  if (post.slug) {
+                    router.push(`/Resources/${post.slug}`);
+                  } else {
+                    alert("Sorry, this post is unavailable.");
+                  }
+                }}
+              >
+                <div className={blog_card}>
+                  <div className={blog_card_img}>
+                    <Image
+                      src={post.mainImage}
+                      alt={post.mainImage}
+                      className={blog_card_img}
+                      width={1000}
+                      height={540}
                     />
                   </div>
-                  <div className={card_line}></div>
-                  <div className={card_footer}>
-                    <div className={ByMovinAfrica}>
-                      {post.author
-                        ? "By " + post.author.name
-                        : "By Movin Africa"}
+                  <div className={card_content}>
+                    <div className={category}>{post.categories}</div>
+                    <div className={card_header}>{post.title}</div>
+                    <div className={card_body}>
+                      <BlockContent
+                        blocks={post.body}
+                        projectId={`${REACT_APP_projectId}`}
+                        dataset={`${REACT_APP_dataset}`}
+                        className={block_content}
+                      />
                     </div>
-                    <div className={dot}>.</div>
-                    <div className={timeRead}>
-                      {getReadingTime(post.body)} min Read
+                    <div className={card_line}></div>
+                    <div className={card_footer}>
+                      <div className={ByMovinAfrica}>
+                        {post.author
+                          ? "By " + post.author.name
+                          : "By Movin Africa"}
+                      </div>
+                      <div className={dot}>.</div>
+                      <div className={timeRead}>
+                        {getReadingTime(post.body)} min Read
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ) : null
+          )}
         </div>
         <div className={readAllArticles}>
           <button className={ReadAll_btn}>Show More</button>

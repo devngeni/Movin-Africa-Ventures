@@ -9,7 +9,6 @@ import JoelJohnson from "../../public/MemberImages/JoelJohnson.jpeg";
 import TeamLines from "../../public/TeamLines.svg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import NoSSR from "react-no-ssr";
 import { useEffect, useState } from "react";
 
 interface Member {
@@ -352,61 +351,60 @@ export default function Team() {
       </div>
 
       {/* corousel for member card at mobile screens */}
-      <NoSSR>
-        <div className={mobile_member_grid_container}>
-          <AliceCarousel
-            items={members.map((card: any, index: number) => (
-              <div key={index}>
-                <div className={member_card_mobile} onClick={toggleLinks}>
-                  <div className={onhover_membercard}>
-                    <div
-                      className={member_name}
-                      style={{ position: "absolute", bottom: "-25px" }}
-                    >
-                      {card.name}
-                    </div>
-                    <div className={onhover_membercard_descrip}>
-                      {card.description}
-                    </div>
-                  </div>
-                  <div className={member_card_container}>
-                    <div className={big_image_container}>
-                      <div className={big_image_}>
-                        <Image src={card.image} alt={card.name} />
-                      </div>
-                    </div>
-                    <div className={small_image_container}>
-                      <div className={small_image}>
-                        <Image src={card.image} alt={card.name} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className={member_name_descrip}>
-                    <div className={member_name}>{card.name}</div>
-                    <div className={member_descrip}>{card.bio}</div>
-                    <button className={ReadBio_btn}>Read Bio</button>
-                  </div>
-                </div>
-              </div>
-            ))}
-            responsive={{
-              0: { items: 1 },
-              500: { items: 2 },
-              700: { items: 2 },
-            }}
-            disableDotsControls={true}
-            infinite={true}
-            autoPlay={true}
-            autoPlayInterval={3000}
-            disableButtonsControls={true}
-            autoPlayControls={false}
-            swipeDelta={50}
-            touchTracking={true}
-            mouseTracking={true}
-            autoPlayStrategy={"default"}
-          />
-        </div>
-      </NoSSR>
+
+      <div className={mobile_member_grid_container}>
+        <AliceCarousel
+          items={members.map((card: any, index: number) => (
+            <ul key={index}>
+              <ul className={member_card_mobile} onClick={toggleLinks}>
+                <ul className={onhover_membercard}>
+                  <ul
+                    className={member_name}
+                    style={{ position: "absolute", bottom: "-25px" }}
+                  >
+                    {card.name}
+                  </ul>
+                  <ul className={onhover_membercard_descrip}>
+                    {card.description}
+                  </ul>
+                </ul>
+                <ul className={member_card_container}>
+                  <ul className={big_image_container}>
+                    <ul className={big_image_}>
+                      <Image src={card.image} alt={card.name} />
+                    </ul>
+                  </ul>
+                  <ul className={small_image_container}>
+                    <ul className={small_image}>
+                      <Image src={card.image} alt={card.name} />
+                    </ul>
+                  </ul>
+                </ul>
+                <ul className={member_name_descrip}>
+                  <ul className={member_name}>{card.name}</ul>
+                  <ul className={member_descrip}>{card.bio}</ul>
+                  <button className={ReadBio_btn}>Read Bio</button>
+                </ul>
+              </ul>
+            </ul>
+          ))}
+          responsive={{
+            0: { items: 1 },
+            500: { items: 2 },
+            700: { items: 2 },
+          }}
+          disableDotsControls={true}
+          infinite={true}
+          autoPlay={true}
+          autoPlayInterval={3000}
+          disableButtonsControls={true}
+          autoPlayControls={false}
+          swipeDelta={50}
+          touchTracking={true}
+          mouseTracking={true}
+          autoPlayStrategy={"default"}
+        />
+      </div>
     </div>
   );
 }

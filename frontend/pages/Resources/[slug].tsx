@@ -63,7 +63,7 @@ export default function Slug() {
           { slug }
         ),
         client.fetch(
-          `*[_type == "post" && slug.current != $slug][0...2]{
+          `*[_type == "post" && slug.current != $slug][0...3]{
             _id,
             title,
             "categories": categories[]->title,
@@ -120,7 +120,7 @@ export default function Slug() {
                 onClick={() => {
                   window.open(
                     `https://api.whatsapp.com/send/?&text=${shareToMedia(
-                      postData.body
+                      postData
                     )}`,
                     "_blank"
                   );
@@ -131,7 +131,7 @@ export default function Slug() {
                 onClick={() => {
                   window.open(
                     `https://twitter.com/intent/tweet?text=${shareToMedia(
-                      postData.body
+                      postData
                     )}`,
                     "_blank"
                   );
@@ -166,13 +166,18 @@ export default function Slug() {
             <div className={blogLine}></div>
             <div className={relatedArticles_header}>Related </div>
             <div className={relatedArticles}>
-              {postData?.relatedArticlesData.map((article: any, index: any) => (
-                <div key={index}>
-                  <Link href={`/Resources/${article.slug.current}`}>
+              {postData?.relatedArticlesData.map((article: any, index: any) =>
+                article.slug ? (
+                  <div
+                    key={index}
+                    onClick={() => {
+                      router.push(`/Resources/${article.slug.current}`);
+                    }}
+                  >
                     <div className={relatedArticles_Card}>
                       <Image
                         src={article.mainImage}
-                        alt={article.slug.current}
+                        alt={""}
                         width={1000}
                         height={540}
                       />
@@ -181,9 +186,9 @@ export default function Slug() {
                       </div>
                       <div className={RelatedArticletitle}>{article.title}</div>
                     </div>
-                  </Link>
-                </div>
-              ))}
+                  </div>
+                ) : null
+              )}
             </div>
           </div>
         )}

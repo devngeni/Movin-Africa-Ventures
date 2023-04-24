@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import Moving from "../../public/Moving.png";
 import NavLogo from "../../public/FooterLogo.svg";
 import Image from "next/image";
@@ -28,7 +28,7 @@ export default function Navbar() {
     navline,
   } = styles;
 
-  React.useEffect(() => {
+  useEffect(() => {
     setActiveNav(router.asPath);
   }, [router.asPath]);
 
@@ -57,7 +57,7 @@ export default function Navbar() {
             href={"/#AboutUs"}
             className={activeNav === "/#AboutUs" ? styles.active : ""}
           >
-            AboutUs
+            About Us
           </Link>
           <Link
             href={"/#InvestmentCriteria"}
@@ -65,12 +65,14 @@ export default function Navbar() {
               activeNav === "/#InvestmentCriteria" ? styles.active : ""
             }
           >
-            InvestmentCriteria
+            Investment Criteria
           </Link>
           <Link href="/Portfolio">Portfolio</Link>
           <Link
             href="/Resources"
-            className={activeNav === "/Resources" ? styles.active : ""}
+            className={
+              router.asPath.startsWith("/Resources") ? styles.active : ""
+            }
           >
             Resources
           </Link>
