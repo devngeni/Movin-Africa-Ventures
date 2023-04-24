@@ -120,7 +120,7 @@ export default function Slug() {
                 onClick={() => {
                   window.open(
                     `https://api.whatsapp.com/send/?&text=${shareToMedia(
-                      postData.body
+                      postData
                     )}`,
                     "_blank"
                   );
@@ -131,7 +131,7 @@ export default function Slug() {
                 onClick={() => {
                   window.open(
                     `https://twitter.com/intent/tweet?text=${shareToMedia(
-                      postData.body
+                      postData
                     )}`,
                     "_blank"
                   );

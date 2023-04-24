@@ -1,10 +1,7 @@
-import { getReadingTime } from "./TimeRead";
-
-export function shareToMedia(post: any) {
+export function shareToMedia(post: any, timeRead: any) {
   const { title, categories, body } = post;
-  const timeRead = getReadingTime(body);
   const currentUrl = window.location.href; // Get the current URL
-  let textContent = `Title: ${title} \nCategory: ${categories},  ${timeRead} min read\n\n`;
+  let textContent = `Title: ${title} \nCategory: ${categories}  ${timeRead}\n\n`;
 
   // loop through each block of postData.body and extract text content
   let sentencesCount = 0;

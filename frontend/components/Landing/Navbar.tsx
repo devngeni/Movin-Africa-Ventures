@@ -57,7 +57,7 @@ export default function Navbar() {
             href={"/#AboutUs"}
             className={activeNav === "/#AboutUs" ? styles.active : ""}
           >
-            AboutUs
+            About Us
           </Link>
           <Link
             href={"/#InvestmentCriteria"}
@@ -65,12 +65,14 @@ export default function Navbar() {
               activeNav === "/#InvestmentCriteria" ? styles.active : ""
             }
           >
-            InvestmentCriteria
+            Investment Criteria
           </Link>
           <Link href="/Portfolio">Portfolio</Link>
           <Link
             href="/Resources"
-            className={activeNav === "/Resources" ? styles.active : ""}
+            className={
+              router.asPath.startsWith("/Resources") ? styles.active : ""
+            }
           >
             Resources
           </Link>
