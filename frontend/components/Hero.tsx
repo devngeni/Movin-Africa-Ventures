@@ -26,11 +26,9 @@ export default function Hero() {
           alt="ecllipse-img"
           className={mobile_home_img}
         />
-       <div>
+        <div>
           <Fade direction="up">
-            <div>
-              <Image className={phoneImg} src={PhoneImg} alt="phone-icon" />
-            </div>
+            <Image className={phoneImg} src={PhoneImg} alt="phone-icon" />
           </Fade>
         </div>
         <div className={Linking}>Linking Technology with Capital</div>
