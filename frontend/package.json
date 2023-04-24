@@ -47,7 +47,8 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.9",
     "text-to-speech-js": "^1.1.10",
-    "typescript": "5.0.3"
+    "typescript": "5.0.3",
+    "yarn": "^1.22.19"
   },
   "peerDependencies": {},
   "browser": {
