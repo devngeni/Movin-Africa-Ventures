@@ -6,6 +6,7 @@ import grid3Img from "../public/Grid3Img.png";
 import grid4Img from "../public/Grid4Img.png";
 import Star from "../public/Star.svg";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 export default function ValueAdd() {
   const {
     valuePage,
@@ -25,7 +26,9 @@ export default function ValueAdd() {
   return (
     <div className={valuePage}>
       <div className={valueAdd_container}>
-        <div className={valueAddheader}>Value Add</div>
+        <div className={valueAddheader}>
+          <Fade direction="up">Value Add</Fade>
+        </div>
         <div className={grid1}>
           <Image src={grid1img} alt="" />
           <div className={headers}>Financial Support</div>

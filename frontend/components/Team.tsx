@@ -13,7 +13,7 @@ import Slider from "react-slick";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { useEffect, useState } from "react";
 import MemberCard from "./Member";
-
+import { Fade } from "react-awesome-reveal";
 interface Member {
   name: string;
   description: string;
@@ -108,7 +108,9 @@ export default function Team() {
   return (
     <div className={team_page}>
       <div className={the_team}>
-        <div className={meet_the_team}>Meet The Team</div>
+        <div className={meet_the_team}>
+          <Fade direction="up">Meet The Team</Fade>
+        </div>
       </div>
       <div className={the_team_lines}>
         <Image src={TeamLines} alt="vector-icon" />
@@ -155,7 +157,7 @@ export default function Team() {
                   {card.name}
                 </div>
                 <div className={onhover_membercard_descrip}>
-                  {card.description}
+                  <Fade direction="up">{card.description}</Fade>
                 </div>
               </div>
               <div className={member_card_container}>

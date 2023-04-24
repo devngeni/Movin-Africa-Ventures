@@ -6,7 +6,7 @@ import MarketSize from "../public/MarketSize.png";
 import investmentsDots from "../public/investmentDots.svg";
 import investments_lines_svg from "../public/InvestmentLines.svg";
 import MobileInvestmentLines from "../public/mobileImages/MobileInvestmentLines.svg";
-
+import { Fade } from "react-awesome-reveal";
 export default function Investments() {
   const {
     investments_page,
@@ -39,11 +39,13 @@ export default function Investments() {
           </div>
           <div className={mcb_headers}>The Competition</div>
           <p className={mcb_p} style={{ color: "#5e5e5e" }}>
-            Movin Africa is a pioneering tech-focused venture collective,
-            carving a unique market niche with no direct competitors. With a
-            distinct value proposition, it capitalizes on emerging opportunities
-            to drive the growth of tech startups, setting itself apart as a
-            trailblazer.
+            <Fade direction="up">
+              Movin Africa is a pioneering tech-focused venture collective,
+              carving a unique market niche with no direct competitors. With a
+              distinct value proposition, it capitalizes on emerging
+              opportunities to drive the growth of tech startups, setting itself
+              apart as a trailblazer.
+            </Fade>
           </p>
         </div>
         <div className={BusinessModel} id="InvestmentCriteria">
@@ -56,12 +58,14 @@ export default function Investments() {
           </div>
           <div className={mcb_headers}>Business Model</div>
           <p className={mcb_p} style={{ color: "#000000" }}>
-            Movin Africa operates an open fund model. We guarantee equitable
-            access to capital for all entrepreneurs, establishing a level
-            playing field for tomorrow&#39;s tech titans. Our innovative
-            investment strategy harnesses emerging technologies and financial
-            instruments, enabling us to fuel the growth of pioneering ventures
-            and shape the future of the tech industry.
+            <Fade direction="up">
+              Movin Africa operates an open fund model. We guarantee equitable
+              access to capital for all entrepreneurs, establishing a level
+              playing field for tomorrow&#39;s tech titans. Our innovative
+              investment strategy harnesses emerging technologies and financial
+              instruments, enabling us to fuel the growth of pioneering ventures
+              and shape the future of the tech industry.
+            </Fade>
           </p>
         </div>
         <div className={marketSize}>
@@ -76,11 +80,13 @@ export default function Investments() {
             Market Size
           </div>
           <p className={mcb_p}>
-            Africa&#39;s tech industry is booming, with a $345 billion market
-            size projected by 2025. Movin Africa is poised to capitalize on this
-            growth by investing in and supporting innovative tech-driven
-            businesses, leveraging the rising population, mobile phone adoption,
-            and expanding internet connectivity in the region.
+            <Fade direction="up">
+              Africa&#39;s tech industry is booming, with a $345 billion market
+              size projected by 2025. Movin Africa is poised to capitalize on
+              this growth by investing in and supporting innovative tech-driven
+              businesses, leveraging the rising population, mobile phone
+              adoption, and expanding internet connectivity in the region.
+            </Fade>
           </p>
         </div>
       </div>

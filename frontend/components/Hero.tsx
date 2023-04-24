@@ -27,10 +27,14 @@ export default function Hero() {
           className={mobile_home_img}
         />
         <Image className={phoneImg} src={PhoneImg} alt="phone-icon" />
-        <div className={Linking}>Linking Technology with Capital</div>
+        <div className={Linking}>
+          <Fade direction="up">Linking Technology with Capital</Fade>
+        </div>
         <div className={fueling_}>
-          Fueling the Growth of Africa&#39;s Tech Ecosystem While Creating
-          Opportunities For Young, Vibrant Minds.
+          <Fade direction="up">
+            Fueling the Growth of Africa&#39;s Tech Ecosystem While Creating
+            Opportunities For Young, Vibrant Minds.
+          </Fade>
         </div>
         <button className={home_button}>Button</button>
         <div className={aboutLink} id="AboutUs"></div>

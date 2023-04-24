@@ -11,7 +11,7 @@ export default function HomeLayout({ children }: Homeinterface) {
     <>
       <Head>
         <title>Moving Africa</title>
-        <meta name="description" content="moving ventures africa" />
+        <meta name="description" content="Linking Technology with Capital" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

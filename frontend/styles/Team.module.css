@@ -184,32 +184,24 @@
   text-align: center;
   color: #666666;
   transition: all 0.5 ease-in-out;
-}
-
-/* Initially hide the onhover_membercard & small_image */
+}/* Initially hide the onhover_membercard & small_image */
 .onhover_membercard,
 .small_image {
   display: none;
 }
 
-/* onhover Show the onhover_membercard */
-.member_card:hover .onhover_membercard {
-  display: block;
-}
-/* onhover Show the small_image */
-.member_card:hover .small_image {
-  display: block;
-}
-
 /* onhover hide the big_image_container */
-.member_card:hover .big_image_container {
-  display: none;
-  transform: 0.3s ease-in-out;
+.big_image_container {
+  transition: 0.3s ease-in-out;
 }
 
 /* onhover hide the member_name_descrip */
-.member_card:hover .member_name_descrip {
-  display: none;
+.member_name_descrip {
+  transition: 0.3s ease-in-out;
+}
+
+.big_image_ img {
+  transition: 1s all ease;
 }
 
 @keyframes moveLeftRight {
@@ -222,13 +214,6 @@
   100% {
     transform: translateX(-50%); /* Adjust the value as needed */
   }
-}
-.member_card:hover .member_name {
-  animation-name: moveLeftRight;
-  animation-duration: 0.3s; /* Adjust the duration as needed */
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  transition: all 0.5 ease-in-out;
 }
 
 @keyframes enlargeImage {
@@ -259,12 +244,32 @@
   }
 }
 
+.member_card:hover .onhover_membercard,
+.member_card:hover .small_image {
+  display: block;
+}
+
+.member_card:hover .big_image_container,
+.member_card:hover .member_name_descrip {
+  display: none;
+}
+
+.member_card:hover .member_name {
+  animation-name: moveLeftRight;
+  animation-duration: 0.3s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transition: moveLeftRight 0.5s ease-in-out;
+}
+
 .member_card:hover .big_image_ img {
   animation-name: enlargeImage, moveImage;
-  animation-duration: 0.5s, 5s;
+  animation-duration: 1s, 5s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out, ease-in-out;
+  animation-timing-function: ease;
 }
+
+
 
 @media screen and (max-width: 1500px) {
   .member_grid_container {

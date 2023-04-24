@@ -175,7 +175,7 @@
   z-index: -5;
 }
 
-.z_index_bottom_grid p {
+.z_index_bottom_grid span {
   position: absolute;
   width: 500px;
   height: 96px;
