@@ -1,11 +1,3 @@
-// export interface BlogPost {
-//   title: string;
-//   slug: {
-//     current: string;
-//   };
-//   body: any;
-// }
-
 import { Block } from "typescript";
 
 export type BlogPost = {

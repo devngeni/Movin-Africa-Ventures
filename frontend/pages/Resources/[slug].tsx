@@ -16,7 +16,6 @@ import Loader from "@/Loader/Loader";
 import { getReadingTime } from "@/utils/TimeRead";
 import { getDateFormat } from "@/utils/DateFormat";
 import { shareToMedia } from "@/utils/ShareToMedia";
-import { speak } from "@/utils/TextToSpeech";
 export default function Slug() {
   const {
     slup_page,
@@ -75,7 +74,6 @@ export default function Slug() {
         ),
       ]);
       setPostData({ ...post, relatedArticlesData });
-      console.log({ ...post, relatedArticlesData });
     };
 
     if (slug) {
@@ -139,10 +137,7 @@ export default function Slug() {
                   );
                 }}
               />
-              <BsPlayFill
-                style={{ cursor: "pointer", fontSize: "20px" }}
-                onClick={() => speak("heyyyy")}
-              />
+              <BsPlayFill style={{ cursor: "pointer", fontSize: "20px" }} />
             </div>
 
             <div className={Blog_Image}>
