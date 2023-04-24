@@ -41,6 +41,8 @@
   top: 334px;
   left: 50%;
   transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #gridtop {
@@ -66,7 +68,7 @@
   width: 327px;
   height: 388px;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .member_card_container {
@@ -76,7 +78,7 @@
   height: 216.67px;
   left: 50%;
   transform: translateX(-50%);
-  transition: 0.3s ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .big_image_container {
@@ -88,7 +90,7 @@
   border-radius: 50%;
   background-color: #fff;
   border: 5px solid #414430;
-  transition: 0.3s ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .big_image_ img {
@@ -100,7 +102,7 @@
   transform: translateX(-50%);
   border-radius: 50%;
   object-fit: cover;
-  transition: 0.3s ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .small_image_container {
@@ -112,7 +114,7 @@
   background: #414430;
   z-index: -1;
   border-radius: 50%;
-  transition: 0.3s ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 .small_image img {
   position: absolute;
@@ -123,7 +125,7 @@
   height: 56.15px;
   border-radius: 50%;
   object-fit: cover;
-  transition: 0.3s ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .member_name_descrip {
@@ -181,7 +183,7 @@
   line-height: 18px;
   text-align: center;
   color: #666666;
-  transition: 0.3s ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 /* Initially hide the onhover_membercard & small_image */
@@ -226,7 +228,7 @@
   animation-duration: 0.3s; /* Adjust the duration as needed */
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  transition: 0.3s ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 @keyframes enlargeImage {
@@ -290,13 +292,13 @@
   .big_image_container {
     width: 190px;
     height: 190px;
-    transition: 0.3s ease-in-out;
+    transition: all 0.5 ease-in-out;
   }
   .big_image_ img {
     width: 170px;
     height: 170px;
     top: 5.5px;
-    transition: 0.3s ease-in-out;
+    transition: all 0.5 ease-in-out;
   }
   .member_card {
     width: 237px;

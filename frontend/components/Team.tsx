@@ -71,9 +71,6 @@ export default function Team() {
     the_team,
     meet_the_team,
     member_grid_container,
-    member_card,
-    gridtop,
-    gridbottom,
     member_card_container,
     big_image_container,
     big_image_,
@@ -117,11 +114,9 @@ export default function Team() {
         <Image src={TeamLines} alt="vector-icon" />
       </div>
       <div className={member_grid_container}>
-        <div id={gridtop}>
-          {members.map((member) => (
-            <MemberCard key={member.name} member={member} />
-          ))}
-        </div>
+        {members.map((member) => (
+          <MemberCard key={member.name} member={member} />
+        ))}
       </div>
 
       {/* corousel for member card at mobile screens */}
