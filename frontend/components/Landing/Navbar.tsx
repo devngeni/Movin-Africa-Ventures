@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Moving from "../../public/Moving.png";
 import NavLogo from "../../public/FooterLogo.svg";
 import Image from "next/image";
@@ -28,7 +28,7 @@ export default function Navbar() {
     navline,
   } = styles;
 
-  React.useEffect(() => {
+  useEffect(() => {
     setActiveNav(router.asPath);
   }, [router.asPath]);
 
