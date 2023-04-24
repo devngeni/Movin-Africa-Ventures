@@ -38,7 +38,6 @@
     "next": "13.2.4",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
-    "react-no-ssr": "^1.1.0",
     "react-responsive-carousel": "^3.2.23",
     "styled-components": "^5.3.9",
     "text-to-speech-js": "^1.1.10",

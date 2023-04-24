@@ -28,12 +28,11 @@
 .relatedArticles {
   position: relative;
   width: 745px;
-  height: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   left: 50%;
   transform: translateX(-50%);
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   top: 18px;
 }
