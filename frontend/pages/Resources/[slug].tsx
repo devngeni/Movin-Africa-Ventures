@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import TopNavImage from "../../public/blogAssets/TopNavImg.png";
 import TopNavImageM from "../../public/blogAssets/TopNavImgM.png";
 import Image from "next/image";
-import Link from "next/link";
 import { RiWhatsappLine } from "@react-icons/all-files/ri/RiWhatsappLine";
 import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 import { BsPlayFill } from "@react-icons/all-files/bs/BsPlayFill";
