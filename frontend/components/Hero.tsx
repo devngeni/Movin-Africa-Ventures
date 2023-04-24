@@ -1,9 +1,9 @@
-import { Fade } from "react-awesome-reveal";
 import Ellipse1 from "../public/Ellipse1.png";
 import MobileEllipse1 from "../public/mobileImages/HeroEllipse1.png";
 import PhoneImg from "../public/PhoneImg.png";
 import Image from "next/image";
 import styles from "@/styles/Hero.module.css";
+import { Fade } from "react-awesome-reveal";
 
 export default function Hero() {
   const {
@@ -26,11 +26,7 @@ export default function Hero() {
           alt="ecllipse-img"
           className={mobile_home_img}
         />
-        <div>
-          <Fade direction="up">
-            <Image className={phoneImg} src={PhoneImg} alt="phone-icon" />
-          </Fade>
-        </div>
+        <Image className={phoneImg} src={PhoneImg} alt="phone-icon" />
         <div className={Linking}>Linking Technology with Capital</div>
         <div className={fueling_}>
           Fueling the Growth of Africa&#39;s Tech Ecosystem While Creating
