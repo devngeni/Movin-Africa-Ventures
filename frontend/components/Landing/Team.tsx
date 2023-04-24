@@ -40,12 +40,8 @@ export default function Team() {
     small_image,
     member_card_mobile,
     mobile_member_grid_container,
-    readbio,
-    collapse,
     ReadBio_btn,
     collapse_btn,
-    open,
-    close,
   } = styles;
 
   const members: Member[] = [
@@ -93,6 +89,11 @@ export default function Team() {
     },
   ];
   const [expanded, setExpanded] = useState(false);
+  const [isInfinite, setIsInfinite] = useState(false);
+
+  useEffect(() => {
+    setIsInfinite(true);
+  }, []);
 
   const toggleLinks = () => {
     setExpanded(!expanded);
@@ -295,12 +296,12 @@ export default function Team() {
             <div className={member_card_container}>
               <div className={big_image_container}>
                 <div className={big_image_}>
-                  <Image src={KevinImani} alt="" />
+                  <Image src={KevinImani} alt="kelvinImani" />
                 </div>
               </div>
               <div className={small_image_container}>
                 <div className={small_image}>
-                  <Image src={KevinImani} alt="" />
+                  <Image src={KevinImani} alt="kelvinImani" />
                 </div>
               </div>
             </div>
@@ -331,12 +332,12 @@ export default function Team() {
             <div className={member_card_container}>
               <div className={big_image_container}>
                 <div className={big_image_}>
-                  <Image src={SusanOh} alt="" />
+                  <Image src={SusanOh} alt="SusanOh" />
                 </div>
               </div>
               <div className={small_image_container}>
                 <div className={small_image}>
-                  <Image src={SusanOh} alt="" />
+                  <Image src={SusanOh} alt="SusanOh" />
                 </div>
               </div>
             </div>
@@ -355,38 +356,38 @@ export default function Team() {
       <div className={mobile_member_grid_container}>
         <AliceCarousel
           items={members.map((card: any, index: number) => (
-            <ul key={index}>
-              <ul className={member_card_mobile} onClick={toggleLinks}>
-                <ul className={onhover_membercard}>
-                  <ul
+            <div key={index}>
+              <div className={member_card_mobile} onClick={toggleLinks}>
+                <div className={onhover_membercard}>
+                  <div
                     className={member_name}
                     style={{ position: "absolute", bottom: "-25px" }}
                   >
                     {card.name}
-                  </ul>
-                  <ul className={onhover_membercard_descrip}>
+                  </div>
+                  <div className={onhover_membercard_descrip}>
                     {card.description}
-                  </ul>
-                </ul>
-                <ul className={member_card_container}>
-                  <ul className={big_image_container}>
-                    <ul className={big_image_}>
+                  </div>
+                </div>
+                <div className={member_card_container}>
+                  <div className={big_image_container}>
+                    <div className={big_image_}>
                       <Image src={card.image} alt={card.name} />
-                    </ul>
-                  </ul>
-                  <ul className={small_image_container}>
-                    <ul className={small_image}>
+                    </div>
+                  </div>
+                  <div className={small_image_container}>
+                    <div className={small_image}>
                       <Image src={card.image} alt={card.name} />
-                    </ul>
-                  </ul>
-                </ul>
-                <ul className={member_name_descrip}>
-                  <ul className={member_name}>{card.name}</ul>
-                  <ul className={member_descrip}>{card.bio}</ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={member_name_descrip}>
+                  <div className={member_name}>{card.name}</div>
+                  <div className={member_descrip}>{card.bio}</div>
                   <button className={ReadBio_btn}>Read Bio</button>
-                </ul>
-              </ul>
-            </ul>
+                </div>
+              </div>
+            </div>
           ))}
           responsive={{
             0: { items: 1 },
@@ -394,7 +395,7 @@ export default function Team() {
             700: { items: 2 },
           }}
           disableDotsControls={true}
-          infinite={true}
+          infinite={isInfinite}
           autoPlay={true}
           autoPlayInterval={3000}
           disableButtonsControls={true}
