@@ -88,6 +88,7 @@ export default function Team() {
     member_card_mobile,
     ReadBio_btn,
     collapse_btn,
+    mobile_member_grid_container,
   } = styles;
 
   const toggleLinks = () => {
@@ -124,60 +125,65 @@ export default function Team() {
       </div>
 
       {/* corousel for member card at mobile screens */}
-
-      <Slider
-        dots={false}
-        infinite={true}
-        speed={500}
-        slidesToShow={2}
-        slidesToScroll={1}
-        autoplay={true}
-        autoplaySpeed={3000}
-        swipeToSlide={true}
-        touchThreshold={50}
-        arrows={false}
-        responsive={[
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
+      <div className={mobile_member_grid_container}>
+        <Slider
+          dots={false}
+          infinite={true}
+          speed={500}
+          slidesToShow={2}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={3000}
+          swipeToSlide={true}
+          touchThreshold={50}
+          arrows={false}
+          responsive={[
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+              },
             },
-          },
-        ]}
-      >
-        {members.map((card, index) => (
-          <div className={member_card_mobile} key={index} onClick={toggleLinks}>
-            <div className={onhover_membercard}>
-              <div
-                className={member_name}
-                style={{ position: "absolute", bottom: "-25px" }}
-              >
-                {card.name}
-              </div>
-              <div className={onhover_membercard_descrip}>
-                {card.description}
-              </div>
-            </div>
-            <div className={member_card_container}>
-              <div className={big_image_container}>
-                <div className={big_image_}>
-                  <Image src={card.image} alt={card.name} />
+          ]}
+        >
+          {members.map((card, index) => (
+            <div
+              className={member_card_mobile}
+              key={index}
+              onClick={toggleLinks}
+            >
+              <div className={onhover_membercard}>
+                <div
+                  className={member_name}
+                  style={{ position: "absolute", bottom: "-25px" }}
+                >
+                  {card.name}
+                </div>
+                <div className={onhover_membercard_descrip}>
+                  {card.description}
                 </div>
               </div>
-              <div className={small_image_container}>
-                <div className={small_image}>
-                  <Image src={card.image} alt={card.name} />
+              <div className={member_card_container}>
+                <div className={big_image_container}>
+                  <div className={big_image_}>
+                    <Image src={card.image} alt={card.name} />
+                  </div>
+                </div>
+                <div className={small_image_container}>
+                  <div className={small_image}>
+                    <Image src={card.image} alt={card.name} />
+                  </div>
                 </div>
               </div>
+              <div className={member_name_descrip}>
+                <div className={member_name}>{card.name}</div>
+                <div className={member_descrip}>{card.bio}</div>
+                <button className={ReadBio_btn}>Read Bio</button>
+              </div>
             </div>
-            <div className={member_name_descrip}>
-              <div className={member_name}>{card.name}</div>
-              <div className={member_descrip}>{card.bio}</div>
-              <button className={ReadBio_btn}>Read Bio</button>
-            </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }
