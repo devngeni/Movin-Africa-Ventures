@@ -38,7 +38,6 @@
     "eslint-config-next": "13.2.1",
     "fs": "^0.0.1-security",
     "next": "13.2.4",
-<<<<<<< HEAD
     "react": ">=18.2.0",
     "react-alice-carousel": "^2.7.1",
     "react-awesome-reveal": "^4.2.3",
@@ -46,17 +45,6 @@
     "styled-components": "^5.3.9",
     "text-to-speech-js": "^1.1.10",
     "typescript": "5.0.3"
-=======
-    "react": "^18.2.0",
-    "react-dom": "18.2.0",
-    "react-responsive-carousel": "^3.2.23",
-    "styled-components": "^5.3.9",
-    "typescript": "5.0.3",
-    "yarn": "^1.22.19"
-  },
-  "devDependencies": {
-    "@types/react-alice-carousel": "^1.15.3"
->>>>>>> 009b297bd7ec2ce97e64b0778570ecbc51423868
   },
   "peerDependencies": {},
   "browser": {
