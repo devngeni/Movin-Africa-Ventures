@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Moving from "../../public/Moving.png";
 import NavLogo from "../../public/FooterLogo.svg";
 import Image from "next/image";

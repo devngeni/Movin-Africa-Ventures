@@ -3,7 +3,7 @@ import styles from "@/styles/Resources.module.css";
 import Image from "next/image";
 import EllipseR from "../../public/ResourcesR.png";
 import MobileBlogImg from "../../public/blogAssets/MobileElllipse.png";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { client } from "@/config/sanity";
 import { PostData } from "@/config/types";
 import BlockContent from "@sanity/block-content-to-react";
