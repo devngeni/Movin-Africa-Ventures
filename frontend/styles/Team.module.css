@@ -362,8 +362,11 @@
     width: auto;
     height: 360px;
     z-index: 1;
+    transition: height 0.5 ease-in-out;
   }
-
+  /* .member_card_mobile:hover {
+    height: 390px;
+  } */
   /* onhover Show the onhover_membercard */
   .member_card_mobile:hover .onhover_membercard {
     display: block;
