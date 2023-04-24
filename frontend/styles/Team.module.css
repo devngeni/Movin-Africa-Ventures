@@ -354,11 +354,12 @@
   }
 
   .member_card_mobile {
+    position: relative;
     padding-top: -10px;
     top: 10px;
-    position: relative;
     width: auto;
     height: 360px;
+    z-index: 1;
   }
 
   /* onhover Show the onhover_membercard */
@@ -470,7 +471,7 @@
     font-size: 40px;
   }
   .mobile_member_grid_container {
-    top: 250px;
+    /* top: 250px; */
     width: 400px;
   }
 }
@@ -479,6 +480,9 @@
   .mobile_member_grid_container {
     width: 327px;
     top: 200px;
+  }
+  .team_page {
+    height: 620px;
   }
 }
 

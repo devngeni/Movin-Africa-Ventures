@@ -343,41 +343,42 @@ export default function Team() {
       </div>
 
       {/* corousel for member card at mobile screens */}
+
       <div className={mobile_member_grid_container}>
         <AliceCarousel
           items={members.map((card: any, index: number) => (
-            <div key={index}>
-              <div className={member_card_mobile} onClick={toggleLinks}>
-                <div className={onhover_membercard}>
-                  <div
+            <ul key={index}>
+              <ul className={member_card_mobile} onClick={toggleLinks}>
+                <ul className={onhover_membercard}>
+                  <ul
                     className={member_name}
                     style={{ position: "absolute", bottom: "-25px" }}
                   >
                     {card.name}
-                  </div>
-                  <div className={onhover_membercard_descrip}>
+                  </ul>
+                  <ul className={onhover_membercard_descrip}>
                     {card.description}
-                  </div>
-                </div>
-                <div className={member_card_container}>
-                  <div className={big_image_container}>
-                    <div className={big_image_}>
+                  </ul>
+                </ul>
+                <ul className={member_card_container}>
+                  <ul className={big_image_container}>
+                    <ul className={big_image_}>
                       <Image src={card.image} alt={card.name} />
-                    </div>
-                  </div>
-                  <div className={small_image_container}>
-                    <div className={small_image}>
+                    </ul>
+                  </ul>
+                  <ul className={small_image_container}>
+                    <ul className={small_image}>
                       <Image src={card.image} alt={card.name} />
-                    </div>
-                  </div>
-                </div>
-                <div className={member_name_descrip}>
-                  <div className={member_name}>{card.name}</div>
-                  <div className={member_descrip}>{card.bio}</div>
+                    </ul>
+                  </ul>
+                </ul>
+                <ul className={member_name_descrip}>
+                  <ul className={member_name}>{card.name}</ul>
+                  <ul className={member_descrip}>{card.bio}</ul>
                   <button className={ReadBio_btn}>Read Bio</button>
-                </div>
-              </div>
-            </div>
+                </ul>
+              </ul>
+            </ul>
           ))}
           responsive={{
             0: { items: 1 },
