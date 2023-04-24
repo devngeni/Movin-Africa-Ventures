@@ -38,15 +38,13 @@ export default function Investments() {
             />
           </div>
           <div className={mcb_headers}>The Competition</div>
-          <p className={mcb_p} style={{ color: "#5e5e5e" }}>
-            <Fade direction="up">
-              Movin Africa is a pioneering tech-focused venture collective,
-              carving a unique market niche with no direct competitors. With a
-              distinct value proposition, it capitalizes on emerging
-              opportunities to drive the growth of tech startups, setting itself
-              apart as a trailblazer.
-            </Fade>
-          </p>
+          <span className={mcb_p} style={{ color: "#5e5e5e" }}>
+            Movin Africa is a pioneering tech-focused venture collective,
+            carving a unique market niche with no direct competitors. With a
+            distinct value proposition, it capitalizes on emerging opportunities
+            to drive the growth of tech startups, setting itself apart as a
+            trailblazer.
+          </span>
         </div>
         <div className={BusinessModel} id="InvestmentCriteria">
           <div>
@@ -57,16 +55,14 @@ export default function Investments() {
             />
           </div>
           <div className={mcb_headers}>Business Model</div>
-          <p className={mcb_p} style={{ color: "#000000" }}>
-            <Fade direction="up">
-              Movin Africa operates an open fund model. We guarantee equitable
-              access to capital for all entrepreneurs, establishing a level
-              playing field for tomorrow&#39;s tech titans. Our innovative
-              investment strategy harnesses emerging technologies and financial
-              instruments, enabling us to fuel the growth of pioneering ventures
-              and shape the future of the tech industry.
-            </Fade>
-          </p>
+          <span className={mcb_p} style={{ color: "#000000" }}>
+            Movin Africa operates an open fund model. We guarantee equitable
+            access to capital for all entrepreneurs, establishing a level
+            playing field for tomorrow&#39;s tech titans. Our innovative
+            investment strategy harnesses emerging technologies and financial
+            instruments, enabling us to fuel the growth of pioneering ventures
+            and shape the future of the tech industry.
+          </span>
         </div>
         <div className={marketSize}>
           <div>
@@ -79,21 +75,21 @@ export default function Investments() {
           <div className={mcb_headers} style={{ color: "#FFFFFF" }}>
             Market Size
           </div>
-          <p className={mcb_p}>
-            <Fade direction="up">
-              Africa&#39;s tech industry is booming, with a $345 billion market
-              size projected by 2025. Movin Africa is poised to capitalize on
-              this growth by investing in and supporting innovative tech-driven
-              businesses, leveraging the rising population, mobile phone
-              adoption, and expanding internet connectivity in the region.
-            </Fade>
-          </p>
+          <span className={mcb_p}>
+            Africa&#39;s tech industry is booming, with a $345 billion market
+            size projected by 2025. Movin Africa is poised to capitalize on this
+            growth by investing in and supporting innovative tech-driven
+            businesses, leveraging the rising population, mobile phone adoption,
+            and expanding internet connectivity in the region.
+          </span>
         </div>
       </div>
       <div className={as_of_March}>
         <div className={as_of_March_p}>
-          As of March 2023, the fund&#39;s AUM totaled $5 million, with $3
-          million uncommitted and $2 million committed to investments.
+          <Fade direction="up">
+            As of March 2023, the fund&#39;s AUM totaled $5 million, with $3
+            million uncommitted and $2 million committed to investments.
+          </Fade>
         </div>
       </div>
       <div>
