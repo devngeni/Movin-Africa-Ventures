@@ -40,6 +40,7 @@ export default function Resources() {
   } = styles;
 
   const [blogPosts, setBlogPosts] = useState<PostData[]>([]);
+  const [numCardsToShow, setNumCardsToShow] = useState(3);
   const router = useRouter();
 
   useEffect(() => {
@@ -87,7 +88,7 @@ export default function Resources() {
       </div>
       <div className={theBigBlogContainer}>
         <div className={blogs_container}>
-          {blogPosts.map((post, index: any) =>
+          {blogPosts.slice(0, numCardsToShow).map((post, index: any) =>
             post.slug ? (
               <div
                 key={index}
@@ -139,7 +140,12 @@ export default function Resources() {
           )}
         </div>
         <div className={readAllArticles}>
-          <button className={ReadAll_btn}>Show More</button>
+          <button
+            className={ReadAll_btn}
+            onClick={() => setNumCardsToShow(numCardsToShow + 3)}
+          >
+            Show More
+          </button>
         </div>
       </div>
       <Footer />
