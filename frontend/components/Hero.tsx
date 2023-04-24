@@ -1,9 +1,10 @@
-import React from "react";
-import Ellipse1 from "../../public/Ellipse1.png";
-import MobileEllipse1 from "../../public/mobileImages/HeroEllipse1.png";
-import PhoneImg from "../../public/PhoneImg.png";
+import { Fade } from "react-awesome-reveal";
+import Ellipse1 from "../public/Ellipse1.png";
+import MobileEllipse1 from "../public/mobileImages/HeroEllipse1.png";
+import PhoneImg from "../public/PhoneImg.png";
 import Image from "next/image";
 import styles from "@/styles/Hero.module.css";
+
 export default function Hero() {
   const {
     home_page,
@@ -25,7 +26,13 @@ export default function Hero() {
           alt="ecllipse-img"
           className={mobile_home_img}
         />
-        <Image className={phoneImg} src={PhoneImg} alt="phone-icon" />
+       <div>
+          <Fade direction="up">
+            <div>
+              <Image className={phoneImg} src={PhoneImg} alt="phone-icon" />
+            </div>
+          </Fade>
+        </div>
         <div className={Linking}>Linking Technology with Capital</div>
         <div className={fueling_}>
           Fueling the Growth of Africa&#39;s Tech Ecosystem While Creating

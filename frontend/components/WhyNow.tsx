@@ -1,6 +1,5 @@
-import React from "react";
 import styles from "@/styles/WhyNow.module.css";
-import Bulb from "../../public/bulb.png";
+import Bulb from "../public/bulb.png";
 import Image from "next/image";
 export default function WhyNow() {
   const { whyNow, withThe_, why_icon, movin_africa_is_here, Why_Container } =

@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "@/styles/ValueAdd.module.css";
-import grid1img from "../../public/grid1img.png";
-import grid2Img from "../../public/grid2Img.png";
-import grid3Img from "../../public/Grid3Img.png";
-import grid4Img from "../../public/Grid4Img.png";
-import Star from "../../public/Star.svg";
+import grid1img from "../public/grid1img.png";
+import grid2Img from "../public/grid2Img.png";
+import grid3Img from "../public/Grid3Img.png";
+import grid4Img from "../public/Grid4Img.png";
+import Star from "../public/Star.svg";
 import Image from "next/image";
 export default function ValueAdd() {
   const {

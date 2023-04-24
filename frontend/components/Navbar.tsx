@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
-import Moving from "../../public/Moving.png";
-import NavLogo from "../../public/FooterLogo.svg";
+import { useState, useEffect } from "react";
+import Moving from "../public/Moving.png";
+import NavLogo from "../public/FooterLogo.svg";
 import Image from "next/image";
 import styles from "@/styles/Navbar.module.css";
-import mLogo from "../../public/mobileImages/lgo.svg";
-import MenuIcon from "../../public/mobileImages/MenuIcon.svg";
+import mLogo from "../public/mobileImages/lgo.svg";
+import MenuIcon from "../public/mobileImages/MenuIcon.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
   const [activeNav, setActiveNav] = useState("/");
+  const router = useRouter();
   const {
     nav,
     logo,

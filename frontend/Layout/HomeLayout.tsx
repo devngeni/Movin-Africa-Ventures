@@ -4,7 +4,7 @@ interface Homeinterface {
   children: ReactNode;
 }
 import styles from "@/styles/Hero.module.css";
-import { Navbar } from "@/components/Landing";
+import { Navbar } from "@/components";
 
 export default function HomeLayout({ children }: Homeinterface) {
   return (

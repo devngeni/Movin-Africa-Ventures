@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "@/styles/Footer.module.css";
-import Movin from "../../public/FooterLogo.svg";
-import SendIcon from "../../public/SendIcon.png";
-import MenuIcon from "../../public/QuickLinks.png";
+import Movin from "../public/FooterLogo.svg";
+import SendIcon from "../public/SendIcon.png";
+import MenuIcon from "../public/QuickLinks.png";
 import Link from "next/link";
 // import { Link } from "react-router-dom";
 
