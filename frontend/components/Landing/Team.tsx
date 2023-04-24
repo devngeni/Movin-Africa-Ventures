@@ -9,7 +9,6 @@ import JoelJohnson from "../../public/MemberImages/JoelJohnson.jpeg";
 import TeamLines from "../../public/TeamLines.svg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import NoSSR from "react-no-ssr";
 import { useEffect, useState } from "react";
 
 interface Member {
