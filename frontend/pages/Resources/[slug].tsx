@@ -1,4 +1,5 @@
-import { Footer, Navbar } from "@/components/Landing";
+import { useEffect, useState } from "react";
+import { Footer, Navbar } from "@/components";
 import styles from "@/styles/Slug.module.css";
 import { useRouter } from "next/router";
 import TopNavImage from "../../public/blogAssets/TopNavImg.png";
@@ -9,7 +10,6 @@ import { RiWhatsappLine } from "@react-icons/all-files/ri/RiWhatsappLine";
 import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 import { BsPlayFill } from "@react-icons/all-files/bs/BsPlayFill";
 import { PostData } from "@/config/types";
-import { useEffect, useState } from "react";
 import { client } from "@/config/sanity";
 import BlockContent from "@sanity/block-content-to-react";
 import Loader from "@/Loader/Loader";

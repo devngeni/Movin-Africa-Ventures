@@ -1,12 +1,11 @@
-import React from "react";
 import styles from "@/styles/WeAre.module.css";
-import CityImage from "../../public/City.svg";
-import CityMobileImg from "../../public/mobileImages/Mobile_City.png";
-import MobileVectorLines from "../../public/mobileImages/VectorLines.svg";
-import MobileDots from "../../public/mobileImages/MobileDots.svg";
+import CityImage from "../public/City.svg";
+import CityMobileImg from "../public/mobileImages/Mobile_City.png";
+import MobileVectorLines from "../public/mobileImages/VectorLines.svg";
+import MobileDots from "../public/mobileImages/MobileDots.svg";
 import Image from "next/image";
-import Dots from "../../public/Dots.svg";
-import Vector2 from "../../public/Vector2.svg";
+import Dots from "../public/Dots.svg";
+import Vector2 from "../public/Vector2.svg";
 import Vector1 from "@/public/Vector1";
 export default function WeAre() {
   const {

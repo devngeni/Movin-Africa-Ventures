@@ -1,12 +1,11 @@
 import styles from "@/styles/Investments.module.css";
 import Image from "next/image";
-
-import competionArrow from "../../public/Competition.png";
-import BusinessModelArrow from "../../public/BsModel.png";
-import MarketSize from "../../public/MarketSize.png";
-import investmentsDots from "../../public/investmentDots.svg";
-import investments_lines_svg from "../../public/InvestmentLines.svg";
-import MobileInvestmentLines from "../../public/mobileImages/MobileInvestmentLines.svg";
+import competionArrow from "../public/Competition.png";
+import BusinessModelArrow from "../public/BsModel.png";
+import MarketSize from "../public/MarketSize.png";
+import investmentsDots from "../public/investmentDots.svg";
+import investments_lines_svg from "../public/InvestmentLines.svg";
+import MobileInvestmentLines from "../public/mobileImages/MobileInvestmentLines.svg";
 
 export default function Investments() {
   const {

@@ -8,7 +8,7 @@ import {
   ValueAdd,
   WeAre,
   WhyNow,
-} from "@/components/Landing";
+} from "@/components";
 
 export default function HomePage() {
   return (
