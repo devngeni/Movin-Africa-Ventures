@@ -311,7 +311,6 @@
   }
   .vectorc1 {
     width: 50vw;
-    /* width: 500px; */
   }
   .vectorc2 {
     width: 60vw;
@@ -355,7 +354,6 @@
   }
   .green_grid {
     width: 60vw;
-    /* width: 251px; */
     height: 289px;
     left: 50%;
     transform: translateX(-50%);
@@ -396,7 +394,6 @@
     background: rgba(221, 221, 221, 0.5);
     backdrop-filter: blur(1.5px);
     width: 60vw;
-    /* width: 251px; */
     height: 289px;
     top: 338px;
   }

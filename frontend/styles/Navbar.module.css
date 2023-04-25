@@ -152,7 +152,8 @@
     position: absolute;
     width: 123px;
     height: 122px;
-    left: 126.65px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 87.89px;
   }
   .theMiniNav a {
