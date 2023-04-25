@@ -40,17 +40,13 @@ export default function WeAre() {
         <div className={grid}>
           <div className={left_grid}>
             <div className={we_are_}>
-              <Fade direction="up">
-                We are Africa’s First Ventures Collective Linking Technology to
-                Capital
-              </Fade>
+              We are Africa’s First Ventures Collective Linking Technology to
+              Capital
             </div>
             <div className={we_are_pan}>
-              <Fade direction="up">
-                We are a Pan-African focus team of entrepreneurs, engineers,
-                investors, dealmakers, and community builders looking to
-                leverage the continent’s vast potential.
-              </Fade>
+              We are a Pan-African focus team of entrepreneurs, engineers,
+              investors, dealmakers, and community builders looking to leverage
+              the continent’s vast potential.
             </div>
           </div>
           <div className={city_div}>
