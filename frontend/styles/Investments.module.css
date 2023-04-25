@@ -134,14 +134,11 @@
   left: 50%;
   transform: translateX(-50%);
   top: 252.73px;
-
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-
-  /* or 188% */
   text-align: center;
 }
 

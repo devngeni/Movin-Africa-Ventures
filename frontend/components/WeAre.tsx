@@ -40,13 +40,17 @@ export default function WeAre() {
         <div className={grid}>
           <div className={left_grid}>
             <div className={we_are_}>
-              We are Africa’s First Ventures Collective Linking Technology to
-              Capital
+              <Fade direction="up">
+                We are Africa’s First Ventures Collective Linking Technology to
+                Capital
+              </Fade>
             </div>
             <div className={we_are_pan}>
-              We are a Pan-African focus team of entrepreneurs, engineers,
-              investors, dealmakers, and community builders looking to leverage
-              the continent’s vast potential.
+              <Fade direction="up">
+                We are a Pan-African focus team of entrepreneurs, engineers,
+                investors, dealmakers, and community builders looking to
+                leverage the continent’s vast potential.
+              </Fade>
             </div>
           </div>
           <div className={city_div}>
@@ -107,9 +111,11 @@ export default function WeAre() {
               </p>
             </div>
             <div className={z_index_bottom_grid}>
-              
-                <span><Fade direction="up">Movin Africa is the capital moving Africa forward.</Fade></span>
-              
+              <span>
+                <Fade direction="up">
+                  Movin Africa is the capital moving Africa forward.
+                </Fade>
+              </span>
             </div>
           </div>
         </div>
