@@ -84,26 +84,12 @@ export default function Team() {
     small_image,
     member_card_mobile,
     ReadBio_btn,
-    collapse_btn,
     mobile_member_grid_container,
   } = styles;
 
   const toggleLinks = () => {
     setExpanded(!expanded);
   };
-  useEffect(() => {
-    const memberCardMobile = document.querySelector(`.${member_card_mobile}`);
-
-    if (memberCardMobile) {
-      const closeButton = memberCardMobile.querySelector(`.${collapse_btn}`);
-
-      if (closeButton) {
-        closeButton.addEventListener("click", () => {
-          memberCardMobile.classList.remove(`hovered`);
-        });
-      }
-    }
-  });
 
   return (
     <div className={team_page}>

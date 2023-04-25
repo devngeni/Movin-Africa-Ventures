@@ -20,8 +20,7 @@
   flex-grow: 0;
   left: 50%;
   transform: translateX(-50%);
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
+  min-height: 400px !important;
 }
 
 .relatedArticles {
@@ -31,15 +30,13 @@
   grid-template-columns: repeat(3, 1fr);
   left: 50%;
   transform: translateX(-50%);
-  overflow-y: hidden;
-  overflow-x: hidden;
   top: 18px;
 }
 
 .relatedArticles_Card {
   position: relative;
   width: 225px;
-  height: 200px;
+  height: auto;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -64,7 +61,6 @@
 
 .RelatedArticletitle {
   position: relative;
-  height: 48px;
   font-family: "Advent Pro UltraExpanded";
   font-style: normal;
   font-weight: 500;
@@ -205,12 +201,6 @@
   transform: translateX(-50%);
   top: 75px;
   text-align: left;
-  /* font-family: "Gotham";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #d11515; */
   padding-bottom: 120px;
   cursor: all-scroll;
 }

@@ -4,6 +4,7 @@ import PhoneImg from "../public/PhoneImg.png";
 import Image from "next/image";
 import styles from "@/styles/Hero.module.css";
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
 
 export default function Hero() {
   const {
@@ -36,7 +37,9 @@ export default function Hero() {
             Opportunities For Young, Vibrant Minds.
           </Fade>
         </div>
-        <button className={home_button}>Button</button>
+        <Link href="/Resources">
+          <button className={home_button}>Read</button>
+        </Link>
         <div className={aboutLink} id="AboutUs"></div>
       </div>
     </div>

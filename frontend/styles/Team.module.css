@@ -184,7 +184,9 @@
   text-align: center;
   color: #666666;
   transition: all 0.5 ease-in-out;
-}/* Initially hide the onhover_membercard & small_image */
+}
+
+/* Initially hide the onhover_membercard & small_image */
 .onhover_membercard,
 .small_image {
   display: none;

@@ -39,8 +39,12 @@ export default function Navbar() {
   return (
     <div>
       <div className={nav}>
-        <Image className={logo} src={Moving} alt="movin-icon" />
-        <Image className={mobile_Logo} src={mLogo} alt="movin-icon" />
+        <Link href="/">
+          <Image className={logo} src={Moving} alt="movin-icon" />
+        </Link>
+        <Link href="/">
+          <Image className={mobile_Logo} src={mLogo} alt="movin-icon" />
+        </Link>
         <div
           className={Menu_icon}
           onClick={() => {

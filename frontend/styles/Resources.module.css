@@ -434,7 +434,6 @@
     display: none;
   }
   .blogs_container {
-    /* height: 600px; */
     padding-bottom: 110px;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
@@ -459,11 +458,6 @@
     transform: translateX(-50%);
     padding-top: 0;
     margin-bottom: 0;
-  }
-  .blog_card_img {
-    transform: none;
-    left: 0;
-    right: 0;
   }
 
   .blog_card:hover .blog_card_img {
@@ -502,8 +496,6 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-
-    /* identical to box height */
     text-align: center;
 
     color: #ffffff;

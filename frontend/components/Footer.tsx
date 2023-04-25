@@ -5,7 +5,6 @@ import Movin from "../public/FooterLogo.svg";
 import SendIcon from "../public/SendIcon.png";
 import MenuIcon from "../public/QuickLinks.png";
 import Link from "next/link";
-// import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 export default function Footer() {
   const [expanded, setExpanded] = useState(false);
@@ -52,7 +51,9 @@ export default function Footer() {
       </Fade>
       <div className={links_socials_container}>
         <div className={links_socials_container_grids}>
-          <div className={Boldtext_footer}>Quick Links</div>
+          <div className={Boldtext_footer}>
+            <Fade direction="up">Quick Links</Fade>
+          </div>
           <Fade direction="up">
             <Link href="/" className={activeNav === "/" ? styles.active : ""}>
               Back to Top
