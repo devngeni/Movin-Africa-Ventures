@@ -1,12 +1,15 @@
 import styles from "@/styles/WhyNow.module.css";
 import Bulb from "../public/bulb.png";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 export default function WhyNow() {
-  const { whyNow, withThe_, why_icon, movin_africa_is_here, Why_Container } =
+  const { whyNow, withThe_, why_icon, movin_africa_is_here } =
     styles;
   return (
     <div className={whyNow}>
-      <div>Why Now</div>
+      <div>
+        <Fade direction="up">Why Now</Fade>
+      </div>
       <div className={withThe_}>
         In today&#39;s fast-paced world of rapid technological advancements,
         African businesses have a unique opportunity to leverage cutting-edge

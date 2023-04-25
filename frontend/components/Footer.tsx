@@ -6,7 +6,7 @@ import SendIcon from "../public/SendIcon.png";
 import MenuIcon from "../public/QuickLinks.png";
 import Link from "next/link";
 // import { Link } from "react-router-dom";
-
+import { Fade } from "react-awesome-reveal";
 export default function Footer() {
   const [expanded, setExpanded] = useState(false);
 
@@ -45,42 +45,64 @@ export default function Footer() {
 
   return (
     <div className={`${footer} ${expanded ? expand : collapse}`}>
-      <div className={footer_logo}>
-        <Image src={Movin} alt="movin-afica-icon" />
-      </div>
+      <Fade direction="up">
+        <div className={footer_logo}>
+          <Image src={Movin} alt="movin-afica-icon" />
+        </div>
+      </Fade>
       <div className={links_socials_container}>
         <div className={links_socials_container_grids}>
           <div className={Boldtext_footer}>Quick Links</div>
-          <Link href="/" className={activeNav === "/" ? styles.active : ""}>
-            Back to Top
-          </Link>
-
-          <Link
-            href="/#AboutUs"
-            className={activeNav === "/" ? styles.active : ""}
-          >
-            About Us
-          </Link>
-
-          <Link
-            href="/#InvestmentCriteria"
-            className={activeNav === "/" ? styles.active : ""}
-          >
-            Investment Criteria
-          </Link>
-          <Link href={"/Portfolio"}>Portfolio</Link>
-          <Link href={"/Resources"}>Resources</Link>
+          <Fade direction="up">
+            <Link href="/" className={activeNav === "/" ? styles.active : ""}>
+              Back to Top
+            </Link>
+          </Fade>
+          <Fade direction="up">
+            <Link
+              href="/#AboutUs"
+              className={activeNav === "/" ? styles.active : ""}
+            >
+              About Us
+            </Link>
+          </Fade>
+          <Fade direction="up">
+            <Link
+              href="/#InvestmentCriteria"
+              className={activeNav === "/" ? styles.active : ""}
+            >
+              Investment Criteria
+            </Link>
+          </Fade>
+          <Fade direction="up">
+            <Link href={"/Portfolio"}>Portfolio</Link>
+          </Fade>
+          <Fade direction="up">
+            <Link href={"/Resources"}>Resources</Link>
+          </Fade>
         </div>
         <div className={links_socials_container_grids}>
-          <div className={Boldtext_footer}>Social Media</div>
-          <Link href={"/#Twitter"}>Twitter</Link>
-          <Link href={"/#LinkedIn"}>Linked In</Link>
-          <Link href={"/#LinkTree"}>LinkTree </Link>
-          <Link href={"/#Substack"}>Substack</Link>
+          <div className={Boldtext_footer}>
+            <Fade direction="up">Social Media</Fade>
+          </div>
+          <Fade direction="up">
+            <Link href={"/#Twitter"}>Twitter</Link>
+          </Fade>
+          <Fade direction="up">
+            <Link href={"/#LinkedIn"}>Linked In</Link>
+          </Fade>
+          <Fade direction="up">
+            <Link href={"/#LinkTree"}>LinkTree </Link>
+          </Fade>
+          <Fade direction="up">
+            <Link href={"/#Substack"}>Substack</Link>
+          </Fade>
           <Link href={"#null"}>
             <div className={aboveFaqsLine} />
           </Link>
-          <Link href={"/#FAQs"}>FAQs</Link>
+          <Fade direction="up">
+            <Link href={"/#FAQs"}>FAQs</Link>
+          </Fade>
         </div>
         <div className={subscribe_grid}>
           <div className={subscribe_container}>
@@ -181,7 +203,11 @@ export default function Footer() {
         </div>
       </div>
       <div className={footer_line} />
-      <div className={copyright}>Copyright @2023 All Rights Reserved.</div>
+
+      <div className={copyright}>
+        {" "}
+        <Fade direction="up">Copyright @2023 All Rights Reserved. </Fade>
+      </div>
     </div>
   );
 }

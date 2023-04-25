@@ -7,6 +7,7 @@ import Image from "next/image";
 import Dots from "../public/Dots.svg";
 import Vector2 from "../public/Vector2.svg";
 import Vector1 from "@/public/Vector1";
+import { Fade } from "react-awesome-reveal";
 export default function WeAre() {
   const {
     WeAre_Page,
@@ -57,8 +58,12 @@ export default function WeAre() {
         </div>
         <div className={invest_container}>
           <div className={invest_invest}>
-            <div id={moveLeft}>Invest in you</div>
-            <div id={moveRight}>Invest with us.</div>
+            <div id={moveLeft}>
+              <Fade direction="up">Invest in you</Fade>
+            </div>
+            <div id={moveRight}>
+              <Fade direction="up">Invest with us.</Fade>
+            </div>
           </div>
         </div>
         <div className={theCapital}>
@@ -102,7 +107,9 @@ export default function WeAre() {
               </p>
             </div>
             <div className={z_index_bottom_grid}>
-              <p>Movin Africa is the capital moving Africa forward.</p>
+              
+                <span><Fade direction="up">Movin Africa is the capital moving Africa forward.</Fade></span>
+              
             </div>
           </div>
         </div>

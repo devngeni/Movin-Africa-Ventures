@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "@/styles/Team.module.css";
+import { Fade } from "react-awesome-reveal";
 
 function MemberCard({ member }) {
   const { name, description, bio, image } = member;
@@ -30,9 +31,11 @@ function MemberCard({ member }) {
       </div>
       <div className={member_card_container}>
         <div className={big_image_container}>
-          <div className={big_image_}>
-            <Image src={image} alt={name} />
-          </div>
+          <Fade direction="up">
+            <div className={big_image_}>
+              <Image src={image} alt={name} />
+            </div>
+          </Fade>
         </div>
         <div className={small_image_container}>
           <div className={small_image}>
