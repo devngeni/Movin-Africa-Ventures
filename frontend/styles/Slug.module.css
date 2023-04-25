@@ -15,14 +15,13 @@
   position: relative;
   padding-bottom: 60px;
   width: 100vw;
-  height: 1400px;
   background: #fafafa;
   flex: none;
   flex-grow: 0;
   left: 50%;
   transform: translateX(-50%);
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
 }
 
 .relatedArticles {
