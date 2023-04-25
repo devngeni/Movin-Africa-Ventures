@@ -30,7 +30,7 @@ export default function ValueAdd() {
           <Fade direction="up">Value Add</Fade>
         </div>
         <div className={grid1}>
-          <Image src={grid1img} alt="" />
+          <Image src={grid1img} alt="FinancialSupport" />
           <div className={headers}>Financial Support</div>
           <span className={descrip}>
             Our main fund is well-equipped to provide robust and consistent
@@ -60,7 +60,7 @@ export default function ValueAdd() {
           </span>
         </div>
         <div className={grid4}>
-          <Image src={grid4Img} alt="" />
+          <Image src={grid4Img} alt="Traction" />
           <div className={headers}>Traction</div>
           <span className={descrip}>
             Movin Africa is making history as the first African fund to invest

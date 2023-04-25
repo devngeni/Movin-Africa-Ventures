@@ -348,10 +348,10 @@
     top: 12px;
   }
 
-  .grid1 p,
-  .grid2 p,
-  .grid3 p,
-  .grid4 p {
+  .grid1 span,
+  .grid2 span,
+  .grid3 span,
+  .grid4 span {
     top: 105.18px;
     width: 242.85px;
     height: 125.5px;
@@ -388,6 +388,17 @@
   .grid4 {
     right: 15px;
   }
+  #grid3_H {
+    top: 105px;
+  }
+  #grid3_D {
+    top: 130px;
+  }
+  .grid1 span,
+  .grid2 span,
+  .grid4 span {
+    top: 110px;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -408,10 +419,10 @@
     right: 15px;
     width: 70vw;
   }
-  .grid1 p,
-  .grid2 p,
-  .grid3 p,
-  .grid4 p {
+  .grid1 span,
+  .grid2 span,
+  .grid3 span,
+  .grid4 span {
     width: 90%;
   }
 
@@ -428,6 +439,6 @@
 
 @media screen and (max-width: 300px) {
   .grid4 {
-    height: 25vh;
+    height: auto;
   }
 }

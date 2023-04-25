@@ -595,5 +595,9 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
+  .card_header {
+    overflow: scroll;
+    cursor: move;
+  }
 }
