@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Movin Arica Ventures</title>
+        <title>Movin Africa Ventures</title>
         <meta
           name="description"
           content="Fueling Growth and Innovations While Creating Opportunities For Young, Innovative, Vibrant Minds."
